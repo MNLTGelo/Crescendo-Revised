@@ -1,0 +1,585 @@
+<html lang="en" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Info Centre</title>
+
+    <!-- Core CSS -->
+    <script src="/cdn-cgi/apps/head/Ni2A8WWyNem1WVYYkrbVsN85fgw.js"></script><link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/white.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  
+<body style="">
+
+<!-- start header -->
+<div class="header">
+    <div class="logobx" style="display: block;"></div>
+</div>
+
+
+<!-- start menu with icons -->
+<div class="container">
+    <div class="mainbx">
+        <!-- MAIN MENUS -->
+        <div class="row">
+            <div id="menucontent">
+
+<!-- start menu with icons -->
+<div class="container">
+    <div class="mainbx">
+        <div class="nav-bx">
+            <ul class="nav-ico">
+                <li>
+                    <a href="rules-sports-en-my.shtml" id="rules_menu">
+                        <i class="icon icon-rules"></i><br>
+                        RULES
+                    </a>
+                </li>
+                <li>
+                    <a href="terms-general-promotions-en-my.shtml" id="terms_menu" class="active">
+                        <i class="icon icon-terms"></i><br>
+                        TERMS <span>&amp; CONDITIONS</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- start secondary toggle menus -->
+        <div class="col-lg-12">
+            <div class="sub-menusbx" id="submenu">
+            
+<nav role="navigation" class="navbar navbar-default">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <span class="menu-select" id="menu-select">P2P VIP Level</span>
+    </div>
+    <!-- Collection of nav links and other content for toggling -->
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="terms-general-promotions-en-my.shtml">General Promotions</a></li>
+            <li><a href="terms-abuse-of-promotions-en-my.shtml">Abuse of Promotions</a></li>
+            <li><a href="terms-slot-free-rounds-en-my.shtml">Slots Free Rounds</a></li>
+            <li><a href="terms-slots-tournament-en-my.shtml">Slots Tournament</a></li>
+            <li><a href="terms-gpi-games-promotion-participation-en-my.shtml">GPI Games Promotion Participation</a></li>
+            <li><a href="terms-lottery-and-games-tournament-en-my.shtml">Lottery and Games Tournament</a></li>
+            <li class="active hidden-xs"><a href="terms-vip-level-en-my.shtml">P2P VIP Level</a></li>
+            <li><a href="terms-p2p-tournament-en-my.shtml">P2P Tournament</a></li>
+            <li><a href="terms-p2p-tnc-en-my.shtml">P2P Terms and Conditions</a></li>
+            <!-- <li><a href="terms-keno-tournament-en-my.shtml">Keno Tournament</a></li> -->
+            <!-- <li><a href="terms-vip-level-en-my.shtml">Security and Fraud Surveillance</a></li> -->
+        </ul>
+    </div>
+</nav>
+<script>
+    $(document).ready(function () {
+        var path = location.pathname.substring(0, location.pathname.indexOf("share/")) + "share/";
+        $("a[href$='.shtml']").each(function () {
+            if ($(this).attr("href").indexOf(path) < 0) {
+                $(this).attr("href", path + $(this).attr("href"));
+            }
+        });
+    });
+</script></div>
+        </div>
+    </div>       
+</div>  
+<script>
+    $(document).ready(function () {
+
+        var path = location.pathname.substring(0, location.pathname.indexOf("share/"))+"share/";
+        $("a[href$='.shtml']").each(function () {
+            if ($(this).attr("href").indexOf(path) < 0) {
+                $(this).attr("href", path + $(this).attr("href"));
+                //console.log($(this).attr("href"));
+            }
+        });
+        var page = window.location.pathname.split('/').slice(-1)[0];
+        var category = page.substr(0, page.indexOf('-'));
+         //console.log(category);console.log(page);
+        switch (category)
+        {
+        case "rules":
+            $("#rules_menu").addClass('active');
+            $.get(path+"menus/rules_submenu_en-my.shtml", function(a){
+              $("#submenu").append(a);
+                setTimeout(function() {
+                 subCat();
+                },1);
+            });
+            break;
+        case "terms":
+            $("#terms_menu").addClass('active');
+            $.get(path+"menus/terms_submenu_en-my.shtml", function(a){
+              $("#submenu").append(a);
+                setTimeout(function() {
+                 subCat();
+                },1);
+            });
+            break;
+
+             default:
+            $("#rules_menu").addClass('active');
+            $.get(path+"menus/rules_submenu_en-my.shtml", function(a){
+              $("#submenu").append(a);
+                setTimeout(function() {
+                 subCat();
+                },1);
+            });
+           break;
+        }
+
+        function subCat() {
+            var page = window.location.pathname.split('/').slice(-1)[0];
+            var url = location.pathname.split('/');
+            var path = url[url.length - 2];
+            if (path.toLowerCase() == "share") {
+                path = "";
+            }
+             $("#navbarCollapse a").each(function () {
+                var link = $(this).attr("href");
+                if(link.indexOf(page)>=0|| (link.indexOf(path)>=0&&path.length>0)){
+                    $(this).parent().addClass('active');
+                    $(this).parent().addClass('hidden-xs');
+                    if($(this).parent().hasClass('hidden-xs')){
+                        var activemenu = $(this).text();
+                        $("#menu-select").text(activemenu);
+                    }
+                }
+             });
+        }
+
+    });
+</script>
+</div>  
+        </div>
+
+
+        <!-- start accordion menus -->
+        <div class="col-lg-12">
+            <div class="menu-collapse">
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="heading1">
+                          <h4 class="panel-title">
+                              <a class="collapse in" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                  P2P VIP Level
+                              </a>
+                          </h4>
+                      </div>
+                      <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1">
+                          <div class="panel-body">
+                            <b>VIP Level</b><br>
+                            <p>
+                                  There is 6 level of VIP level in P2P games. It start from the lowest Earth Dragon to highest Gold Dragon.<br>
+                                  The game will start from the lowest level ( Earth Dragon)<br>
+                                  To be upgraded to a higher level or to retain the level, player must have  and/or maintain pre-requisite VPP points.
+                                  <br><br>                                           
+                            </p>
+
+                            <!-- <p><b>Points With Points (PWP) earn as follow;</b></p> -->
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tbody><tr style="text-align: left;" class="rowheader">
+                                                    <td>Icon</td>
+                                                    <td>Level Name</td>
+                                                    <td>Monthly VPP Required</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img class="img-responsive center-block" src="../images/Earth-Dragon.png" style="width: 100px;"></td>
+                                                    <td style="text-align: center; padding-top: 45px;">Earth Dragon</td>
+                                                    <td style="text-align: left; padding-top: 45px;">-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img class="img-responsive center-block" src="../images/Fire-Dragon.png" style="width: 100px;"></td>
+                                                    <td style="text-align: center; padding-top: 45px;">Fire Dragon</td>
+                                                    <td style="text-align: left; padding-top: 40px;">To be upgraded to Fire Dragon, "750 amount of VPP points within 60 days "<br>To be retained in Fire Dragon, "750 amount of VPP points within 60 days "</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img class="img-responsive center-block" src="../images/Water-Dragon.png" style="width: 100px;"></td>
+                                                    <td style="text-align: center; padding-top: 45px;">Water Dragon</td>
+                                                    <td style="text-align: left; padding-top: 40px;">To be upgraded to Water Dragon, "3,000 amount of VPP points within 60 days "<br>To be retained in Water Dragon, "2,000 amount of VPP points within 60 days "</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img class="img-responsive center-block" src="../images/Wind-Dragon.png" style="width: 100px;"></td>
+                                                    <td style="text-align: center; padding-top: 45px;">Wind Dragon</td>
+                                                    <td style="text-align: left; padding-top: 40px;">To be upgraded to Wind Dragon, "7,500 amount of VPP points within 60 days "<br>To be retained in Wind Dragon, "5,000 amount of VPP points within 60 days "</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img class="img-responsive center-block" src="../images/Light-Dragon.png" style="width: 100px;"></td>
+                                                    <td style="text-align: center; padding-top: 45px;">Light Dragon</td>
+                                                    <td style="text-align: left; padding-top: 40px;">To be upgraded to Light Dragon, " 100,000 amount of VPP points within 365 days "<br>To be retained in Light Dragon, "70,000 amount of VPP points within 365 days "</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td style="text-align: left;">To be upgraded to Gold Dragon, “By Invitation Only”<br></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img class="img-responsive center-block" src="../images/Gold-Dragon.png" style="width: 100px;"></td>
+                                                    <td style="text-align: center; padding-top: 45px;">Gold Dragon</td>
+                                                    <td style="text-align: left; padding-top: 45px;">Not required retention point. Level will not be downgraded and fixed on Dragon level.</td>
+                                                </tr>
+                                            </tbody></table>
+                                        </div>
+                                        - Any cancelation of Sit &amp; Go and Schedule Tournament will be not be calculated for rake and VPP points.<br>
+                                        - Player able to upgrade multiple VIP levels in 60 days.<br><br>
+
+                                        <b>Earning VPP Points</b><br>
+                                        Player can start  earn VPP points by playing in cash table and cash tournament (Sit &amp; Go and Scheduled) based on 
+                                        the amount of bet that player contribute on the winning pot. VPPs will be reflected upon completion of the game round.<br>
+                                        For every RMB 1,- on rake contribution, 5.5 VPPs are rewarded to player.<br><br>
+
+                                        <div align="center" class="table-responsive">
+                                            <table style="width:400px;" class="table">
+                                                <tbody><tr style="text-align: left;" class="rowheader">
+                                                    <td>RMB 1,-</td>
+                                                    <td>5.5 VPPs</td> 
+                                                </tr> 
+                                            </tbody></table>
+                                            On cash table , for every  RMB 1,-  on rake contribution, 5.5 VPPs are rewarded to player.<br><br>
+                                        </div>
+                                        <div align="center" class="table-responsive">
+                                            <table style="width:400px;" class="table">
+                                                <tbody><tr style="text-align: left;" class="rowheader">
+                                                    <td>Rake contribution =  Total bet x % Rake</td>
+                                                </tr> 
+                                            </tbody></table>
+                                            <i>* rake percentage varied based on game</i><br>
+                                        </div>
+
+                                        <p><b>Example:</b></p>
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tbody><tr style="text-align: left;" class="rowheader">
+                                                    <td style="text-align: left;">Player</td>
+                                                    <td style="text-align: left;">Rake Contribute 3%</td>
+                                                    <td style="text-align: left;">VPP</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;">Player A ,  total bet  RMB 20,- win</td>
+                                                    <td style="text-align: left;">0.60 (20 RMB x 3%)</td>
+                                                    <td style="text-align: left;">3.3 (0.60 RMB x 5.5 VPP)</td>
+                                                </tr><tr>
+                                                    </tr><tr>
+                                                    <td style="text-align: left;">Player B ,  total bet  RMB 20,- lose</td>
+                                                    <td style="text-align: left;">0.6</td>
+                                                    <td style="text-align: left;">3.3</td> 
+                                                </tr><tr>
+                                                    </tr><tr>
+                                                    <td style="text-align: left;">Player C ,  total bet  RMB 10,- Fold Lose</td>
+                                                    <td style="text-align: left;">0.3</td>
+                                                    <td style="text-align: left;">1.65</td>
+                                                </tr><tr>
+                                            </tr></tbody></table>
+                                        </div>
+                                        On tournament, for every RMB1,- on tournament entry fee, 5.5 VPPs are rewarded to player.<br><br>
+
+                                        <p><b>Example:</b></p>
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tbody><tr style="text-align: left;" class="rowheader">
+                                                    <td style="text-align: left;">Player</td>
+                                                    <td style="text-align: left;">Buy-In</td>
+                                                    <td style="text-align: left;">Fee</td>
+                                                    <td style="text-align: left;">VPP</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;">Player A ,  Join Tournament</td>
+                                                    <td style="text-align: left;">15</td>
+                                                    <td style="text-align: left;">3</td>
+                                                    <td style="text-align: left;">3  x 5.5 VPP= 16.5 VPPs</td>
+                                                </tr><tr>
+                                                    </tr><tr>
+                                                    <td style="text-align: left;">Player B ,  Join Tournament</td>
+                                                    <td style="text-align: left;">Ticket</td>
+                                                    <td style="text-align: left;">0</td> 
+                                                    <td style="text-align: left;">0 x 5.5 VPP= 0 VPPs</td>
+                                            </tr></tbody></table>
+                                        </div>
+                                        At the end of game round each player will receive respective VPP<br><br>
+
+                                        <b>Spin The Wheel</b><br>
+                                        On P2P games, the VIP player has an advantage on the spin-the-wheel feature.<br>
+                                        Spin the wheel feature enable players to have chances to win cash prize. Number of chance on daily depends on member VIP level.<br>
+                                        Spin the wheel has Daily Prize Pool for players to participate and it will be reset daily.<br><br>
+
+                                        <div align="center" class="table-responsive">
+                                            <table style="width:400px;" class="table">
+                                                <tbody><tr class="rowheader">
+                                                    <td>VIP Level</td>
+                                                    <td>Max. Spin</td> 
+                                                </tr> 
+                                                <tr>
+                                                    <td>Earth Dragon</td>
+                                                    <td>-</td> 
+                                                </tr> 
+                                                <tr>
+                                                    <td>Fire Dragon</td>
+                                                    <td>3 Times</td> 
+                                                </tr>
+                                                <tr>
+                                                    <td>Water Dragon</td>
+                                                    <td>4 Times</td> 
+                                                </tr>
+                                                <tr>
+                                                    <td>Wind Dragon</td>
+                                                    <td>5 Times</td> 
+                                                </tr>
+                                                <tr>
+                                                    <td>Light Dragon</td>
+                                                    <td>6 Times</td> 
+                                                </tr>
+                                                <tr>
+                                                    <td>Gold Dragon</td>
+                                                    <td>Unlimited</td> 
+                                                </tr>
+                                            </tbody></table>
+                                        </div><br>
+
+
+                                        <p><b>Expiration VPP Points</b></p>
+                                        
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tbody><tr style="text-align: left;" class="rowheader">
+                                                    <td style="text-align: left;">Level</td>
+                                                    <td style="text-align: left;">Expiration</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;">Earth, Fire, Water and Wind Dragon</td>
+                                                    <td style="text-align: left;">Every 1st day of the Month of February, April, June, August, October and December 00:00:00 (GMT+8)</td>
+                                                </tr>
+                                                    <tr>
+                                                    <td style="text-align: left;">Light and Gold Dragon</td>
+                                                    <td style="text-align: left;">Every 1st July of yearly 00:00:00 (GMT+8).</td>
+                                                </tr>
+                                                
+                                            </tbody></table>
+                                        </div>
+
+                                        Texas Mahjong has additional previlege from VIP level in which earn Points With Points (PWP).<br>
+                                        In addition to earning VPP points, players earn FPP (Frequent Player Points) Points as well.<br>
+                                        FPP points can be used to complete the mission to win prizes. Terms and conditions applied<br><br>
+
+                                        <p><b>Points With Points (PWP) earn as follow;</b></p>
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tbody><tr style="text-align: left;" class="rowheader">
+                                                    <td style="text-align: left;">Level Name</td>
+                                                    <td style="text-align: left;">FPP per VPP</td>
+                                                    <td style="text-align: left;">Extra FPP Points Upon Level Up (One Time Only)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;">Earth Dragon</td>
+                                                    <td style="text-align: left;">Every 1 VPP is equal to 1 FPP</td>
+                                                    <td style="text-align: left;">-</td>
+                                                </tr>
+                                                    <tr>
+                                                    <td style="text-align: left;">Fire Dragon</td>
+                                                    <td style="text-align: left;">Every 1 VPP is equal to 1.5 FPPs</td>
+                                                    <td style="text-align: left;">Upgraded to Fire Dragon, 10 extra FPPs will be earned</td>
+                                                </tr><tr>
+                                                    </tr><tr>
+                                                    <td style="text-align: left;">Water Dragon</td>
+                                                    <td style="text-align: left;">Every 1 VPP is equal to 2 FPPs</td>
+                                                    <td style="text-align: left;">Upgraded to Water Dragon, 30 extra FPPs will be earned</td>
+                                                </tr>
+                                                    <tr>
+                                                    <td style="text-align: left;">Wind Dragon</td>
+                                                    <td style="text-align: left;">Every 1 VPP is equal to 2.5 FPPs</td>
+                                                    <td style="text-align: left;">Upgraded to Wind Dragon, 300 extra FPPs will be earned</td>
+                                                </tr>
+                                                    <tr>
+                                                    <td style="text-align: left;">Light Dragon</td>
+                                                    <td style="text-align: left;">Every 1 VPP is equal to 3.5 FPPs</td>
+                                                    <td style="text-align: left;">Upgraded to Light Dragon, 2,000 extra FPPs will be earned</td>
+                                                </tr>
+                                                    <tr>
+                                                    <td style="text-align: left;">Gold Dragon</td>
+                                                    <td style="text-align: left;">Every 1 VPP is equal to 5 FPPs</td>
+                                                    <td style="text-align: left;">Upgraded to Gold Dragon, 10,000 extra FPPs will be earned</td>
+                                                </tr>
+                                            </tbody></table>
+                                        </div>
+
+
+                                        <p><b>Total bet in RMB  to FPP,</b></p>
+                                        From every RMB total bet in the game round, player can calculate the total FPP Point that can be earn, Based on the following table.<br><br>
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tbody><tr style="text-align: left;" class="rowheader">
+                                                    <td style="text-align: left;">Level</td>
+                                                    <td style="text-align: left;">1 RMB = FPP</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;">Earth Dragon</td>
+                                                    <td style="text-align: left;">5.5 FPPs</td>
+                                                </tr><tr>
+                                                    </tr><tr>
+                                                    <td style="text-align: left;">Fire Dragon</td>
+                                                    <td style="text-align: left;">8.25 FPPs</td>
+                                                </tr><tr>
+                                                    </tr><tr>
+                                                    <td style="text-align: left;">Water Dragon</td>
+                                                    <td style="text-align: left;">11 FPPs</td>
+                                                </tr><tr>
+                                                    </tr><tr>
+                                                    <td style="text-align: left;">Wind Dragon</td>
+                                                    <td style="text-align: left;">13.75 FPPs</td>
+                                                </tr><tr>
+                                                    </tr><tr>
+                                                    <td style="text-align: left;">Light Dragon</td>
+                                                    <td style="text-align: left;">19.25 FPPs</td>
+                                                </tr><tr>
+                                                    </tr><tr>
+                                                    <td style="text-align: left;">Gold Dragon</td>
+                                                    <td style="text-align: left;">27.5 FPPs</td>
+                                                </tr><tr>
+                                            </tr></tbody></table>
+                                        </div>
+
+                                        <p><b>Example:</b></p>
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tbody><tr style="text-align: left;" class="rowheader">
+                                                    <td style="text-align: left;">Player</td>
+                                                    <td style="text-align: left;">Rake Contribute 3%</td>
+                                                    <td style="text-align: left;">VPP</td>
+                                                    <td style="text-align: left;">FPP</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;">A , Total bet 50, Win (Earth Dragon)</td>
+                                                    <td style="text-align: left;">1.5 (50,- RMB x 3%)</td>
+                                                    <td style="text-align: left;">8.25 ( 1.5,- RMB *5.5)</td>
+                                                    <td style="text-align: left;">8.25 (1.5RMB x 5.5)</td>
+                                                </tr><tr>
+                                                    </tr><tr>
+                                                    <td style="text-align: left;">B , Total bet 50, Lose (Fire Dragon)</td>
+                                                    <td style="text-align: left;">1.5</td>
+                                                    <td style="text-align: left;">8.25</td>
+                                                    <td style="text-align: left;">12.37 (1.5RMB x8.25)</td>
+                                                </tr><tr>
+                                                    </tr><tr>
+                                                    <td style="text-align: left;">C , Total bet 30, Fold - Lose (Water Dragon)</td>
+                                                    <td style="text-align: left;">0.9</td>
+                                                    <td style="text-align: left;">4.95</td>
+                                                    <td style="text-align: left;">9.9 (0.9 RMBx11)</td>
+                                                </tr><tr>
+                                            </tr></tbody></table>
+                                        </div>
+
+                                        <p><b>FPP Points - Mission</b></p>
+                                        On Texas Mahjong, players able to participate in tournament missions. To participate min.requirement of FPP Points need to  be met.<br><br>
+                                        <b>Details as follows:</b><br>
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tbody><tr style="text-align: left;" class="rowheader">
+                                                    <td style="text-align: left;">Prize Amount (RMB)</td>
+                                                    <td style="text-align: left;">No. of Rollover</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;">0~100</td>
+                                                    <td style="text-align: left;">N/A</td>
+                                                    <td style="text-align: left;">No FPP Required, prize amount will be injected into mah-jong wallet directly</td>
+                                                </tr><tr>
+                                                    </tr><tr>
+                                                    <td style="text-align: left;">101~200</td>
+                                                    <td style="text-align: left;">1x</td>
+                                                    <td style="text-align: left;">Player need to complete 50 FPPs within 30 days upon receiving the prize amount</td>
+                                                </tr><tr>
+                                                    </tr><tr>
+                                                    <td style="text-align: left;">201~400</td>
+                                                    <td style="text-align: left;">1x</td>
+                                                    <td style="text-align: left;">Player need to complete 100 FPPs within 30 days upon receiving the prize amount</td>
+                                                </tr><tr>
+                                                    </tr><tr>
+                                                    <td style="text-align: left;">401~600</td>
+                                                    <td style="text-align: left;">Prize will be split into 2x</td>
+                                                    <td style="text-align: left;">Player need to complete 200 FPPs within 30 days upon receiving the prize amount</td>
+                                                </tr><tr>
+                                                    </tr><tr>
+                                                    <td style="text-align: left;">601~800</td>
+                                                    <td style="text-align: left;">Prize will be split into 2x</td>
+                                                    <td style="text-align: left;">Player need to complete 400 FPPs within 30 days upon receiving the prize amount</td>
+                                                </tr><tr>
+                                                    </tr><tr>
+                                                    <td style="text-align: left;">801~1,000</td>
+                                                    <td style="text-align: left;">Prize will be split into 2x</td>
+                                                    <td style="text-align: left;">Player need to complete 500 FPPs within 30 days upon receiving the prize amount</td>
+                                                </tr><tr>
+                                                    </tr><tr>
+                                                    </tr><tr>
+                                                    <td style="text-align: left;">1,001~1,500</td>
+                                                    <td style="text-align: left;">Prize will be split into 2x</td>
+                                                    <td style="text-align: left;">Player need to complete 750 FPPs within 30 days upon receiving the prize amount</td>
+                                                </tr><tr>
+                                                    </tr><tr>
+                                                    </tr><tr>
+                                                    <td style="text-align: left;">1,501~2,000</td>
+                                                    <td style="text-align: left;">Prize will be split into 2x</td>
+                                                    <td style="text-align: left;">Player need to complete 1,000 FPPs within 45 days upon receiving the prize amount</td>
+                                                </tr><tr>
+                                                    </tr><tr>
+                                                    </tr><tr>
+                                                    <td style="text-align: left;">2,001~3,000</td>
+                                                    <td style="text-align: left;">Prize will be split into 2x</td>
+                                                    <td style="text-align: left;">Player need to complete 1,500 FPPs within 45 days upon receiving the prize amount</td>
+                                                </tr><tr>
+                                                    </tr><tr>
+                                                    </tr><tr>
+                                                    <td style="text-align: left;">3,001~4,000</td>
+                                                    <td style="text-align: left;">Prize will be split into 4x</td>
+                                                    <td style="text-align: left;">Player need to complete 2,000 FPPs within 45 days upon receiving the prize amount</td>
+                                                </tr><tr>
+                                                    </tr><tr>
+                                                    </tr><tr>
+                                                    <td style="text-align: left;">4,001 and above</td>
+                                                    <td style="text-align: left;">Prize will be split into 4x</td>
+                                                    <td style="text-align: left;">Player need to complete 3,000 FPPs within 45 days upon receiving the prize amount</td>
+                                                </tr><tr>
+                                            </tr></tbody></table>
+                                        </div>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>       
+</div>    
+
+<!-- back to top -->
+<a href="#" id="back-to-top" title="Back to top"><!-- &uarr; -->
+    <img src="images/goTop.png" title="Back to Top">
+</a>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $.get("menus/menu_en-my.shtml", function(a){
+      $("#menucontent").append(a);
+    });
+  });
+</script>
+
+</body></html>

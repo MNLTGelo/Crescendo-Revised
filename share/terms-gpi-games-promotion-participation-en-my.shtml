@@ -1,0 +1,283 @@
+<html lang="en" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Info Centre</title>
+
+    <!-- Core CSS -->
+    <script src="/cdn-cgi/apps/head/Ni2A8WWyNem1WVYYkrbVsN85fgw.js"></script><link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/white.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  
+<body style="">
+
+<!-- start header -->
+<div class="header">
+    <div class="logobx" style="display: block;"></div>
+</div>
+
+
+<!-- start menu with icons -->
+<div class="container">
+    <div class="mainbx">
+        <!-- MAIN MENUS -->
+        <div class="row">
+            <div id="menucontent">
+
+<!-- start menu with icons -->
+<div class="container">
+    <div class="mainbx">
+        <div class="nav-bx">
+            <ul class="nav-ico">
+                <li>
+                    <a href="rules-sports-en-my.shtml" id="rules_menu">
+                        <i class="icon icon-rules"></i><br>
+                        RULES
+                    </a>
+                </li>
+                <li>
+                    <a href="terms-general-promotions-en-my.shtml" id="terms_menu" class="active">
+                        <i class="icon icon-terms"></i><br>
+                        TERMS <span>&amp; CONDITIONS</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- start secondary toggle menus -->
+        <div class="col-lg-12">
+            <div class="sub-menusbx" id="submenu">
+            
+<nav role="navigation" class="navbar navbar-default">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <span class="menu-select" id="menu-select">GPI Games Promotion Participation</span>
+    </div>
+    <!-- Collection of nav links and other content for toggling -->
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="terms-general-promotions-en-my.shtml">General Promotions</a></li>
+            <li><a href="terms-abuse-of-promotions-en-my.shtml">Abuse of Promotions</a></li>
+            <li><a href="terms-slot-free-rounds-en-my.shtml">Slots Free Rounds</a></li>
+            <li><a href="terms-slots-tournament-en-my.shtml">Slots Tournament</a></li>
+            <li class="active hidden-xs"><a href="terms-gpi-games-promotion-participation-en-my.shtml">GPI Games Promotion Participation</a></li>
+            <li><a href="terms-lottery-and-games-tournament-en-my.shtml">Lottery and Games Tournament</a></li>
+            <li><a href="terms-vip-level-en-my.shtml">P2P VIP Level</a></li>
+            <li><a href="terms-p2p-tournament-en-my.shtml">P2P Tournament</a></li>
+            <li><a href="terms-p2p-tnc-en-my.shtml">P2P Terms and Conditions</a></li>
+            <!-- <li><a href="terms-keno-tournament-en-my.shtml">Keno Tournament</a></li> -->
+            <!-- <li><a href="terms-vip-level-en-my.shtml">Security and Fraud Surveillance</a></li> -->
+        </ul>
+    </div>
+</nav>
+<script>
+    $(document).ready(function () {
+        var path = location.pathname.substring(0, location.pathname.indexOf("share/")) + "share/";
+        $("a[href$='.shtml']").each(function () {
+            if ($(this).attr("href").indexOf(path) < 0) {
+                $(this).attr("href", path + $(this).attr("href"));
+            }
+        });
+    });
+</script></div>
+        </div>
+    </div>       
+</div>  
+<script>
+    $(document).ready(function () {
+
+        var path = location.pathname.substring(0, location.pathname.indexOf("share/"))+"share/";
+        $("a[href$='.shtml']").each(function () {
+            if ($(this).attr("href").indexOf(path) < 0) {
+                $(this).attr("href", path + $(this).attr("href"));
+                //console.log($(this).attr("href"));
+            }
+        });
+        var page = window.location.pathname.split('/').slice(-1)[0];
+        var category = page.substr(0, page.indexOf('-'));
+         //console.log(category);console.log(page);
+        switch (category)
+        {
+        case "rules":
+            $("#rules_menu").addClass('active');
+            $.get(path+"menus/rules_submenu_en-my.shtml", function(a){
+              $("#submenu").append(a);
+                setTimeout(function() {
+                 subCat();
+                },1);
+            });
+            break;
+        case "terms":
+            $("#terms_menu").addClass('active');
+            $.get(path+"menus/terms_submenu_en-my.shtml", function(a){
+              $("#submenu").append(a);
+                setTimeout(function() {
+                 subCat();
+                },1);
+            });
+            break;
+
+             default:
+            $("#rules_menu").addClass('active');
+            $.get(path+"menus/rules_submenu_en-my.shtml", function(a){
+              $("#submenu").append(a);
+                setTimeout(function() {
+                 subCat();
+                },1);
+            });
+           break;
+        }
+
+        function subCat() {
+            var page = window.location.pathname.split('/').slice(-1)[0];
+            var url = location.pathname.split('/');
+            var path = url[url.length - 2];
+            if (path.toLowerCase() == "share") {
+                path = "";
+            }
+             $("#navbarCollapse a").each(function () {
+                var link = $(this).attr("href");
+                if(link.indexOf(page)>=0|| (link.indexOf(path)>=0&&path.length>0)){
+                    $(this).parent().addClass('active');
+                    $(this).parent().addClass('hidden-xs');
+                    if($(this).parent().hasClass('hidden-xs')){
+                        var activemenu = $(this).text();
+                        $("#menu-select").text(activemenu);
+                    }
+                }
+             });
+        }
+
+    });
+</script>
+</div>  
+        </div>
+
+
+        <!-- start accordion menus -->
+        <div class="col-lg-12">
+            <div class="menu-collapse">
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="heading3">
+                          <h4 class="panel-title">
+                              <a class="collapse in" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                 Slots Free Rounds
+                              </a>
+                          </h4>
+                      </div>
+                      <div id="collapse3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading3">
+                          <div class="panel-body">
+                            <p><b>GPI Promotion Game Terms and Conditions of Participation</b></p>
+
+                            <p><b>1. Acceptance of Terms and Conditions</b></p>
+
+                            <p>1.1. The following general terms and conditions regulate the use of promotional games and other services (collectively, the "Games") provided by Gameplay Interactive (hereinafter referred to as "GPI") on all GPI platform.</p>
+                            <p>By participating in or playing any of the Games, you, as an eligible user (such person, a "User"), agree unconditionally and irrevocably to be bound by, and shall be deemed to accept, these terms and conditions (the "Games Terms") in addition to the <a href="terms-general-promotions-en-my.shtml">General promotion Terms &amp; Conditions</a> and/or <a href="terms-abuse-of-promotions-en-my.shtml">Abuse of promotion Terms and conditions</a>, which are incorporated by reference into these Games Terms.</p>
+                            <p>1.2. GPI offers games and other services within the context of its technical and operational capabilities, subject to downtime and lack of availability during which the use of the Games and other services are interrupted or affected due to urgent technical reasons or required maintenance work. GPI shall not be liable, in any case whatsoever, for these instances in accordance with the conditions of this Games Terms. This also does not include periods of time in which GPI general services or the servers of the particular games offered do not allow online access due to reasons beyond GPI control such as any events of force majeure or as a result of third party actions or omissions.</p>
+                            <p>1.3. GPI continuously updates, changes and develops its Games and other services at its own discretion. Other provisions or general terms and conditions of a User that deviates in any way from GPI Games Terms herein, shall only apply if GPI gives prior written consent to their validity.</p>
+                            <p>1.4. GPI does not make any warranty or representation or undertaking on the performance and capability the Games and/or any software or hardware used with the Games, any application accessed by a User the reliability or quality of the underlying telecommunications network accessed by such User using the Games.</p>
+                            <p>1.5. Games and other services offered by GPI are intended solely for the purpose of a User's personal entertainment and personal benefit.</p>
+                            <p>1.6. In addition to these Games Terms, any existing rules of the respective games available in the Games portal shall also apply. In the case of any inconsistency or conflict between these Games Terms, the rules of any Game, the provisions of these Games Terms shall prevail over the others, following by the specific rules of any Game to the extent of such conflict.</p>
+
+                            <p><b>2. Games Conditions</b></p>
+
+                            <p>2.1. A User shall be a registered player of GPI on Website under verified vendors. Users shall only be able to enter the Games portal and participate in the Games after they have logged in with valid registration account. Only natural persons are eligible for registration and participation in the Games and only individual persons are permitted to be authorized users.</p>
+                            <p>2.2. Users shall be prohibited from running with programs other than GPI client program that has been provided in the Games portal. This refers in particular to automated bots and other tools meant to replace or supplement game interface. In addition, scripts and completely or partially automated programs providing Users with any advantage over other Users shall be prohibited, including without limitation, auto-refresh functions and other integrated browser mechanisms that use or concern automated procedures for participation in the Games.</p>
+                            <p>2.3. Users are, under no circumstances, permitted to:</p>
+                            <p>(i) create or use cheats, mods and/or hacks, or any other third party software products that may change the result or gameplay of the Games;</p>
+                            <p>(ii) use software that allows the mining of data or otherwise intercepts or collects information in connection with the Games;</p>
+                            <p>2.4. The User acknowledges that the availability of the Games shall be subject to:</p>
+                            <p>(i) the availability and functionality of resources including, without limitation, the availability and functionality GPI Games; and</p>
+                            <p>(ii) the capability of GPI system at the time and location when the Games are due to be operated or run for Users.</p>
+                            <p>2.5. The User accepts that GPI shall not be responsible to him or her for any loss, damage, fine, regulatory action, claim or compensation of whatever nature arising from or related to the Games (collectively, the "Liabilities") including but not limited to (i) such User's breach of these Games Terms, (ii) any alleged unauthorised transactions, disruptions, errors, defects or unavailability of the Games, or (iii) any loss of data or damage to any of his or her mobile equipment, to the fullest extent permitted by law.</p>
+
+                            <p><b>3. Content Restrictions</b></p>
+
+                            <p>3.1. GPI Games include various content, imagery, media and graphics that are protected by trademarks, copyrights or other means for the benefit of GPI or third parties. Unless explicitly permitted within these Games Terms, no User or any third party may edit, copy, distribute, publicly reproduce, use for advertising purposes, or use beyond the contractually agreed purposes of any of GPI's Games, or the content or any portion thereof. Copyright information and brand names may not be changed, hidden or removed. The term "content" includes all and any data, images, text, graphics, music, sounds, sound sequences, videos, software programs and codes, and other information provided or developed by GPI and any such services available for download.</p>
+                            <p>3.2. Users are obliged to abstain from any measure which may compromise or interrupt the proper functioning of GPI games, any individual services and/or offers there, or its Games. Users are also required to abstain from any measure which may allow unauthorized access to data.</p>
+
+                            <p><b>4. General Rules of Participation in the Games</b></p>
+
+                            <p>4.1. Subject to downtime, the lack of availability or the rules of any Game, Users shall be entitled to participate in the GPI Games. To participate in the Games, Users shall enter the GPI Games landing page by clicking the "Claim Now" icon at the home page and/or main campaign page on authorized vendors. User shall logged in with his or her credentials prior to accessing GPI Games landing page.</p>
+                            <p>4.2. Once a User has arrived at the GPI Games landing page, such User may start to play the promotional game. Prize rewards obtained during the course of such game shall be accumulated and claim by User. Prize offered in different form based on the promotion campaign (a) monetary prize (b) rewards points (c) gifts provided by GPI during campaign period.</p>
+                            <p>4.3. Each Games session shall be unique to the User, and shall only be accessible to such User. GPI shall be entitled at its sole discretion to determine the number of GPI promotion live points, monetary prizes, rewards points and/or gifts that any User shall entitled to receive.</p>
+                            <p>4.4. Any prizes obtained and/or accumulated by a User from participation in the Games shall be claimable only during the time period specified by GPI. Prize that not claim within the time period specified by GPI shall lapse and become void and of no further use.</p>
+                            <p>4.5. GPI reserves the right to cancel any prizes awarded to a User in connection where prizes obtained under or as a result of the Games where it determines in its sole and absolute discretion that such User has breached these Games Terms, <a href="terms-general-promotions-en-my.shtml">General Promotions Terms and Conditions</a>, <a href="terms-abuse-of-promotions-en-my.shtml">Abuse promotion terms</a> .</p>
+                            <p>4.6. The number rewards or value of rewards required claiming and any gift shall be determined by GPI and may change from time to time without notice.</p>
+
+                            <p><b>5. User's Obligations</b></p>
+
+                            <p>5.1. Each User acknowledges and agrees that:</p>
+                            <p>(i) He or she shall comply with all applicable laws and regulations to the fullest extent when participating in the Games.</p>
+                            <p>(ii) He or she shall comply with all third party terms (including, without limitation, any applicable terms of use, policies and guidelines) provided by sharing channels where such sharing channels are used to invite third parties to the Games, and such User shall not, as part of his or her participation in the Games, breach any of these terms.</p>
+                            <p>(iii) He or she shall be responsible for all information that is communicated, submitted, transmitted or otherwise made available during such User's participation in the Games whether to GPI or third parties.</p>
+                            <p>(iv) You shall not participate in the Games or permit the participation in the Games in any manner which may adversely affect other ‘Users' participation in the Games or the goodwill or reputation of GPI</p>
+                            <p>(v) You are responsible for complying with these Games Terms.</p>
+                            <p>(vi) GPI to the fullest extent permitted by law, excludes all warranties, rights and remedies (including warranties implied by statute or otherwise) that a User would otherwise be entitled to under law.</p>
+                            <p>5.2. Where GPI deems that a User has breached of any of these Games Terms, including fraudulently participating in the Games, GPI reserves the right, at its sole and absolute discretion to: prevent or restrict access of any User to the Games in the aggregate or any of the Games on any of the GPI Platforms.</p>
+
+                            <p><b>6. Data Collected by GPI</b></p>
+
+                            <p>6.1. When you access or use the Games, we may collect information from you, which may include personal information such as photographs, name and username that you may upload, provide or use.</p>
+                            <p>6.2. Any personal information that we collect may be used by us, or shared with or transferred to third parties (including related companies, third party service providers, and other Users), for some or all of the following purposes:</p>
+                            <p>(a) To display on scoreboards on the Platform in relation to the Games; and/or</p>
+                            <p>(b) To otherwise facilitate your use of the Games.</p>
+                            <p>For the avoidance of doubt, the Privacy Policy as referred to in the Terms of Use shall apply to all personal information referred to under these Games Terms.</p>
+
+                            <p><b>7. Miscellaneous</b></p>
+
+                            <p>7.1. Any Clause in these Games Terms, the Terms of Use, the Standard Terms and Conditions, the Privacy Policy as well as such other terms and conditions as may be agreed or accepted by a User, that are invalid, unenforceable or illegal shall be enforced as far as possible in accordance with its terms, but shall otherwise be deemed severed and shall not affect the enforceability of any other Clauses, terms and/or conditions which Clauses, terms and/or conditions shall continue to be valid and enforceable to the fullest extent permitted by law.</p>
+                            <p>7.2. GPI reserves the sole right to alter, modify, add to or otherwise vary these Games Terms at any time and from time to time, and in such manner as GPI deems appropriate at its absolute discretion. In the event of variation of these Games Terms, if you continue to participate in or use the Games thereafter, you shall be bound by the Games Terms as so amended and shall be deemed to have accepted the Games Terms as so amended.</p>
+                            <p>7.3. GPI shall not be liable for any non-performance, error, interruption or delay in the performance of its obligations under these Games Terms (or any part thereof) or in connection with the Games or for any inaccuracy, unreliability or unsuitability of the Games if this is due, in whole or in part, directly or indirectly to an event or failure which is beyond GPI's reasonable control.</p>
+
+                            <p><b>GPI Live Coins Terms of Use</b></p>
+                            <p>1. GPI Live Coins are not exchangeable for prizes (a) monetary (b) rewards point and/or (c) gifts.</p>
+                            <p>2. GPI Live Coins is use to play GPI promotional games to obtained prizes in form of (a) monetary (b) rewards point and/or (c) gifts that is part of promotional campaign.</p>
+
+                            <p>3. Any GPI Live Coins obtained and/or accumulated by a User shall be use to play on GPI promotional game to obtained prizes only during the time period specified by GPI. GPI Live Coins that is not used to play on promotional game within the time period specified by GPI shall lapse and become void and of no further use.</p>
+                            <p>4. Any prizes obtained and/or accumulated by a User shall only be during the time period specified by GPI. Prizes that is not claimed within the time period specified by GPI shall lapse and become void and of no further use.</p>
+                            <p>5. GPI reserves the right to cancel any GPI Live Coins or any Prizes awarded to a User in connection with any GPI Live Coins, that were obtained under or as a result of the Games where it determines in its sole and absolute discretion that such User has breached these Games Terms, the Terms of Use &amp;/or <a href="terms-general-promotions-en-my.shtml">General Promotions Terms and Conditions</a> and/or <a href="terms-abuse-of-promotions-en-my.shtml">Abuse promotion terms</a> .</p>
+                            <p>6. The number of rewards points required to claim or gift, and the number or value of rewards points required to claim, as the case may be, shall be determined by GPI and may change from time to time without notice.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>       
+</div>    
+
+<!-- back to top -->
+<a href="#" id="back-to-top" title="Back to top"><!-- &uarr; -->
+    <img src="images/goTop.png" title="Back to Top">
+</a>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $.get("menus/menu_en-my.shtml", function(a){
+      $("#menucontent").append(a);
+    });
+  });
+</script>
+
+</body></html>

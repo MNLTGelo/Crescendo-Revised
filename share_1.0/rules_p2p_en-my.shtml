@@ -1,0 +1,2559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>    
+    <link href="css/white.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.gpislots.info/shared/css/style.css">
+    <link rel="stylesheet" href="https://www.gpislots.info/shared/css/blocklibrary.css">
+    <link rel="stylesheet" href="https://www.gpislots.info/shared/css/font.css">
+    <link rel="stylesheet" href="https://www.gpislots.info/shared/css/bootstrap.css">
+    <link rel="stylesheet" href="https://www.gpislots.info/shared/css/bootstrap-table.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Info Centre - P2P</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <style type="text/css">
+        .mainbx {
+          width: 100%;
+          background-color: #fff;
+          display: inline-block; 
+        }
+        .nav-ico {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            padding:0;  
+        }
+        .nav-bx {
+          width: 100%;
+          display: inline-block;
+          padding: 30px 0;
+          border-bottom: 1px #F4F4F4 solid;
+        }
+        .nav-ico ul {
+            margin: 0 auto;
+            padding: 0;
+            text-align: center; 
+        }
+        .nav-ico li {
+          margin: 0 auto;
+          text-align: center;
+          list-style: none;
+            padding: 0px 15px;
+          display: inline-block;  
+        }
+        .nav-ico li a {
+          text-decoration: none;
+          -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+          display: inline-block; 
+          font-size: 17px;
+          color: #757575; 
+        }
+        .nav-ico li a:hover, .nav-ico li a.active {
+          color:#A8C62C; 
+        }
+        .nav-ico li a i {
+          text-align: center;
+          font-size: 60px;
+          margin: 0 auto;
+          display: block;
+        }
+        .backicon {
+          padding: 12px 0px;
+        }
+        .backicon li {
+          margin: 0 auto;
+          text-align: right;
+          padding-right: 18px;
+        }
+        .backicon li a i {
+          float: left;
+        }
+        .backicon li a i {
+          font-size: 37px;
+        }
+        .backicon li a em {
+          line-height: 40px;
+          padding-left: 10px;
+          font-style: normal;
+        }
+
+        /* start secondary toggle menus */
+        .sub-menusbx {
+          width: 100%;
+        }
+        .sub-menusbx span.menu-select {
+          color:#A8C62C;
+          text-align: center;
+          width: 100%; 
+          float: left;
+          margin-top: -35px;
+          display: none;
+        }
+        .navbar-default {
+          background: none;
+          border: none;
+          position: relative;
+        }
+        .navbar-header {
+          background-color: #f8f8f8;
+        }
+        .navbar {
+          border-radius: 0;
+          min-height: auto;
+          margin: 20px 0px;
+        }
+        .navbar-toggle {
+          border-radius: 0;
+          background: none;
+          margin: 5px 5px 5px 0px;
+        }
+        .nav {
+          background: none;
+          text-align: center;
+        }
+        .navbar-nav {
+          float: none;
+        }
+        .navbar-nav ul {
+          padding: 0;
+          margin: 0;
+        }
+        .navbar-default .navbar-nav li {
+          float: none;
+          display: inline-block;
+          border-right: 1px #e6e6e6 solid;
+          color: #e6e6e6;
+          padding: 0px 12px 0px 7px;
+          margin: 5px 0px;
+        }
+        .navbar-default .navbar-nav li:last-child {
+          border-right: none;
+        }
+        .navbar-nav li a{
+          padding: 0;
+          margin: 0;
+        }
+        .navbar-default .navbar-nav>.active>a,
+        .navbar-default .navbar-nav>.active>a:focus, 
+        .navbar-default .navbar-nav>.active>a:hover {
+          color: #A8C62C;
+          background: none;
+        }
+        .navbar-default .navbar-nav>li>a:focus, 
+        .navbar-default .navbar-nav>li>a:hover {
+          color:#A8C62C;
+        }
+
+
+        /*start secondary menus for accordion */
+        .menu-collapse {
+          width: 100%;
+          margin-top: 20px;
+          border-top: 1px solid #DBDBDB;
+        }
+        .panel {
+          border-color:none;
+          background: none;
+          border:none;
+          box-shadow: none;
+          -webkit-box-shadow: none;
+        }
+        .panel-group .panel+.panel {
+          margin: 0;
+        }
+        .panel-group,
+        .panel-group .panel,
+        .panel-group .panel-heading,
+        .panel-group .panel-heading a,
+        .panel-group .panel-title,
+        .panel-group .panel-title a,
+        .panel-group .panel-body,
+        .panel-group .panel-group .panel-heading + .panel-collapse > .panel-body {
+          border-radius: 0px;
+          border: 0;
+        }
+        .panel-group .panel-heading {
+          padding: 0;
+        }
+
+        .panel-group .panel-heading a {
+          display: block;
+          background: #A8C62C;
+          color: #ffffff;
+          font-size: 17px;
+          padding: 15px;
+          text-decoration: none;
+          position: relative;
+          border-bottom: 1px solid #DBDBDB;
+          -webkit-transition: 0.4s ease;
+          transition: 0.4s ease;
+          padding-right: 65px;
+        }
+        .panel-group .panel-heading a.collapsed {
+          background: #fff;
+          color: #757575;
+        }
+        .panel-group .panel-heading a.collapsed:hover {
+          background: #A8C62C; 
+          color: #fff;
+          padding-left: 25px; 
+        }
+        .panel-group .panel-heading a:after {
+            content: '∟';
+            position: absolute;
+            right: 20px;
+            top: 18px;
+            font-size: 18px;
+            color: white;
+            -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+        }
+        .panel-group .panel-heading a.collapsed:after {
+            top: 10px;
+            color: #B3B3B3;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+        .panel-group .panel-heading a.collapsed:hover:after {
+            color: white;
+        }
+
+        .panel-group .panel-collapse {
+          margin-top: 0px !important;
+        }
+        .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body{
+          border-top: none;
+          border:1px #DBDBDB solid;
+          border-top: none;
+        }
+
+        .panel-body {
+          padding: 20px 15px;
+          font-size: 16px;
+          line-height: 23px;
+          color: #757575;
+        }
+        .panel-body blockquote {
+          font-size: 16px; 
+        }
+        .panel-body p {
+          margin: 0px 0px 17px 0px;
+        }
+        .panel-body a {
+          color: #A8C62C;
+          -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+          text-decoration: none;
+        }
+        .panel-body a:hover {
+          color:#A8C62C;
+          text-decoration: underline;
+        }
+        .panel-body a:focus {
+          text-decoration: none;
+        }
+        .panel-body ol li {
+          margin-top:5px;
+        }
+        .panel-body ul li {
+          margin-top:5px;
+        }
+        .content-list {
+          margin: 20px 0px; 
+        }
+        .content-list li {
+          line-height: 30px;
+        }
+        .nostyle1 {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        .nostyle1 li p {
+          margin: 0px 0px 10px 40px;
+        }
+        .nostyle1 li {
+          clear: both;
+        }
+        .nostyle1 li span {
+          display: block;
+          float: left;
+          font-weight: bold;
+          margin-right: 10px;
+        }
+        .nostyle2 {
+            list-style: none; 
+        }
+
+        /*start table boxes*/
+        .table {
+          background: #eee;
+          border-spacing: 0;
+          font-size: 14px;
+        }
+        .table thead, .table tr:first-child {
+          color: #000; 
+          font-weight:bold;
+        }
+        .table td {
+          border: 1px solid #fff;
+          text-align: center;
+        }
+        .table-textleft td {
+          text-align: left;
+        }
+        .table .table-inside1, .table .table-inside2{
+          background:none; 
+          padding:0; 
+          border: none; 
+          margin-bottom:0;
+        }
+        .table .table-inside1 td, .table .table-inside2 td{
+          border: none;
+          font-weight: normal;
+          color: #757575; 
+          min-height: 80px;
+        }
+        .table .table-inside2 td:first-child{
+            border-right: 1px solid #fff;
+        }
+        /*.table .table-inside2 tbody tr td{
+          background: red;
+          padding:0;
+        }*/
+        .sbull {
+          width: 100%;
+        }
+        .sbull img {
+          float: left;
+        }
+        .rowheader td {
+          background: #ddd;
+        }
+        .carspace img {
+          margin-bottom: 7px;
+        }
+        #gotop {
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            display: none;
+        }
+        #back-to-top {
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            z-index: 9999;
+            width: 32px;
+            height: 32px;
+            text-align: center;
+            line-height: 30px;
+            background: #A8C62C;
+            color: #fff;
+            cursor: pointer;
+            border: 0;
+            text-decoration: none;
+            transition: opacity 0.2s ease-out;
+            -webkit-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+            opacity: 0;
+        }
+        #back-to-top.show {
+            opacity: 1;
+        }
+        .heading-txt {
+          text-align: left;
+          padding: 0px 15px;
+        }
+
+        .bg-dark {
+            background-color: #000000 !important;
+        }
+
+        .w-100 {
+            text-align: center !important;
+
+        }
+
+        .justify-content-end {
+            justify-content: center !important;
+        }
+
+        .fa-bars:before {
+            content: "\f0c9";
+            color: #fff;
+        }
+
+        .navbar-brand {
+            width: 100% !important;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .topnav {
+            padding: 15px;
+            background-color: black;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 991px) {
+            .navbar-brand {
+                width: 90% !important;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .w-100 {
+
+                text-align: left !important;
+            }
+        }
+
+        @media (min-width: 992px) {
+
+            .navbar-expand-lg>.container,
+            .navbar-expand-lg>.container-fluid {
+                -ms-flex-wrap: nowrap;
+                display: block;
+            }
+
+
+        }
+    </style>
+
+    <div class="header">
+        <nav class="navbar sticky-top navbar-expand-lg bg-dark">
+           <div class="container d-flex justify-content-between align-items-center">
+              <a class="navbar-brand" href="#"><img src="https://www.gpislots.info/shared/images/GPI-logo-en.png" width="240"
+                    height="50"></a>
+              <!-- Center right alignment -->
+              <button class="btn btn-secondary" onclick="goBack()">Back</button>
+           </div>
+        </nav>
+        <div class="blue-bar-head">
+            <div class="container">
+                Info Centre 
+            </div>           
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <div class="container pt-5 pb-5">
+
+        <div class="container" id="jar">
+            <div class="row pb-5">
+                <div class="col-lg-2 col-md-4 col-sm-3 page-header" style="margin-top: -7px;">
+                    <h1>P2P</h1>
+                </div>
+                <div class="col-lg-8 col-md-4 col-sm-5">
+                    <input class="searchBox form-control" placeholder="Type game title">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4">
+                    <div class="search-group ">
+                        <div class="col-xs-8">
+                            <select onChange="window.location.href=this.value">
+                                <!-- <option value="0">----- Select -----</option> -->
+                                <option value="https://en.gpislots.info">English</option>
+                                <option value="https://es.gpislots.info">Español</option>
+                                <option value="https://cn.gpislots.info">简体中文</option>
+                                <option value="https://id.gpislots.info"> Bhs Indonesia</option>
+                                <option value="https://kh.gpislots.info">Khmer</option>
+                                <option value="https://kr.gpislots.info">한국어</option>
+                                <option value="https://th.gpislots.info">ไทย</option>
+                                <option value="https://vn.gpislots.info">Tiếng Việt</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+                #content {
+                    display: flex;
+                }
+
+                .btn-success {
+                    color: #fff;
+                    background-color: #A8C62C;
+                    border-color: #A8C62C;
+                }
+
+                .btn-success:hover {
+                    color: #fff;
+                    background-color: #839a23;
+                    border-color: #839a23;
+                }
+            </style>
+            <a id="bttbutton"></a>
+            <div class="row" id="content">
+
+
+                <!-- BAI CAO -->
+
+
+                <div class="col-lg-2 col-md-4 col-sm-6 result well">
+                    <div class="row mb-4">
+                        <div class="col text-center ">
+                            <a href="#"><img
+                                    src="images/thumbnails/W88-P2P-BaiCao-EN.jpg"
+                                    data-toggle="modal" data-target="#BaiCao"></a>
+                            <p>Bai Cao</p>
+                        </div>
+                    </div>
+                    <!-- large modal -->
+                    <div class="modal fade" id="BaiCao" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel">Bai Cao</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="panel-body">
+                                        <div>
+                                            <p>
+                                                <b>Introduction</b><br>
+                                                Bai Cao is a card game played between 6 players and the dealer (also a
+                                                player) whereby players will be pitted against the chosen dealer each
+                                                round. Before the start of each round players will be required to place
+                                                a bet amount against the dealer and only after that would everyone be
+                                                dealt 3 cards each. Players would then be required to compare their
+                                                cards with the dealer.<br><br>
+
+                                                A game of Bai Cao consist of a single 52-card deck which includes 13
+                                                ranks of each suit:
+                                            </p>
+                                            <div class="cardbox">
+                                                <p>
+                                                    Clubs (<span style="color: black">♣</span>)
+                                                    <img src="p2p/images/texas-holdem/card-clubs.png"
+                                                        class="img-responsive">
+                                                </p>
+                                                <p>
+                                                    Spades (<span style="color: black">♠</span>)
+                                                    <img src="p2p/images/texas-holdem/card-spades.png"
+                                                        class="img-responsive">
+                                                </p>
+                                                <p>
+                                                    Diamonds (<span style="color: red">♦</span>)
+                                                    <img src="p2p/images/texas-holdem/card-diamonds.png"
+                                                        class="img-responsive">
+                                                </p>
+                                                <p>
+                                                    Hearts (<span style="color: red">♥</span>)<br>
+                                                    <img src="p2p/images/texas-holdem/card-hearts.png"
+                                                        class="img-responsive">
+                                                </p>
+
+
+                                                <p>
+                                                    Each card in Bai Cao carries a fix amount of points ranging from Ace
+                                                    to 10.<br>
+                                                    Face Cards: King, Queen, Jack - 10 Points
+                                                </p>
+                                            </div>
+
+                                            <p>
+                                                <b>Game Flow</b><br>
+                                                Member needs to ensure that they have sufficient balance to Buy-in
+                                                before joining a table. There are 2 types of players in Bai Cao game, a
+                                                Player and a Dealer.<br><br>
+
+                                                <b>Dealer</b> – The Dealer compares their hand against all players.<br>
+                                                <b>Player</b> – Player/s ONLY compares their hand against the
+                                                Dealer.<br><br>
+
+                                                A game begins with the dealer bidding phase:<br>
+                                                - Player bids for the 1, 5 or 10 consecutive rounds for the Dealer
+                                                position.<br>
+                                                - If nobody bids for the Dealer, a Dealer will be chosen at random.<br>
+                                                - If 2 or more players bid on the Dealer position, the Dealer will be
+                                                chosen at random between the bidding players.<br><br>
+
+                                                After the dealer has been chosen, players place their bets amount, can
+                                                bet x1, x2 or x3 of the table stake. Once the bet amount is confirmed,
+                                                each player (including the dealer) draws up to 3 cards.<br><br>
+
+                                                After revealing the cards, dealer hand will compare to other players
+                                                hands. The last digit of the sum of 3 cards is then the value of the
+                                                hand where 9 points and 3 pictures (Ex. J Q K) are the highest in hand
+                                                ranking.<br><br>
+
+                                                Once a round is completed, players would be given the option to leave
+                                                the table or remain seated to continue playing. Players with
+                                                insufficient funds would automatically be forced to leave the
+                                                table.<br><br>
+
+                                                <b>Card Value</b><br><br>
+
+                                                Ace = 1<br>
+                                                Card 2 -10 correspond to their respective numbers<br>
+                                                J ,Q, K = 10
+                                            </p><br>
+
+                                            <p><b>Card Rankings</b></p>
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr class="rowheader">
+                                                            <td>Hand Rank</td>
+                                                            <td>Example</td>
+                                                            <td>Tie Breaker</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>0 Point (0 điểm)</td>
+                                                            <td>10 6 4</td>
+                                                            <td>Use high card</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1 Point (1 điểm)</td>
+                                                            <td>K K A</td>
+                                                            <td>Use high card</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2 Points (2 điểm)</td>
+                                                            <td>A A J</td>
+                                                            <td>Use high card</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3 Points (3 điểm)</td>
+                                                            <td>A 2 10</td>
+                                                            <td>Use high card</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4 Points (4 điểm)</td>
+                                                            <td>A A 2</td>
+                                                            <td>Use high card</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5 Points (5 điểm)</td>
+                                                            <td>9 3 3</td>
+                                                            <td>Use high card</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6 Points (6 điểm)</td>
+                                                            <td>9 6 A</td>
+                                                            <td>Use high card</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7 Points (7 điểm)</td>
+                                                            <td>10 10 7</td>
+                                                            <td>Use high card</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>8 Points (8 điểm)</td>
+                                                            <td>K A 7</td>
+                                                            <td>Use high card</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>9 Points (9 điểm)</td>
+                                                            <td>10 10 9</td>
+                                                            <td>Use high card</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3 Pictures (3 Thằng Tây)</td>
+                                                            <td>Q Q K / J J Q</td>
+                                                            <td>Use high card J, Q, K check suit</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <p>
+                                                <b>Tie Breaker:</b><br>
+                                                1.Use this order when determining the card rank (Lowest A 2 3 4 5 6 7 8
+                                                9 10 J Q K Highest)<br>
+                                                Example: 6♣ A♦ K♥ = 7 vs 3♥ 4♥ J♣ = 7<br>
+                                                Winner is the hand with K♥ having the highest card rank.<br><br>
+
+                                                2.If the HIGH card is still tied, check the suit (Lowest Spade &gt; Club
+                                                &gt; Diamond &gt; Heart Highest)<br>
+                                                Example: 4♠ 5♣ 6♣ = 5 vs 4♦ 5♠ 6♥ = 5<br>
+                                                Winner is the hand with 6♥ having the highest card suit.<br><br>
+
+                                                Same rules applied when breaking a tie 3 pictures hand. Use high card
+                                                then check suit.
+                                            </p>
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Domino QQ -->
+
+
+                <div class="col-lg-2 col-md-4 col-sm-6 result well">
+                    <div class="row mb-4">
+                        <div class="col text-center ">
+                            <a href="#"><img
+                                    src="images/thumbnails/DominoQQ-En.jpg"
+                                    data-toggle="modal" data-target="#Domino_QQ"></a>
+                            <p>Domino QQ</p>
+                        </div>
+                    </div>
+                    <!-- large modal -->
+                    <div class="modal fade" id="Domino_QQ" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel">Domino QQ</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="panel-body">
+                                        <div>
+                                            <p>
+                                                <b>Introduction</b><br>
+                                                DominoQQ is a card game with an objective to win the game by having the
+                                                best hand combination using the left and right card pairs with 99 or a
+                                                QQ (Qiu Qiu) being the highest regular hand and which can only be beaten
+                                                by special hands.<br><br>
+
+                                                DominoQQ is played using the double-six domino card set which uses a
+                                                total of 28 domino cards.
+                                            </p>
+
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr class="rowheader">
+                                                            <td>Domino Series</td>
+                                                            <td>Domino Cards</td>
+                                                            <td>Pip Count</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Domino Series 0
+                                                            </td>
+                                                            <td width="350px">
+                                                                <img src="p2p/images/dominoqq/series0.png"
+                                                                    class="center-block">
+                                                            </td>
+                                                            <td>
+                                                                Domino 0/0 = 0<br>
+                                                                Domino 0/1 = 1<br>
+                                                                Domino 0/2 = 2<br>
+                                                                Domino 0/3 = 3<br>
+                                                                Domino 0/4 = 4<br>
+                                                                Domino 0/5 = 5<br>
+                                                                Domino 0/6 = 6
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Domino Series 1
+                                                            </td>
+                                                            <td>
+                                                                <img src="p2p/images/dominoqq/series1.png"
+                                                                    class="center-block">
+                                                            </td>
+                                                            <td>
+                                                                Domino 1/1 = 2<br>
+                                                                Domino 1/2 = 3<br>
+                                                                Domino 1/3 = 4<br>
+                                                                Domino 1/4 = 5<br>
+                                                                Domino 1/5 = 6<br>
+                                                                Domino 1/6 = 7
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Domino Series 2
+                                                            </td>
+                                                            <td>
+                                                                <img src="p2p/images/dominoqq/series2.png"
+                                                                    class="center-block">
+                                                            </td>
+                                                            <td>
+                                                                Domino 2/2 = 4<br>
+                                                                Domino 2/3 = 5<br>
+                                                                Domino 2/4 = 6<br>
+                                                                Domino 2/5 = 7<br>
+                                                                Domino 2/6 = 8
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Domino Series 3
+                                                            </td>
+                                                            <td>
+                                                                <img src="p2p/images/dominoqq/series3.png"
+                                                                    class="center-block">
+                                                            </td>
+                                                            <td>
+                                                                Domino 3/3 = 6<br>
+                                                                Domino 3/4 = 7<br>
+                                                                Domino 3/5 = 8<br>
+                                                                Domino 3/6 = 9
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Domino Series 4
+                                                            </td>
+                                                            <td>
+                                                                <img src="p2p/images/dominoqq/series4.png"
+                                                                    class="center-block">
+                                                            </td>
+                                                            <td>
+                                                                Domino 4/4 = 8<br>
+                                                                Domino 5/5 = 9<br>
+                                                                Domino 6/6 = 10
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Domino Series 5
+                                                            </td>
+                                                            <td>
+                                                                <img src="p2p/images/dominoqq/series5.png"
+                                                                    class="center-block">
+                                                            </td>
+                                                            <td>
+                                                                Domino 5/5 = 10<br>
+                                                                Domino 6/6 = 11
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Domino Series 6
+                                                            </td>
+                                                            <td>
+                                                                <img src="p2p/images/dominoqq/series6.png"
+                                                                    class="center-block">
+                                                            </td>
+                                                            <td>
+                                                                Domino 6/6 = 12
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <p><b>DominoQQ Game Flow</b><br>
+                                                The game starts by table randomly selecting the player who will start
+                                                with the dealer marker. After the dealer is selected. Each player who
+                                                has a hand puts in ante equivalent to 10% of the table minimum buy in.
+                                                (e.g 1000 minimum buy in = 100 ante per game round). Each player on the
+                                                table is given 3 domino cards from the 28 card stack. The player next to
+                                                the dealer in the clockwise position start the betting for the round and
+                                                can do the following options:</p>
+
+                                            <ul>
+                                                <li>Check : The player can check if they decide to pass on betting for
+                                                    that round.</li>
+
+                                                <li>Raise : Increase the bet in order to challenge other players.</li>
+
+                                                <li>Call : Follow through a raise to match the highest player’s current
+                                                    bet.</li>
+
+                                                <li>All-In : If a player chooses to “Raise/Call” to the amount of their
+                                                    current balance, the action would be changed to “All-In”. Doing so
+                                                    would exempt the member from further betting in the round.</li>
+
+                                                <li>Fold : Forfeit their current Ante and concede for the round.</li>
+                                            </ul>
+
+                                            <p>The first round of betting will be completed when all the bets have been
+                                                settled. Then the fourth (4th) domino card is dealt to all players who
+                                                are still active in the game. The second round of betting commences
+                                                until all betting is completed. Cards are revealed and bets are resolved
+                                                to players that are eligible for each of the pots. Rake is taken from
+                                                the player upon bet resolution and the respective VPP points are also
+                                                awarded.</p>
+
+                                            <p><b>DominoQQ Betting Rule</b><br>
+                                                Domino table betting rules follow the same betting structure as No Limit
+                                                Poker table. It means that at any point in the game a player can bet as
+                                                much as all of the chips they have on the table, which is known as going
+                                                all-in. The other players must match the amount to call the bet, or can
+                                                go all-in themselves for less.</p>
+
+                                            <p><b>DominoQQ Score Calculation</b><br>
+                                                The total pips of two domino cards must be added together and separated
+                                                as left and right hand pairs. if the combination is tied with another
+                                                hand the system will determine the winner via highest single domino
+                                                cards.
+                                                Note: The system will always give the best result for score calculation.
+                                            </p>
+
+                                            <p><b>Examples for single hand calculation:</b></p>
+                                            <img src="p2p/images/dominoqq/blue-img.jpg" class="img-responsive"><br>
+
+                                            <ul>
+                                                <li>If set total is 10 to 19, subtract 10</li>
+                                                <li>If set total is 20 and up, subtract 20</li>
+                                            </ul>
+
+                                            <p>This should give a single digit number for the left and right pair and
+                                                the value of left pair must be always be higher than right pair. The
+                                                domino cards can be rearranged to see the possible combinations but the
+                                                system will always submit the best hand possible. The Winner is
+                                                determined by the comparison of total both pairs of the cards.</p>
+
+                                            <p><b>Settling Ties</b><br>
+                                                When 2 or more players are tied. The tie will be resolved in the
+                                                following order.<br><br>
+
+                                                1. Add the dots of highest single domino card and compare (the highest
+                                                total wins)<br>
+                                                2. If still tied, count the bottom dots of that same card (the highest
+                                                number wins)</p>
+
+                                            <p><b>Special Sets</b><br>
+                                                Special sets are a combination of domino that have higher value than a
+                                                regular pair. Listed below are the special combinations.</p>
+
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr class="rowheader">
+                                                            <td>Hand Rank</td>
+                                                            <td>Name</td>
+                                                            <td>Example</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Rank 1</td>
+                                                            <td>Six Devils 6666</td>
+                                                            <td>
+                                                                <img src="p2p/images/dominoqq/six-devil-6666.png"
+                                                                    class="center-block">
+                                                            </td>
+                                                            <td width="300px">
+                                                                This is the highest combination of. This hand
+                                                                automatically wins over other hands.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Rank 2</td>
+                                                            <td>Twin Cards</td>
+                                                            <td>
+                                                                <img src="p2p/images/dominoqq/twin-cards.png"
+                                                                    class="center-block">
+                                                            </td>
+                                                            <td>
+                                                                This is the second highest combination. If a player has
+                                                                any four (4) of these cards at the same time
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Rank 3</td>
+                                                            <td>Pure Small</td>
+                                                            <td>
+                                                                <img src="p2p/images/dominoqq/pure-small-top.png"
+                                                                    class="center-block">
+                                                                pips=5<br><br>
+                                                                <img src="p2p/images/dominoqq/pure-small-bottom.png"
+                                                                    class="center-block">
+                                                                pips=8<br>
+                                                            </td>
+                                                            <td>
+                                                                The 3rd highest combination in the game. This is a set
+                                                                of domino cards with the combined pips totaling 9 or
+                                                                less.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Rank 4</td>
+                                                            <td>Pure Big</td>
+                                                            <td>
+                                                                <img src="p2p/images/dominoqq/pure-big-top.png"
+                                                                    class="center-block">
+                                                                pips=43<br><br>
+                                                                <img src="p2p/images/dominoqq/pure-big-bottom.png"
+                                                                    class="center-block">
+                                                                pips=40<br>
+                                                            </td>
+                                                            <td>
+                                                                The 4th highest ranking combination in the game. This is
+                                                                a set of domino cards with the combined number of pips
+                                                                being EQUAL or greater than 39.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Rank 5</td>
+                                                            <td>Double 9 (QQ)</td>
+                                                            <td>
+                                                                <img src="p2p/images/dominoqq/left-hand9.png"
+                                                                    class="center-block">
+                                                                Left Hand = 9 <br><br>
+                                                                <img src="p2p/images/dominoqq/right-hand9.png"
+                                                                    class="center-block">
+                                                                Right Hand = 9<br>
+                                                            </td>
+                                                            <td>
+                                                                This is the biggest combination for normal cards. More
+                                                                than player can have a QQ hand.
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
+                </div>
+
+                <!-- Pokdeng-->
+
+
+                <div class="col-lg-2 col-md-4 col-sm-6 result well">
+                    <div class="row mb-4">
+                        <div class="col text-center ">
+                            <a href="#"><img
+                                    src="images/thumbnails/W88-P2P-Pokdeng-EN.jpg"
+                                    data-toggle="modal" data-target="#Pokdeng"></a>
+                            <p>Pokdeng</p>
+                        </div>
+                    </div>
+                    <!-- large modal -->
+                    <div class="modal fade" id="Pokdeng" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel">Pokdeng</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="panel-body">
+                                        <div>
+                                            <p>
+                                                <b>Introduction</b><br>
+                                                Pok Deng is a card game between 6 players and the dealer (also a player)
+                                                whereby players compare their cards in hand against the dealer. All
+                                                players aims to achieve a total of 8(Pok 8) or 9(Pok 9) with the 2 cards
+                                                they draw at the beginning of each round and is given the option to draw
+                                                1 more additional card if required. The better the combination of cards
+                                                the better the multiplier would be against the dealer. <br><br>
+
+                                                A game of Pok Deng consist of a single 52-card deck which includes 13
+                                                ranks of each suits:
+                                            </p>
+                                            <div class="cardbox">
+                                                <p>
+                                                    Clubs (<span style="color: black">♣</span>)
+                                                    <img src="p2p/images/texas-holdem/card-clubs.png"
+                                                        class="img-responsive">
+                                                </p>
+                                                <p>
+                                                    Diamonds (<span style="color: red">♦</span>)
+                                                    <img src="p2p/images/texas-holdem/card-diamonds.png"
+                                                        class="img-responsive">
+                                                </p>
+                                                <p>
+                                                    Hearts (<span style="color: red">♥</span>)<br>
+                                                    <img src="p2p/images/texas-holdem/card-hearts.png"
+                                                        class="img-responsive">
+                                                </p>
+                                                <p>
+                                                    Spades (<span style="color: black">♠</span>)
+                                                    <img src="p2p/images/texas-holdem/card-spades.png"
+                                                        class="img-responsive">
+                                                </p>
+
+                                                <p>
+                                                    Each card in Pok Deng carries a fix amount of points ranging from
+                                                    Ace to 10. <br>
+                                                    Face Cards: King, Queen, Jack - 0 Points
+                                                </p>
+                                            </div>
+
+                                            <p>
+                                                <b>Game Flow</b><br>
+                                                Member needs to ensure that they have sufficient balance to Buy-in
+                                                before joining a table. There are 2 types of players in Super Bull game,
+                                                a Player and a Dealer.<br><br>
+
+                                                <b>Dealer</b> – The Dealer compares their hand against all players. <br>
+                                                <b>Player</b> – Player/s ONLY compares their hand against the
+                                                Dealer.<br><br>
+
+                                                A game begins with the dealer bidding phase:<br><br>
+
+                                                - Player bids for the 1 or 10 consecutive rounds for the Dealer
+                                                position.<br>
+                                                - If nobody bids for the Dealer, a Dealer will be chosen at random.<br>
+                                                - If 2 or more players bid on the Dealer position, the Dealer will be
+                                                chosen at random between the bidding players.<br><br>
+
+                                                After the dealer has been chosen , players can then place a fixed bet
+                                                amount against the dealer depending on the dealer’s total buy-in amount.
+                                                Once confirmed, each player would be dealt 2 cards each.<br><br>
+
+                                                If a player has a Pok all players would have to reveal their cards
+                                                immediately and skip straight to the hand comparison phase if not
+                                                players would be given the option to draw 1 more additional card or pass
+                                                starting with the dealer and only after would players then compare their
+                                                hands.<br><br>
+
+                                                Once a round is completed, players would be given the option to leave
+                                                the table or remain seated to continue playing. Players with
+                                                insufficient funds would automatically be prompted to buy-in in-order to
+                                                continue playing.<br><br>
+
+                                                In the event of a draw game, both players and dealer will be charged
+                                                half the rake for the stake placed.<br><br>
+
+                                                <b>Card Value</b><br>
+                                                Three aspects of a player's hand determine the scoring: the hand type,
+                                                taem (numerical value of the overall hand, is simply the sum of the
+                                                cards) and deng (the bet multiplier, determined by the relationship
+                                                among the cards in hand).<br><br>
+
+                                                <b>Card Rankings</b><br>
+                                                When comparing hands player the type of hands the player has at the end
+                                                of each round determines their hand ranking as well as the multiplier
+                                                for their winnings. The list below displays the hand ranks in order of
+                                                strongest to weakest.<br><br>
+
+                                                1. <b>Pok</b> - If a player’s initial first 2 cards in hand adds up to a
+                                                total of 8 or 9. The player will automatically announce and shows this
+                                                cards face-up. Pok is also considered an instant win scenario skipping
+                                                player’s ability to draw a 3rd card and immediately fast forwarding to
+                                                the hand comparison phase.<br>
+                                                (i.e Pok 9 - 9<span style="color: black">♣</span> J<span
+                                                    style="color: black">♣</span>) (i.e. Pok 8 - 8<span
+                                                    style="color: red">♦</span> K<span
+                                                    style="color: black">♠</span>)<br><br>
+
+                                                2. <b>Straight Flush</b> - A straight flush is when a player has 3 cards
+                                                in running sequence with the same suit. <br>(i.e 4<span
+                                                    style="color: red">♥</span> 5<span style="color: red">♥</span>
+                                                6<span style="color: red">♥</span>)<br><br>
+
+                                                3. <b>Tong</b> - A Tong is when a player gets a 3 of a kind. (i.e A<span
+                                                    style="color: black">♣</span> A<span style="color: black">♠</span>
+                                                A<span style="color: red">♥</span>)<br><br>
+
+                                                4. <b>Straight</b> - A straight is when a player has 3 cards of running
+                                                sequence with different suits.<br>
+                                                (i.e. 8<span style="color: red">♦</span> 9<span
+                                                    style="color: black">♣</span> 10<span
+                                                    style="color: red">♥</span>)<br><br>
+
+                                                5. <b>Sam Luaeng</b> - If a player draws their 3rd card and all 3 cards
+                                                in their hands are picture cards.<br>
+                                                (i.e. Q<span style="color: red">♥</span> K<span
+                                                    style="color: red">♦</span> K<span
+                                                    style="color: black">♠</span>)<br><br>
+
+                                                6. <b>Normal</b> - Any other type of hand
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <!-- Super Bull -->
+
+
+                <div class="col-lg-2 col-md-4 col-sm-6 result well">
+                    <div class="row mb-4">
+                        <div class="col text-center ">
+                            <a href="#"><img
+                                    src="images/thumbnails/w88-slots-Super-Bull.jpg"
+                                    data-toggle="modal" data-target="#Super_Bull"></a>
+                            <p>Super Bull</p>
+                        </div>
+                    </div>
+                    <!-- large modal -->
+                    <div class="modal fade" id="Super_Bull" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel">Super Bull</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="mainbx">
+                                          <div class="row">
+                                              <div id="menucontent">
+                                    <script>
+                                        $(document).ready(function () {
+
+                                            var path = location.pathname.substring(0, location.pathname.indexOf("share/"))+"share/";
+                                            $("a[href$='.shtml']").each(function () {
+                                                if ($(this).attr("href").indexOf(path) < 0) {
+                                                    $(this).attr("href", path + $(this).attr("href"));
+                                                    //console.log($(this).attr("href"));
+                                                }
+                                            });
+                                            var page = window.location.pathname.split('/').slice(-1)[0];
+                                            var category = page.substr(0, page.indexOf('-'));
+                                             //console.log(category);console.log(page);
+                                            switch (category)
+                                            {
+                                            case "rules":
+                                                $("#rules_menu").addClass('active');
+                                                $.get(path+"menus/rules_submenu_en-my.shtml", function(a){
+                                                  $("#submenu").append(a);
+                                                    setTimeout(function() {
+                                                     subCat();
+                                                    },1);
+                                                });
+                                                break;
+                                            case "terms":
+                                                $("#terms_menu").addClass('active');
+                                                $.get(path+"menus/terms_submenu_en-my.shtml", function(a){
+                                                  $("#submenu").append(a);
+                                                    setTimeout(function() {
+                                                     subCat();
+                                                    },1);
+                                                });
+                                                break;
+
+                                                 default:
+                                                $("#rules_menu").addClass('active');
+                                                $.get(path+"menus/rules_submenu_en-my.shtml", function(a){
+                                                  $("#submenu").append(a);
+                                                    setTimeout(function() {
+                                                     subCat();
+                                                    },1);
+                                                });
+                                               break;
+                                            }
+
+                                            function subCat() {
+                                                var page = window.location.pathname.split('/').slice(-1)[0];
+                                                var url = location.pathname.split('/');
+                                                var path = url[url.length - 2];
+                                                if (path.toLowerCase() == "share") {
+                                                    path = "";
+                                                }
+                                                 $("#navbarCollapse a").each(function () {
+                                                    var link = $(this).attr("href");
+                                                    if(link.indexOf(page)>=0|| (link.indexOf(path)>=0&&path.length>0)){
+                                                        $(this).parent().addClass('active');
+                                                        $(this).parent().addClass('hidden-xs');
+                                                        if($(this).parent().hasClass('hidden-xs')){
+                                                            var activemenu = $(this).text();
+                                                            $("#menu-select").text(activemenu);
+                                                        }
+                                                    }
+                                                 });
+                                            }
+
+                                        });
+                                    </script>
+                                    </div>  
+                                          </div>
+                                    <!--       <div class="nav-bx backicon">
+                                              <ul class="nav-ico">
+                                                  <div class="col-lg-12">
+                                                      <li>
+                                                          <a href="rules-p2p-en.shtml">
+                                                              <i class="fa fa-angle-left"></i>
+                                                              <em>BACK</em>
+                                                          </a>
+                                                      </li>
+                                                  </div>
+                                              </ul>
+                                          </div> -->
+                                          <div class="col-lg-12">
+                                              <br>
+                                              <p><b>Basic Rules</b><br>
+                                              1.  Each player will receive 5 cards as the starting. The card is divided into right and left hand.<br>
+                                              2.  The total value in left hand must be multiple of 10 and the total value in right hand have to be as high as possible.<br>
+                                              3.  It is a comparing game between dealer and players. Each round will have one player as a dealer.<br><br>
+
+                                              <b>Cards Ranking</b><br>
+                                              1.  Basic card type comparison: Bull Bull &gt; Bull 8-9 &gt; Bull 1-7 &gt; No Bull<br>
+                                              2.  When card type ranking are the same, compare the card number: K&gt;Q&gt;J&gt;10&gt;9&gt;8&gt;7&gt;6&gt;5&gt;4&gt;3&gt;2&gt;A<br>
+                                              3.  When number are the same, compare card suit: Spade &gt; Heart &gt; Club &gt; Diamond<br><br>
+
+                                              <b>Payouts</b><br>
+                                              No Bull till Bull 7 [x1]<br> 
+                                              Bull 8 and Bull 9 [x2] <br>
+                                              Bull Bull [x3]<br>
+                                              </p>
+                                              <br>
+                                          </div>
+
+                                            <!-- start accordion menus -->
+                                                <div class="col-lg-12">
+                                                    <div class="menu-collapse">
+                                                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading" role="tab" id="heading1">
+                                                                    <h4 class="panel-title">
+                                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#introduction" aria-expanded="false" aria-controls="introduction">
+                                                                        1. Introduction
+                                                                    </a>
+                                                                </h4>
+                                                                </div>
+                                                                <div id="introduction" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1" aria-expanded="false" style="height: 0px;">
+                                                                    <div class="panel-body">
+                                                                        <p>
+                                                                            Super Bull is a card game between the  player and the dealer (also a player) whereby players compare their cards in  hand. The game is played between a minimum of 2 to a maximum of 6 players with  the objective of the game is to divide a five-card hand into 2 segments with  the left consisting of 3 cards while the right having 2. The total value of the  left hand must be in multiples of 10 (i.e. 10, 20, 30) and the value of the  right hand should be as high as possible.<br>
+                                                                            A game of Super Bull consists of a single  standard 52-card deck which includes 13 ranks of each suits: 
+                                                                        </p>
+                                                                        <p>
+                                                                            Spades (<span style="color: black">♠</span>)
+                                                                            <img src="p2p/images/superbull/cardsuperbull4.png" class="img-responsive">
+                                                                        </p>
+                                                                        <p>
+                                                                            Hearts (<span style="color: red">♥</span>)<br>
+                                                                            <img src="p2p/images/superbull/cardsuperbull3.png" class="img-responsive">
+                                                                        </p>
+                                                                        <p>
+                                                                            Clubs (<span style="color: black">♣</span>) 
+                                                                            <img src="p2p/images/superbull/cardsuperbull2.png" class="img-responsive">
+                                                                        </p>
+                                                                        <p>
+                                                                            Diamonds (<span style="color: red">♦</span>) 
+                                                                            <img src="p2p/images/superbull/cardsuperbull1.png" class="img-responsive">
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading" role="tab" id="heading2">
+                                                                    <h4 class="panel-title">
+                                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#gettingstarted" aria-expanded="false" aria-controls="gettingstarted">
+                                                                         2. Getting Started 
+                                                                    </a>
+                                                                </h4>
+                                                                </div>
+                                                                <div id="gettingstarted" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2" aria-expanded="false">
+                                                                    <div class="panel-body">
+
+                                                                        <p><b>2.1 Account Creation</b></p>
+                                                                        <p>You are required to create an account at the following <a href="https://tm.gp2play.com/mobileNiuniu/android/install.html" target="blank">Link</a> before playing Super Bull Game.</p>
+
+                                                                        <p><b>2.2 Playing Super Bull</b></p>
+                                                                        <p>After creating an account, you will be required to download Super Bull from one of the following links depending on your platform of choice:<br>
+                                                                        Android <a href="https://tm.gp2play.com/mobileNiuniu/android/install.html" target="blank">(Link)</a><br>
+                                                                        <!-- iOS <a href="#">(Link)</a><br> -->
+                                                                        All accounts are synced so you are free able to switch between platforms while retaining all existing data.
+                                                                        </p>
+
+                                                                        <p><b>2.3 Nickname:</b></p>
+                                                                        <p>Members will be required to create a “nickname” upon logging into Super Bull if they haven’t done yet. Your nickname represents you as the user when playing on Super Bull. You will not be able to change your Nickname once it is registered. The chosen nickname will be applied all games in Super Bull.<br>Members are free to select any avatar (image) that suits their game style and personality. You are able to freely change your avatar at any time in the profile menu.</p>
+                                                                        
+                                                                        <p><b>2.4 Game Tables:</b></p>
+                                                                        <p>Gameplay Interactive offers various type of game mode and prizes.<br>
+                                                                        Upon entering the Super Bull’s lobby, players are given a choice to play on one of the 3 main game modes: Cash tables, Tournament, Free tables. 
+                                                                        </p>
+
+                                                                        <p><b>Summary of Tables:</b></p>
+                                                                        <p><b>Cash Tables:</b> Choose to buy-in from a variety of tiers of your choice.<br>
+                                                                        <b>Tournament: </b>Compete against other players in our various types of tournaments with attractive prizes to be won.<br>
+                                                                        <b>Free Tables: </b>Practice how on how to play Super Bull using chips provided, no risk involved.
+                                                                        </p>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading" role="tab" id="heading3">
+                                                                    <h4 class="panel-title">
+                                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#playingthegame" aria-expanded="false" aria-controls="playingthegame">
+                                                                       3. Playing the Game 
+                                                                    </a>
+                                                                </h4>
+                                                                </div>
+                                                                <div id="playingthegame" class="panel-collapse collapse" role="tabpane" aria-labelledby="heading3" aria-expanded="false">
+                                                                    <div class="panel-body">
+                                                                        <p><b>3.1 How to Play Super Bull</b></p>
+                                                                        <p>Super Bull is a game whereby all players aim to form a “Bull Bull” (Bull 10) against the dealer (player) from a combination of 5 cards drawn at the beginning of each round.<br>
+                                                                        Each card in Super Bull has a fix amount of points regardless of suit (Spade, Heart, Diamond, and Club)<br>
+
+                                                                        </p><div class="table-responsive">
+                                                                            <table class="table">
+                                                                                <tbody><tr class="rowheader">
+                                                                                    <td colspan="4">
+                                                                                        Face Cards:
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>                                        
+                                                                                        <img src="p2p/images/superbull/card1-king.png"><br>
+                                                                                        <b>King</b>
+                                                                                    </td>
+                                                                                    <td>                                            
+                                                                                        <img src="p2p/images/superbull/card2-queen.png"><br>
+                                                                                        <b>Queen</b>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <img src="p2p/images/superbull/card3-jack.png"><br>
+                                                                                        <b>Jack</b>
+                                                                                    </td>
+                                                                                    <td valign="middle">
+                                                                                        <br><br><br><b><!-- –  -->10 Points</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody></table>
+                                                                        </div>
+
+                                                                        <p>
+                                                                            <img src="p2p/images/superbull/card-ace.png" width="30px">
+                                                                            Ace – 1 Point
+                                                                        </p>
+
+                                                                        The points of Card 2 to 10 corresponding to their respective numbers<br>
+                                                                        Cards are counted as “have bull” when the left hand cards add up to 10 or multiples of 10 (i.e. 20 or 30), else it is considered as “No Bull”.
+                                                                        <p></p>
+
+                                                                        <p><b>3.2 The Betting/Game Flow</b></p>
+                                                                        <p>Member needs to ensure that they have sufficient balance to Buy-in before joining a table.<br>
+                                                                        There are 2 types of players in Super Bull game, a Player and a Dealer.<br>
+                                                                        Dealer – The Dealer compares their hand against all players. <br>
+                                                                        Player – The player ONLY compares their hand against the Dealer.<br>
+                                                                        A game begins the dealer bidding phase:
+                                                                            </p><ul>
+                                                                                <li>Players bid for the Dealer position</li>
+                                                                                <li>If nobody bids for the Dealer, a Dealer would be chosen at random</li>
+                                                                                <li>If the bid between 2 or more players end up as a tie, the Dealer will be chosen at random between the tied players.</li>
+                                                                            </ul>
+                                                                        <p></p>
+
+                                                                        <p>After the dealer has been chosen, players place their bets amount<br>
+                                                                        Once bet amount is confirmed, each player (including the dealer) draws up to 5 cards.<br>
+                                                                        Once the cards are drawn, each player can begin forming combination with their drawn cards.<br> 
+                                                                        Only after would the players individually compare their hand with the Dealer’s hand and depending on the “Bull” would the payout for, or from the dealer be calculated accordingly. <br>
+                                                                        Once a round is completed, players would be given the option to leave the table or remain seated to continue playing.<br>
+                                                                        Players with insufficient funds would automatically be forced to leave the table.
+                                                                        </p>
+
+                                                                        
+                                                                        <p><b>3.3 Examples of winning hand combination:</b></p>
+                                                                        <p>
+                                                                            Player A: 3 + 7 + K + Q + 3 -&gt; have Bull<br>
+                                                                            Player B: 10 + 2 + 6 + 5 + K -&gt; No Bull<br><br>
+                                                                            After getting “have Bull” card, the winner is the one who get the highest number in right hand. For example<br><br>
+                                                                            Player A: 3 + 7 + K + Q + 3 -&gt; Bull three<br>
+                                                                            Player B: 10 + 2 + 8 +5 + K -&gt; Bull five (WINNER)
+                                                                        </p>
+
+                                                                        <p><b>3.4  Payout:</b></p>
+
+                                                                        <div class="table-responsive">
+                                                                            <table class="table">
+                                                                              <tbody><tr class="rowheader">
+                                                                                <td>Name</td>
+                                                                                <td>Description</td>
+                                                                                <td>Payout multiplier</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                <td>No Bull (High Card)</td>                                        
+                                                                                <td>No multiples of 10 in left    hand card </td>                                        
+                                                                                <td>x1 </td>                                      
+                                                                              </tr>
+                                                                              <tr>
+                                                                                <td>Bull 1-7 (Small Point) </td>                                        
+                                                                                <td>Have multiples of 10 in left  hand card and the last digit of sum in right hand is between 1 to 6 </td> 
+                                                                                <td>x1 </td>                                      
+                                                                              </tr>
+                                                                              <tr>
+                                                                                <td>Bull 8-9 (Big Point) </td>                                        
+                                                                                <td>Have multiples of 10 in left  hand card and the last digit of sum in right hand is between 7 to 9 </td> 
+                                                                                <td>x2 </td>                                      
+                                                                              </tr>
+                                                                              <tr>
+                                                                                <td>Bull Bull (Bull 10) </td>                                        
+                                                                                <td>Multiple of 10 in the left    and right hand </td>
+                                                                                <td>x3 </td>
+                                                                              </tr>
+                                                                            </tbody></table>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading" role="tab" id="heading4">
+                                                                    <h4 class="panel-title">
+                                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq" aria-expanded="false" aria-controls="faq">
+                                                                        4. FAQ
+                                                                    </a>
+                                                                </h4>
+                                                                </div>
+                                                                <div id="faq" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+                                                                    <div class="panel-body">
+                                                                        <p><b>Q: What happens when there’s a draw?</b></p>
+                                                                        <p>A: A 2 step calculation would appear whenever a draw happens:</p>
+                                                                            <ol type="0">
+                                                                                <li>Player’s hand the end up in a draw will be compared to find the player with the largest card in their hands</li>
+                                                                                <li>If both players are tied for the largest card, then compared the card suit: Spade &gt; Heart &gt; Club &gt; Diamond</li>
+                                                                            </ol>
+
+                                                                        <p><b>Q: Why do I keep getting automatically kicked out of a game whenever I lose?</b></p>
+                                                                        <p>A: A Player will automatically get kicked out of a game if their current amount goes below the minimum Buy-in.</p>
+
+                                                                        <p><b>Q: What is the primary currency used in the game?</b></p>
+                                                                            <ol type="A">
+                                                                                <li>Super Bull uses primarily Renminbi (RMB) (人民币). This includes payment as well as cash prizes.</li>
+                                                                                <li>You are required to convert your existing currency (if not in RMB) to RMB in-order to begin playing.</li>
+                                                                            </ol>
+                                                                        
+                                                                        <p><b>Q: What happen if I get disconnected from Cash and Free game?</b></p>
+                                                                        <p>If a player disconnects from the game, system will help player to continue to complete the current round of game. The player will auto select for “Reject” to be dealer and “Minimum” bet amount.</p>
+                                                                        <p>When game is completed and user still disconnected, their status will change to “Sit out” and they will be kicked out from the table after 3 minutes.</p>
+
+                                                                        <p><b>Q: What happens if I get disconnected during a tournament game?</b></p>
+                                                                        <p>If a player disconnects from the game, they are able to rejoin so as long as the round is still ongoing, however during this time the disconnected player will still be in the game but system will control.</p>
+                                                                            <ul>
+                                                                                <li>The disconnected player automatically reject to be “dealer”</li>
+                                                                                <li>The player will auto select the minimum bet amount</li>
+                                                                            </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="panel panel-default">
+                                                              <div class="panel-heading" role="tab" id="heading5">
+                                                                  <h4 class="panel-title">
+                                                                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#viplevel" aria-expanded="false" aria-controls="viplevel">
+                                                                          5. VIP Level
+                                                                      </a>
+                                                                  </h4>
+                                                              </div>
+                                                              <div id="viplevel" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5" aria-expanded="false">
+                                                                  <div class="panel-body">
+                                                                      
+                                                                    <p><b>5.1 Earning VPP Points</b></p>
+                                                                    <p>All VIP level are starting to earn VPP points from earning rake in cash table and it is starting from 26th May 2016 11:00:00 (GMT+8) onwards.<br>
+                                                                    For every RMB 1 rake contribution is equal to 5.5VPPs. For example, Player A is playing cash table and contributed RMB 0.5, he will be earned 2.75 VPPs. VPPs will be updated immediately after the cash game is completed and reflected in the game statement automatically.</p>
+
+                                                                    <div class="table-responsive">
+                                                                      <table class="table">
+                                                                        <tbody>
+                                                                          <tr class="rowheader">
+                                                                            <td>Icon</td>
+                                                                            <td>Level Name</td>
+                                                                            <td>Monthly VPP Required</td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td><img height="86" width="87" src="../images/Earth-Dragon.png"></td>
+                                                                            <td>Earth Dragon</td>
+                                                                            <td>To be upgraded to Fire Dragon, "<b>750</b> amount of VPP points within 60 days "</td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td><img height="86" width="87" src="../images/Fire-Dragon.png"></td>
+                                                                            <td>Fire Dragon</td>
+                                                                            <td>To be upgraded to Water Dragon, "<b>3,000</b> amount of VPP points within 60 days "<br>
+                                                                            To be retained in Fire Dragon, "<b>750</b> amount of VPP points within 60 days "</td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td><img height="86" width="87" src="../images/Water-Dragon.png"></td>
+                                                                            <td>Water Dragon</td>
+                                                                            <td>To be upgraded to Wind Dragon, "<b>7,500</b> amount of VPP points within 60 days "<br>
+                                                                            To be retained in Water Dragon, "<b>2,000</b> amount of VPP points within 60 days "</td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td><img height="86" width="87" src="../images/Wind-Dragon.png"></td>
+                                                                            <td>Wind Dragon</td>
+                                                                            <td>To be upgraded to Light Dragon, " <b>100,000</b> amount of VPP points within 365 days "<br>
+                                                                            To be retained in Wind Dragon, "<b>5,000</b> amount of VPP points within 60 days "</td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td><img height="86" width="87" src="../images/Light-Dragon.png"></td>
+                                                                            <td>Light Dragon</td>
+                                                                            <td>To be upgraded to Gold Dragon, “By Invitation Only”<br>
+                                                                            To be retained in Wind Dragon, "<b>70,000</b> amount of VPP points within 365 days "</td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td><img height="86" width="87" src="../images/Gold-Dragon.png"></td>
+                                                                            <td>Gold Dragon</td>
+                                                                            <td>-</td>
+                                                                          </tr>
+                                                                        </tbody>
+                                                                      </table>
+                                                                    </div>
+
+                                                                    <p>Once member account is opened successfully, you are automatically start from Earth Dragon.</p>
+                                                                    <p>Notes:<br>
+                                                                    <em>- Any cancelation of Sit &amp; Go and Schedule Tournament will be not be calculated for rake and VPP points.</em><br>
+                                                                    <em>- Member is able to upgrade multiple VIP levels in 60 days.</em></p>
+                                                                    <p><b>5.2 Benefits</b></p>
+
+                                                                    <div class="table-responsive">
+                                                                      <table class="table">
+                                                                        <tbody>
+                                                                          <tr class="rowheader">
+                                                                            <td>Level Name</td>
+                                                                            <td>FPP per VPP</td>
+                                                                            <td>Extra FPP Points Upon Level Up (One Time Only)</td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td>Earth Dragon</td>
+                                                                            <td>Every 1 VPP is equal to 1 FPP</td>
+                                                                            <td>Upgraded to Fire Dragon, 10 extra FPPs will be earned</td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td>Fire Dragon</td>
+                                                                            <td>Every 1 VPP is equal to 1.5 FPPs</td>
+                                                                            <td>Upgraded to Water Dragon, 30 extra FPPs will be earned</td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td>Water Dragon</td>
+                                                                            <td>Every 1 VPP is equal to 2 FPPs</td>
+                                                                            <td>Upgraded to Wind Dragon, 300 extra FPPs will be earned</td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td>Wind Dragon</td>
+                                                                            <td>Every 1 VPP is equal to 2.5 FPPs</td>
+                                                                            <td>Upgraded to Light Dragon, 2,000 extra FPPs will be earned</td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td>Light Dragon</td>
+                                                                            <td>Every 1 VPP is equal to 3.5 FPPs</td>
+                                                                            <td>Upgraded to Gold Dragon, 10,000 extra FPPs will be earned</td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td>Gold Dragon</td>
+                                                                            <td>Every 1 VPP is equal to 5 FPPs</td>
+                                                                            <td>-</td>
+                                                                          </tr>
+                                                                        </tbody>
+                                                                      </table>
+                                                                    </div>
+
+                                                                    <p><b>5.3 Expiration VPP Points</b></p>
+                                                                    <p>For Earth, Fire, Water, and Wind Dragon VPP points is due for expiry each 1st day of the Month of February, April, June, August, October and December 00:00:00 (GMT+8)<br>
+                                                                    For Light and Gold Dragon VPP points will be due for expiry on every 1st July of yearly 00:00:00 (GMT+8).</p>
+                                                                    <p><b>5.4 Rake</b></p>
+                                                                    <p>Rake is a small percentage amount of money taken out from the game and given to the house in return for hosting the game</p>
+                                                                    <ol type="a">
+                                                                      <li>Cash/Normal: rake percentage ranging from 1% to 5% taken from the each pot.</li>
+                                                                      <li>Sit &amp; Go: Admin fee will be taken as rake</li>
+                                                                      <li>Schedule tournament: Admin fee will be taken as rake</li>
+                                                                      <li>Free Play: no rake contribution</li>
+                                                                    </ol>
+
+                                                                  </div>
+                                                              </div>
+                                                            </div>
+
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading" role="tab" id="heading6">
+                                                                    <h4 class="panel-title">
+                                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#disclaimer" aria-expanded="false" aria-controls="disclaimer">
+                                                                        6. Disclaimer
+                                                                    </a>
+                                                                </h4>
+                                                                </div>
+                                                                <div id="disclaimer" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6" aria-expanded="false">
+                                                                    <div class="panel-body">
+                                                                        <p>Gameplay Interactive reserves the right to void any or all bets made by any individual/group of people acting in liaison/collusion and attempts of fraudulent. These include persons, relatives, organizations, bookmakers and their employees. The monies in such Player Accounts will be confiscated and Accounts suspended immediately.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <!-- Texas Hold'em Poker -->
+
+
+                <div class="col-lg-2 col-md-4 col-sm-6 result well">
+                    <div class="row mb-4">
+                        <div class="col text-center ">
+                            <a href="#"><img
+                                    src="images/thumbnails/W88-P2P-THP-EN.jpg"
+                                    data-toggle="modal" data-target="#Texas_Hold"></a>
+                            <p>Texas Hold'em Poker</p>
+                        </div>
+                    </div>
+                    <!-- large modal -->
+                    <div class="modal fade" id="Texas_Hold" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel">Texas Hold'em Poker</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="panel-body">
+                                        <div>
+                                            <p>
+                                                <b>Introduction</b><br>
+                                                Texas Hold’em Poker is a variation of poker which differs by having five community cards that are shared among all players on the table and two cards dealt to each player face down which are known as hole cards. The objective of Texas Hold’em is to form the best 5 card poker hand from the combination of the five community cards and the player’s 2 hole cards.<br><br>
+    
+                                                A game of Texas Hold’em Poker consist of a single 52-card deck which includes 13 ranks of each suits:
+                                            </p>
+                                            <div class="cardbox">
+                                                <p>
+                                                    Diamonds (<span style="color: red">♦</span>) 
+                                                    <img src="p2p/images/texas-holdem/card-diamonds.png" class="img-responsive">
+                                                </p>
+                                                <p>
+                                                    Clubs (<span style="color: black">♣</span>) 
+                                                    <img src="p2p/images/texas-holdem/card-clubs.png" class="img-responsive">
+                                                </p>
+                                                <p>
+                                                    Spades (<span style="color: black">♠</span>)
+                                                    <img src="p2p/images/texas-holdem/card-spades.png" class="img-responsive">
+                                                </p>
+                                                <p>
+                                                    Hearts (<span style="color: red">♥</span>)<br>
+                                                    <img src="p2p/images/texas-holdem/card-hearts.png" class="img-responsive">
+                                                </p> 
+                                                <p>*The cards are arranged from their weakest to strongest.</p>
+                                            </div>
+    
+                                            <p><b>Game Flow</b></p>
+    
+                                            <p>Before joining a room in Texas Hold’em Poker, the player would have to ensure that they have sufficient balance for the minimum Buy-in before joining a table.</p>
+    
+                                            <p>A round of Texas Hold’em Poker begins with a random player given the dealer chip which then have the two players to the left of the dealer place the small and big blind before the round begins. The player to the immediate left of the dealer in the small blind receives the first card and then the dealer pitches cards around the table in a clockwise motion from player to player until each has received two starting cards (Hole cards).</p>
+    
+                                            <p>Then players will be able to examine their cards and decide on the following options:  
+                                            (pre-flop phase)</p>
+    
+                                            <ul>
+                                                <li><b>Check  :</b> The player can check if they decide to pass on betting for that round.</li>
+    
+                                                <li><b>Raise  :</b> Increase the bet in order to challenge other players.</li>
+    
+                                                <li><b>Call   :</b> Follow through a raise to match the highest player’s current bet.</li>
+    
+                                                <li><b>All-In :</b> If a player chooses to “Raise/Call” to the amount of their current balance, the  action would be changed to “All-In”. Doing so would exempt the member from further betting in the round.</li>
+    
+                                                <li><b>Fold   :</b> Forfeit their current Ante and concede for the round.</li>
+                                            </ul>
+    
+                                            <p>When all the Pre-flop betting has finished, the first three community cards would be shown on the table, this is commonly known as The flop, followed by a round of betting. Until then the fourth community card will be dealt face up. This is called  The Turn, followed by another round of betting. Then the last community card is revealed, called The River, and a final betting round will be given. Once the river betting round has been completed the players now enter into the Showdown. At this point the best hand wins the pot.</p>
+    
+                                            <p><b>Betting Rule</b></p>
+    
+                                            <p>Texas Hold’em Poker table betting rules follow the same betting structure as No Limit Poker table. It means that at any point in the game a player can bet as much as all of the chips they have on the table, which is known as going all-in. The other players must match the amount to call the bet, or can go all-in themselves for less.</p>
+    
+                                            <p><b>Card Ranking</b></p>
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <tbody><tr class="rowheader">
+                                                        <td>Ranking</td>
+                                                        <td>Example</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Royal Flush<br>
+                                                            - A royal flush requires the following specific cards, 10, Jack, Queen, King and Ace with the same suit
+                                                        </td>                                        
+                                                        <td>
+                                                            <img src="p2p/images/texas-holdem/royal-flush.png" class="img-responsive">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Straight Flush<br>
+                                                            - Five cards of the same suit. The values of the cards does not matter unless the player has a flush.
+                                                        </td>                                        
+                                                        <td>
+                                                            <img src="p2p/images/texas-holdem/straight-flush.png" class="img-responsive">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Four of a Kind<br>
+                                                            - Four  cards of the same value.
+                                                        </td>                                        
+                                                        <td>
+                                                            <img src="p2p/images/texas-holdem/four-of-a-kind.png" class="img-responsive">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Full House<br>
+                                                            - A full house is a combination of a pair and a three of a kind.
+                                                        </td>                                        
+                                                        <td>
+                                                            <img src="p2p/images/texas-holdem/full-house.png" class="img-responsive">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Flush<br>
+                                                            - Five cards of the same suit. The values of the cards does not matter unless the player has a flush.
+                                                        </td>                                        
+                                                        <td>
+                                                            <img src="p2p/images/texas-holdem/flush.png" class="img-responsive">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Straight <br>
+                                                            - A straight is five cards that are running values
+                                                        </td>                                        
+                                                        <td>
+                                                            <img src="p2p/images/texas-holdem/straight.png" class="img-responsive">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Three of a Kind<br>
+                                                            - Three cards of the same value
+                                                        </td>                                        
+                                                        <td>
+                                                            <img src="p2p/images/texas-holdem/three-of-a-kind.png" class="img-responsive">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Two Pair<br>
+                                                            - Two pairs of respectively equal values.
+                                                        </td>                                        
+                                                        <td>
+                                                            <img src="p2p/images/texas-holdem/two-pair.png" class="img-responsive">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Pair <br>
+                                                            -  A pair of two cards with the same value.
+                                                        </td>                                        
+                                                        <td>
+                                                            <img src="p2p/images/texas-holdem/pair.png" class="img-responsive">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            High Card<br>
+                                                            - The highest card in a player’s hand if no combinations are found.
+                                                        </td>                                        
+                                                        <td>
+                                                            <img src="p2p/images/texas-holdem/high-card.png" class="img-responsive">
+                                                        </td>
+                                                    </tr>
+                                                </tbody></table>
+    
+                                                <p>
+                                                    <b>The Kicker Card</b><br>
+                                                    After the hands of all participating players in a round has been revealed and there are two or more players with the same winning hands. A Kicker Card will be used to determine the winner. In the situation where the Kicker Card is unable to resolve due to players still having the same hand, the pot will be split among the winners.
+                                                </p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+             <!-- Texas Mahjong -->
+
+            <div class="col-lg-2 col-md-4 col-sm-6 result well">
+                <div class="row mb-4">
+                    <div class="col text-center ">
+                        <a href="#"><img
+                                src="images/thumbnails/W88-P2P-Texas-Mahjong-EN.jpg"
+                                data-toggle="modal" data-target="#Texas_Mahjong"></a>
+                        <p>Texas Mahjong</p>
+                    </div>
+                </div>
+                <!-- large modal -->
+                <div class="modal fade" id="Texas_Mahjong" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">Texas Mahjong</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="panel-body">
+                                    <div>
+                                        <p>
+                                            <b>Introduction</b><br>
+                                            Introducing a new game innovation combining East (mahjong) and West (poker) in <b>Texas Mahjong</b>.<br>
+                                            <b>Mahjong</b> (or “má jiàng” in Chinese pinyin) is a four-player game that originated in China<br> and became popular throughout Asia.<br>
+                                            Poker originated in the West and is widely popular. Like its precedent, Texas Mahjong requires skill, strategy,<br> calculation, and luck.
+                                            <br>                                            
+                                        </p>
+                                        The following is basic information on <b>Texas Mahjong</b>,
+                                        <table style="width: 800px; border: 0px solid black; border-collapse: collapse; font: normal;">
+                                        <colgroup>
+                                            <col span="2">
+                                            <col span="3" style="visibility: collapse">
+                                          </colgroup>
+                                        <tbody><tr>
+                                        <td><b>Tiles</b></td>
+                                        <td>: Game is played with 37 mahjong tiles.</td>
+                                        </tr>
+                                        <tr>
+                                        <th><b>Suit</b></th>
+                                        <td>: 1 Suit (Circle Suit)</td>
+                                        </tr>
+                                        <tr>
+                                        <th><b>Rank</b></th>
+                                        <td>: 1- 9</td>
+                                        </tr>
+                                        <tr>
+                                        <th><b>Set</b></th>
+                                        <td>: 4 Sets</td>
+                                        </tr>
+                                        <tr>
+                                        <th><b>Wild</b></th>
+                                        <td>: 1 Joker</td>
+                                        </tr>
+                                        <tr>
+                                        <th><b>Hand</b></th>
+                                        <td>: 5 Tiles</td>
+                                        </tr>
+                                        <tr>
+                                        <th><b>Players</b></th>
+                                        <td>: 2 – 4 Players</td>
+                                        </tr>
+                                    </tbody></table>
+                                    <br>
+                                            
+
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tbody><tr class="rowheader">
+                                                    <td style="text-align: left;" colspan="3">The Circle Suit</td> 
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3"><img class="img-responsive left-block" src="images/texas-mahjong/circle-suit.png" style="width: 600px;"></td>  
+                                                </tr>
+                                            </tbody></table>
+                                        </div>
+
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tbody><tr class="rowheader"> 
+                                                    <td style="text-align: left;">Joker</td> 
+                                                </tr>
+                                                <tr>
+                                                    <td><img class="img-responsive left-block" src="images/texas-mahjong/joker.png" style="width: 60px;"></td> 
+                                                </tr>
+                                            </tbody></table>
+                                            <p style="text-align: left;"><i>** “Joker” as a wild tiles. It can be used as a substitute to represent any other tiles. The uniqueness of the Joker tiles is to further enhance the speed and thrill of the game.</i></p>
+                                        </div>
+
+                                        <p>
+                                            <b>2. Getting Started</b><br>
+                                            1.1 Signed Up / Register<br>                       
+                                            Texas Mahjong is available only for registered players. Please ensure to have a registered account to play.<br><br>
+
+                                            1.2 Nickname:<br>                       
+                                            Once a player is registered, the next step is to create your own unique nickname that will be displayed on the game interface.<br>
+                                            Nickname is permanent and non-editable.<br><br>
+
+                                            1.3 Game Tables and Buy-in<br>                       
+                                            Players can play Texas Mahjong, by selecting the preferred table that is available.<br>
+                                            Each table has its minimum buy-in to be able to sit in the game. During the gameplay, the buy-in amount will increase or decrease, it is advisable for players  to always ensure to have sufficient balance when playing.<br><br>
+
+                                            1.4 Dealer, Small Blind, Big Blind<br>                       
+                                            The system will randomly pick one player as Dealer. Next to the Dealer is the Small Blind and followed by the Big Blind player.<br>
+                                            The Small Blind and Big Blind bet amount is pre-set for each room.  Hence, to participate in the game round, all players must match the bet to the Big Blind bet amount.<br><br>
+                                                                                                                                                  
+                                        </p>
+
+                                        <p>
+                                            <b>3. How to Play Texas Mahjong</b><br>
+                                            The goal of the game is to complete the set on the player’s hand with the highest possible tiles combinations as fast as possible.<br> 
+                                            1. Select the table for the player to join with at least min. buy-in amount.<br>
+                                            2. The game starts with 4 mahjong tiles distributed to players that sit on the table to play.<br>
+                                            3. The system will randomly pick one player as Dealer. Next sit to Dealer (clockwise) is  Small Blind player followed by Big Blind player.<br><br>
+                                            
+                                           To participate in the game, players must;<br>
+                                           
+                                            &nbsp;&nbsp;<span>•</span>&nbsp;Follow the big blind bet amount (Call),<br>
+                                            &nbsp;&nbsp;<span>•</span>&nbsp;Increase the blind amount (Raise), <br>
+                                            &nbsp;&nbsp;<span>•</span>&nbsp;Sit out and do not participate in the game round (Fold).<br>
+                                           
+                                            All the matched bets with Big Blind will be put in the Winning pot. Should the player decide to fold, the Big Blind bet will be forfeited from the player’s balance. The forfeited amount will be put in the winning pot.<br><br>
+                                                4. Once players match the bet with the Big Blind (call), the 5th tiles is distributed to players. Players then to form the combination tiles to win.<br>
+                                                During the process to form the best-winning tiles combination, Players are given a stipulated time to pick a tile to be discarded and time to decide to;<br>
+                                                &nbsp;&nbsp;<span>•</span>&nbsp;Increase the bet (Raise),<br>
+                                                &nbsp;&nbsp;<span>•</span>&nbsp;Increase the bet with all the balance buy-in (All in),<br> 
+                                                &nbsp;&nbsp;<span>•</span>&nbsp;Follow the increased bet (Call),<br>
+                                                &nbsp;&nbsp;<span>•</span>&nbsp;Sit out / quit the game round (fold),<br>
+                                                &nbsp;&nbsp;<span>•</span>&nbsp;Remain the same/pass on betting (check).<br>
+                                                
+                                                ** Joker tiles cannot be discarded.<br>
+                                                ** All-in player exempt from further betting the game. Bet amount that exceeds other players' All-In bet will be accumulated in the “Side Pot”.<br><br>
+                                                The number of side pots in a round will be less than the total number of players in the game round.<br> 
+                                                <b>Example:</b> In the game round there is 4 total players, and the maximum pot is 3 (1 main winning pot and 2 side pots).<br><br>
+
+                                                5. This process will continue until the game round ends. The game ends when there is a winner or more than one winner in the game round, or when there are insufficient tiles to continue the game.<br><br>
+                                                &nbsp;&nbsp;<span>•</span>&nbsp;The game round ended with a winner - The winner will get the winning pot after the rake deduction.<br>
+                                                &nbsp;&nbsp;<span>•</span>&nbsp;The game round ended with more than one winner – The Winning pot will be split equally by the number of winners.<br><br>
+                                                The winning amount is after the rake deduction.<br>
+                                                &nbsp;&nbsp;<span>•</span>&nbsp;The game round ended with insufficient tiles – The game is considered a draw, all bets return to the player after rake deduction.<br>
+                                                &nbsp;&nbsp;<span>•</span>&nbsp;The game round ended with no winner - The game is considered a draw, all bets return to the player after rake deduction.<br>                                                                                                                   
+                                        </p><br>
+
+                                        <b>How to form a winning combination of 5 tiles in Texas Mahjong.</b><br><br>
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tbody><tr class="rowheader">
+                                                    <td style="text-align: left;" colspan="3"><span>•</span>&nbsp;  A straight and a pair</td> 
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3"><img class="img-responsive left-block" src="p2p/images/texas-mahjong/straight-pair.png" style="width: 370px;"></td>  
+                                                </tr>
+                                            </tbody></table>
+                                        </div>
+
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tbody><tr class="rowheader"> 
+                                                    <td style="text-align: left;"><span>•</span>&nbsp; Three of a kind and a pair</td> 
+                                                </tr>
+                                                <tr>
+                                                    <td><img class="img-responsive left-block" src="p2p/images/texas-mahjong/three-pair.png" style="width: 370px;"></td> 
+                                                </tr>
+                                            </tbody></table>
+                                        </div>
+
+                                        <b>4. Tournaments</b><br>
+
+                                        There are two category of tournament :<br>
+                                        1. Cash Tournament - Players participate in tournaments with own cash buys-in<br>
+                                        2. Mission Tournament - Player must meet pre-requisite to be able to join the tournament.<br><br>
+
+                                        Type of tournaments:<br>
+                                        (a)   Sit and Go Tournament<br>
+                                        (b)   Scheduled Tournament<br><br>
+
+                                        To enter the tournament, players need to pay the tournament  host fee.<br>
+                                        (a)   Sit and Go Tournament <br>
+                                        The minimum number of players to start the tournament is six based on predetermined by pre-determined no. players.<br>
+                                        The tournament will begin anytime once the required numbers of members are in.<br><br>
+
+                                        (b)   Scheduled Tournament<br>
+                                        The players need to register to participate prior to the tournament begin.<br>
+                                        The minimum number of players to start the tournament is pre-determined by the tournament organizer.<br>
+                                        Tournament will begin at the pre-determined time by the tournament organizer.<br><br>
+
+
+                                        <b>VIP Level</b><br>
+
+                                        To find more about VIP level general information, <a href="/share/terms-vip-level-en-my.shtml">Click here</a>.<br><br>
+
+                                        
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tbody><tr class="rowheader">
+                                                    <td colspan="2">Glossary</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Menu</b></td>
+                                                    <td style="text-align: left">
+                                                        This button controls a pull-up menu with various options, which determine the game setting<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Help</b></td>
+                                                    <td style="text-align: left;">
+                                                        Players can view game introduction from this selection.<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Close</b></td>
+                                                    <td style="text-align: left;">
+                                                        Players can exit from the game by selecting this button<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Fullscreen</b></td>
+                                                    <td style="text-align: left;">
+                                                        Player can full screen the game<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;" colspan="2"><b>As shown, this is a pull-up menu with various options.</b></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Background</b></td>
+                                                    <td style="text-align: left;">
+                                                        Player allows to change the background<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Help</b></td>
+                                                    <td style="text-align: left;">
+                                                        Provide player with help option<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Sound On/Off</b></td>
+                                                    <td style="text-align: left;">
+                                                        Turn sound on and off<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>History</b></td>
+                                                    <td style="text-align: left;">
+                                                        Player allows to check game history within 30 days<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Buy-In</b></td>
+                                                    <td style="text-align: left;">
+                                                        An amount of money or chips that a player needs to have to be able to join a table or game round.<br>  
+                                                        The base currency for Texas Mahjong is RMB. For players with different currencies, there will be a conversion to RMB to join the table game.<br><br>
+                                                        <b>Example:</b><br>
+                                                        Player A , Balance MYR 100,- <br>
+                                                        Minimum Buy-In = RMB100.00, FX rate is 1MYR=2 RMB.<br> 
+                                                        After Min. Buy in<br>  
+                                                        Player A Balance MYR50,- and Buy in Balance RMB100,- <br>                     
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Dealer</b></td>
+                                                    <td style="text-align: left;">
+                                                        At the start of the game the system will indicate one of the players as a dealer by throwing a dice. <br>
+                                                        The game will start in a clockwise manner starting from the left of the dealer.                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Blind</b></td>
+                                                    <td style="text-align: left;">
+                                                        A mandatory bet for players to participate in the game<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Small Blind</b></td>
+                                                    <td style="text-align: left;">
+                                                        Player sit next to dealer (clockwise direction)<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Big Blind</b></td>
+                                                    <td style="text-align: left;">
+                                                        Player sit next to small blind (clockwise direction)<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>All-In</b></td>
+                                                    <td style="text-align: left;">
+                                                        Player bet all buys in or raise or call with the remaining buys in balance<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Call</b></td>
+                                                    <td style="text-align: left;">
+                                                        Call the amount which other player has raised<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Check</b></td>
+                                                    <td style="text-align: left;">
+                                                        Agrees to current bet amount (equivalent to zero betting). Player can pre-check during the game as well.<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Fold</b></td>
+                                                    <td style="text-align: left;">
+                                                        Player chooses to give up current hand and forfeits any amount betted.<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Raise</b></td>
+                                                    <td style="text-align: left;">
+                                                        Players can choose to increase bet. Player can increase the bet amount by clicking on the arrows, adjusting the slider or typing in the bet amount in the box (black area).<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Stand Up</b></td>
+                                                    <td style="text-align: left;">
+                                                        Player decide to leave the current seat<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Sit</b></td>
+                                                    <td style="text-align: left;">
+                                                        Available sit for player to join the game round.<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Sit out Next Game</b></td>
+                                                    <td style="text-align: left;">
+                                                        Player still remain at the seat but not participating in the next round. If player misses any blinds while sitting out, player will have to pay a penalty equivalent to the total blinds missed before playing the next round.<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Hand</b></td>
+                                                    <td style="text-align: left;">
+                                                        Tiles held by player currently<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Joker Tiles</b></td>
+                                                    <td style="text-align: left;">
+                                                        A tile which can be used to represent any tiles. A Joker tile can turn a pair into three-of-a-kind, form a pair with any tile, or complete a run. <br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Winning Pot</b></td>
+                                                    <td style="text-align: left;">
+                                                        Total accumulative bet amount by players<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Side Pot</b></td>
+                                                    <td style="text-align: left;">
+                                                        In a multi-way pot, side pot is created for other players if one &amp;/or more players goes All-In.<br><br> 
+                                                        <b>Example:</b><br>
+                                                        Player A bets $10, Player B calls the $10, and Player C calls, but he has only<br> 
+                                                        $8 left.  $4 side pot is created that either Player A or Player B can win, but not Player 3.<br>
+                                                        However Player C, can still win all the money in the "center" main pot.                         
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Rake</b></td>
+                                                    <td style="text-align: left;">
+                                                        A small percentage amount of money taken out from each pot and given to the house in return for hosting the game.<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Host Fee</b></td>
+                                                    <td style="text-align: left;">
+                                                        An amount of money pay to house for hosting the game<br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Tournament Fee</b></td>
+                                                    <td style="text-align: left;">
+                                                        Fees that is charged to all players that will join the tournament. <br>                             
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;"><b>Freeroll</b></td>
+                                                    <td style="text-align: left;">
+                                                        Free entry tournament with no buy-in.<br>                             
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </div>
+
+                                        <!-- <p><b>Paytable</b></p>
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr class="rowheader">
+                                                        <td colspan="3"><b>Paytable</b></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"><b>Bet Type</b></td>
+                                                        <td colspan="2"><b>Payout</b></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b>Normal</b></td>
+                                                        <td><b>Deluxe</b></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Head</td>
+                                                        <td>1 : 0.80</td>
+                                                        <td>1 : 1.60</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tail</td>
+                                                        <td>1 : 0.80</td>
+                                                        <td>1 : 1.60</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <font style="color:red">Important!</font><br>
+                                        <i>- Game does not allow player to place opposite bet on  Head or Tail on the same draw.</i><br><br>
+
+                                        <p><b>Coin Toss - Deluxe : Information Chart</b></p>
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tr class="rowheader">
+                                                    <td>Market</td>
+                                                    <td>Draw Frequency</td>
+                                                    <td>Start Time</td>
+                                                    <td>End Time</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Coin Toss - Deluxe</td>
+                                                    <td>15 Seconds</td>
+                                                    <td>00:00:00</td>
+                                                    <td>23:59:59</td>
+                                                <tr>
+                                            </table>
+                                        </div>
+                                        <p>*GMT+8</p> -->
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+              <!-- Tien Len -->
+
+              <div class="col-lg-2 col-md-4 col-sm-6 result well">
+                <div class="row mb-4">
+                    <div class="col text-center ">
+                        <a href="#"><img
+                                src="images/thumbnails/W88-P2P-TienLen.jpg"
+                                data-toggle="modal" data-target="#Tien_Len"></a>
+                        <p>Tien Len</p>
+                    </div>
+                </div>
+                <!-- large modal -->
+                <div class="modal fade" id="Tien_Len" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">Tien Len</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="panel-body">
+                                    <div>
+                                        <p>
+                                            <b>Introduction</b><br>
+                                            Tiến lên is a card shedding type of game devised in Southern China and Vietnam playable 2 to 4 players with each player being dealt 13 cards each from a 52-card deck. The objective of Tiến lên is to be the first player to empty their hands while playing various combinations.<br><br>
+
+                                            A game of Tiến lên consist of a single 52-card deck which includes 13 ranks of each suits:
+                                        </p>
+                                        <div class="cardbox">
+                                            <p>
+                                                Hearts (<span style="color: red">♥</span>)<br>
+                                                <img src="p2p/images/tienlen/card-hearts.png" class="img-responsive">
+                                            </p> 
+                                            <p>
+                                                Diamonds (<span style="color: red">♦</span>) 
+                                                <img src="p2p/images/tienlen/card-diamonds.png" class="img-responsive">
+                                            </p>
+                                            <p>
+                                                Clubs (<span style="color: black">♣</span>) 
+                                                <img src="p2p/images/tienlen/card-clubs.png" class="img-responsive">
+                                            </p>
+                                            <p>
+                                                Spades (<span style="color: black">♠</span>)
+                                                <img src="p2p/images/tienlen/card-spades.png" class="img-responsive">
+                                            </p>
+
+                                            <p>*The cards are arranged from their weakest to strongest.<br>
+                                            The cards are also ranked based on their suits. <br>The ranking from highest to lowest is: Hearts <span style="color: red">♥</span>, Diamonds <span style="color: red">♦</span>, Clubs <span style="color: black">♣</span>, <span style="color: black">Spades ♠</span>.</p>
+                                        </div>
+
+                                        <p><b>Game Flow</b></p>
+
+                                        <p>Before you’re able to join a room in Tien Len, the player would have to ensure that there is sufficient balance for the minimum Buy-in before joining a table. The minimum buy-in represents the maximum the highest possible loss on the table.<br><br>
+
+                                        A typical round of Tien Len begins with each player being dealt 13 cards from a 52 card deck regardless of the total amount of players. Generally the player with the lowest value card will begin, however if there was a winner on the previous round that player will begin the round and after that the game will move in a clockwise order.<br><br>
+
+                                        During the course of gameplay, players are able to manipulate the winning/losing stake via multipliers through various actions (Explained further below) until the first player empties their hand and then the stake of each player will be calculated based on various actions as well as “Rotten” cards in each remaining player’s hand.<br><br> 
+
+                                        Players are given the option to Pass or Play during the game. It is not compulsory to play a card of higher value just because they own the card/s of higher value. Whenever a player plays a card and all players pass, the player will gain control of the board and is able to play any legal card combination.</p>
+
+                                        <p><b>Game Actions</b><br>
+                                        Types of playable cards and combinations<br>
+                                        Standard Combinations<br><br>
+
+                                        - <b>Single :</b> A single card played. Singles can be defeated by singles that are higher in value or suit.<br><br>
+
+                                        - <b>Pair :</b> A combination of exactly 2 cards of the same value. A pair can only be defeated by a pair with higher value or higher suit. Examples of a pairs: 5<span style="color: black">♠</span> 5<span style="color: red">♦</span> , A<span style="color: black">♠</span> A<span style="color: black">♣</span> or J<span style="color: red">♥</span>J<span style="color: red">♦</span>.<br><br>
+
+                                        - <b>Three of a Kind:</b> A combination of exactly 3 cards of the same value. Three of a Kind can only be defeated by another Three of a Kind of higher rank. A Three of a Kind 2<span style="color: black">♠</span> 2<span style="color: red">♦</span> 2<span style="color: red">♥</span> can not be defeated and immediately ends the discard round.<br><br>
+
+                                        - <b>Sequence:</b> Sequences are a combination of at least 3 cards that are played in a numerical order. A sequence can only be defeated by another higher sequence. The suit of the last card in a sequence determines the strength of the sequence while the cards in the sequence played before that only have to follow the sequence numerically.Any sequence with Q K A<span style="color: red">♥</span> can not be defeated and immediately ends the discard round.</p>
+
+
+                                        <p><b>Special Combinations</b><br>
+                                        Bombs: A Bomb is primarily used to play a single deuce(2), it requires a 3-pair or 4-pair sequence or a 4-of-a-kind.</p>
+
+                                        <p><b>Types of Bombs</b><br>
+                                        Pair sequences<br>
+                                        Combination of at least 3 pairs that are in numerical sequences.</p>
+
+                                        <p><b>3 Pair Sequence</b>
+                                        (Ex. 3<span style="color: red">♣</span> 3<span style="color: red">♦</span>, 4<span style="color: red">♦</span> 4<span style="color: red">♥</span>, 5<span style="color: red">♠</span> 5<span style="color: red">♣</span>)
+                                        A 3 pair sequences can be used to Bomb a single deuce or any lower 3 pair sequence in numerical value.</p>
+
+                                        <p><b>Four-of-a-kind</b>
+                                        (Ex. A<span style="color: red">♠</span> A<span style="color: red">♣</span> A<span style="color: red">♦</span> A<span style="color: red">♥</span>)
+                                        Four of a kind can be used to Bomb a single or double deuce, any 3 or 4 pair sequences any lower Four-of-a-kind in numerical value.</p>
+
+                                        <p><b>4 Pair Sequence</b>
+                                        (Ex. 10<span style="color: black">♠</span> 10<span style="color: red">♦</span> J<span style="color: black">♣</span> J<span style="color: red">♥</span> Q<span style="color: black">♠</span> Q<span style="color: black">♣</span>, K<span style="color: red">♦</span> K<span style="color: red">♥</span>)
+                                        A 4 pair sequences can be used to Bomb a single or double deuce, any 3 pair sequence and a 4 pair sequence that is smaller in numerical value.</p>
+
+
+                                        <p><b>Betting Rule</b><br>
+                                        When a player wants to buy-into a room in Tien Len they are required to buy in the maximum amount that can be lost in a game. For example, if a player wants to buy-in to a 1k stake room they would be required to buy-in 35k ,which is the maximum possible loss amount in one game.<br><br>
+
+                                        The moment the player’s stack drops below the required minimum amount; the buy-in menu will prompt the player to top-up the required amount.</p>
+
+                                        <p><b>Stakes and Penalties</b><br>
+                                        Penalties are how players are able to earn an increased amount of chips. After they buy-in to the game with minimum amount</p>
+                                            
+                                        <p><b>Stakes</b><br>
+                                        Stakes are an additive ways that players can manipulate the current stake with actions that happen throughout the game. One of the common ways that this can happen is through Bombs, each time a player gets bombed they will be penalized with a minimum of x1 stake at the end of the match.</p>
+
+                                        <p>This stake value can be added on again if another player puts a bomb on top of an existing bomb which will result in the multiplier penalty to be passed on to the next player with x4 the amount.</p>
+
+                                        <p><b>Penalties</b><br>
+                                        Whenever a player is bombed the below mentioned penalties will be applied to the player and aside from being bombed the same stake applies to having leftover cards in your hand whenever another player wins.</p>
+
+                                        <p><b>Penalty for unused special cards</b><br>
+                                        - 2 <span style="color: black">♠</span> or 2 <span style="color: black">♣</span> -&gt; 1x stake<br>
+                                        - 2 <span style="color: red">♦</span> or 2 <span style="color: red">♥</span> -&gt; 2x stake<br>
+                                        - 3 pair sequence -&gt; 3x stake<br>
+                                        - 4 of a kind -&gt; 4x stake<br>
+                                        - 4 pairs sequence -&gt; 5x stake</p>
+
+                                        <p><b>Game lose penalties</b><br>
+                                        - 1 - 6 cards remaining -&gt; 1x stake<br>
+                                        - 7 - 12 cards remaining -&gt; 2x stake<br>
+                                        - 13 cards remaining -&gt; 3x stake</p>
+
+                                        <p><b>Instant Wins</b><br>
+                                        Instant win scenarios are when a player is dealt the specific combination of cards resulting in an instant win. Each opponent who loses to an instant win has to have each opponent pay 2 stake to the winner.</p>
+
+                                        <p>- 4 Deuce 
+                                        (Ex. 2<span style="color: black">♠</span>, 2<span style="color: black">♣</span>, 2<span style="color: red">♦</span>, 2<span style="color: red">♥</span>)<br>
+
+                                        - 6 Pairs 
+                                        (Ex. 4<span style="color: black">♠</span> 4<span style="color: red">♥</span>, 6<span style="color: black">♠</span> 6<span style="color: red">♦</span>, 9<span style="color: red">♦</span> 9<span style="color: red">♥</span>, 10<span style="color: black">♣</span> 10<span style="color: red">♥</span>, Q<span style="color: red">♦</span> Q<span style="color: red">♥</span>, A<span style="color: black">♠</span> A<span style="color: red">♥</span>)<br>
+
+                                        - 5 Sequential pairs 
+                                        (Ex 5<span style="color: red">♦</span> 5<span style="color: red">♥</span>, 6<span style="color: red">♦</span> 6<span style="color: red">♥</span>, 7<span style="color: black">♠</span> 7<span style="color: black">♣</span>, <span style="color: black">8</span><span style="color: black">♣</span> 8<span style="color: red">♥</span>, 9<span style="color: black">♠</span> 9<span style="color: red">♦</span>)<br>
+
+                                        - 3 Sequential Three of a Kind 
+                                        (Ex. 10<span style="color: black">♠</span> 10<span style="color: black">♣</span> 10<span style="color: red">♥</span>, J<span style="color: black">♠</span> J<span style="color: black">♣</span> J<span style="color: red">♦</span>, Q<span style="color: black">♣</span> Q<span style="color: red">♦</span> Q<span style="color: red">♥</span>)<br>
+
+                                        - 3 to Ace Sequence
+                                        (Ex. 3<span style="color: black">♣</span> 4<span style="color: red">♥</span> 5<span style="color: black">♣</span> 6<span style="color: red">♥</span> 7<span style="color: red">♦</span> 8<span style="color: black">♠</span> 9<span style="color: red">♦</span> 10<span style="color: black">♠</span> J<span style="color: red">♦</span> Q<span style="color: red">♦</span> K<span style="color: black">♣</span> A<span style="color: black">♠</span>)<br></p>
+
+
+
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+        </div>
+        <div class="col" id="searchNotfound">
+            <img src="https://www.gpislots.info/shared/images/no-results-en.png">
+            <h3 style="font-family: 'Helvetica', sans-serif;;
+">No results found</h3>
+            <p style="font-family: 'Helvetica', sans-serif;;
+">Please modify your search and try again.
+            </p>
+        </div>
+        <div class="paginationCustom">
+            <div id="pagingControls"></div>
+            <!--   <div id="showingInfo" class="well" style="margin-top:20px"></div> -->
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <script src="https://www.gpislots.info/shared/js/jquery.js"></script>
+    <script src="https://www.gpislots.info/shared/js/flexible-pagination.js"></script>
+    <script src="https://www.gpislots.info/shared/js/scripts.js"></script>
+    <script src="https://www.gpislots.info/shared/js/bootstrap.js"></script>
+
+
+</body>
+
+</html>
