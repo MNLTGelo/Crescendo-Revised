@@ -957,3 +957,7 @@ img.thumbnail-img {
     line-height:20px;
   }
 }
+
+.bg-dark {
+    background-color: #373737 !important;
+}
