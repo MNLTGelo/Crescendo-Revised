@@ -72,7 +72,7 @@ h1 {
   display: none;
 }
 .blue-bar-head {
-    background-color: #A8C62C;
+    background-color: #fe5e00;
     text-align: center;
     color: white;
     padding: 5px 0px;
@@ -80,6 +80,12 @@ h1 {
 .blue-bar-head i {
     font-size: 30px;
     width: 50px;
+}
+
+/* thumbnail */
+img.thumbnail-img {
+  height: 189;
+  width: 146;
 }
 
 

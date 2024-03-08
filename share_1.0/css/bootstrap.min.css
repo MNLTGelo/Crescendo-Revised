@@ -5409,6 +5409,7 @@ a.badge:focus,a.badge:hover {
     transition: border .2s ease-in-out
 }
 
+
 .thumbnail a>img,.thumbnail>img {
     margin-right: auto;
     margin-left: auto
