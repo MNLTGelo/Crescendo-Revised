@@ -15,7 +15,7 @@
 </head>
 <body>
 <style type="text/css">
-    
+     
     .w-100{
         text-align: center!important;
 
@@ -34,6 +34,10 @@
     text-align: center;
 }
 
+.bg-dark {
+    background-color: #4439a1 !important;
+}
+
 .topnav {
   padding: 15px;
   background-color: black;
@@ -43,6 +47,23 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    color: white;
+}
+
+.game {
+   color: #4439a1 !important;
+}
+
+#content img {
+    border-radius: 0px !important;
+}
+
+#content p {
+      margin-top: 10px !important;
+    margin-bottom: 15px !important;
 }
 
 @media (max-width: 991px){
@@ -73,24 +94,17 @@ h1 {
 <div class="header">
     <nav class="navbar sticky-top navbar-expand-lg bg-dark">
        <div class="container d-flex justify-content-between align-items-center">
-          <a class="navbar-brand" href="#"><img src="../images/thumbnails/logo.png" width="240"
+          <a class="navbar-brand" href="#"><img src="../images/thumbnails/logo.png" width="189"
                 height="50"></a>
           <!-- Center right alignment -->
-          <button class="btn btn-secondary" onclick="goBack()">Back</button>
        </div>
     </nav>
     <div class="blue-bar-head">
         <div class="container">
-            Info Centre 
         </div>           
     </div>
 </div>
 
-<script>
-    function goBack() {
-        window.history.back();
-    }
-</script>
 
 <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -101,7 +115,7 @@ h1 {
     <div class="container" id="jar">
         <div class="row pb-5">
           <div class="col-lg-2 col-md-4 col-sm-3 page-header" style="margin-top: -7px;">
-            <h1>GAMES</h1>
+            <h1 class="game">Games</h1>
           </div>
           <div class="col-lg-8 col-md-4 col-sm-5">
             <input class="searchBox form-control" placeholder="Type game title">
@@ -145,7 +159,7 @@ h1 {
  <a id="bttbutton"></a>
  <div class="row" id="content">
 
-<div class="col-lg-2 col-md-4 col-sm-6 result well">
+<div class="col-lg-3 col-md-4 col-sm-6 result well">
    <div class="row mb-4">
       <div class="col text-center  ">
          <a href="#"><img src="../images/thumbnails/Crypto-Crash-EN.png" class="thumbnail-img" data-toggle="modal" data-target="#CrytoCrash"></a>
@@ -162,6 +176,11 @@ h1 {
                <span aria-hidden="true">×</span>
                </button>
             </div>
+
+            <div class="modal-body">
+
+
+                        </div>
             
          </div>
       </div>
@@ -169,7 +188,7 @@ h1 {
 
 </div>
 
-   <div class="col-lg-2 col-md-4 col-sm-6 result well">
+   <div class="col-lg-3 col-md-4 col-sm-6 result well">
    
    <div class="row mb-4 ">
       <div class="col text-center ">
@@ -190,13 +209,288 @@ h1 {
                <span aria-hidden="true">×</span>
                </button>
             </div>
+
+            <div class="modal-body">
+
+                              <div>
+                                  <p>
+                                      <b>Introduction</b><br>
+                                      Andar Bahar is table game that getting popular around the world.  The game origin from south east asia with simple game play of predicting the middle card will appear on Andar or Bahar side.<br><br>                      
+                  
+                                      On every new round, a standard 52-card deck is used.                                                              
+                                  </p><br>
+
+                                  <div class="table-responsive">
+                                      <table class="table">
+                                          <tbody><tr class="rowheader">
+                                              <td colspan="4">
+                                                  Card Suit
+                                              </td>
+                                          </tr>
+                                          <tr>
+
+                                              <td><img class="img-responsive center-block" src="games/super98-baccarat/images/Ace-Spade.png" style="width: 70px;"></td>
+                                              <td><img class="img-responsive center-block" src="games/super98-baccarat/images/Ace-Hearts.png" style="width: 70px;"></td>
+                                              <td><img class="img-responsive center-block" src="games/super98-baccarat/images/Ace-Clubs.png" style="width: 70px;"></td>
+                                              <td><img class="img-responsive center-block" src="games/super98-baccarat/images/Ace-Diamonds.png" style="width: 70px;"></td>
+
+                                          </tr>
+                                      </tbody></table>
+                                  </div><br>
+
+                                  <div class="table-responsive">
+                                      <table class="table">
+                                          <tbody><tr class="rowheader">
+                                              <td colspan="13">
+                                                  Card Rank and Card Point
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              
+                                              <td><img class="img-responsive center-block" src="games/super98-baccarat/images/2-Spade.png" style="width: 70px;"></td>
+                                              <td><img class="img-responsive center-block" src="games/super98-baccarat/images/3-Spade.png" style="width: 70px;"></td>
+                                              <td><img class="img-responsive center-block" src="games/super98-baccarat/images/4-Spade.png" style="width: 70px;"></td>
+                                              <td><img class="img-responsive center-block" src="games/super98-baccarat/images/5-Spade.png" style="width: 70px;"></td>
+                                              <td><img class="img-responsive center-block" src="games/super98-baccarat/images/6-Spade.png" style="width: 70px;"></td>
+                                              <td><img class="img-responsive center-block" src="games/super98-baccarat/images/7-Spade.png" style="width: 70px;"></td>
+                                              <td><img class="img-responsive center-block" src="games/super98-baccarat/images/8-Spade.png" style="width: 70px;"></td>
+                                              <td><img class="img-responsive center-block" src="games/super98-baccarat/images/9-Spade.png" style="width: 70px;"></td>
+                                              <td><img class="img-responsive center-block" src="games/super98-baccarat/images/10-Spade.png" style="width: 70px;"></td>
+                                              <td><img class="img-responsive center-block" src="games/super98-baccarat/images/Jack-Spade.png" style="width: 70px;"></td>
+                                              <td><img class="img-responsive center-block" src="games/super98-baccarat/images/Queen-Spade.png" style="width: 70px;"></td>
+                                              <td><img class="img-responsive center-block" src="games/super98-baccarat/images/King-Spade.png" style="width: 70px;"></td>
+                                              <td><img class="img-responsive center-block" src="games/super98-baccarat/images/Ace-Spade.png" style="width: 70px;"></td>
+
+                                          </tr>
+                                          <tr style="font-weight: bold">
+                                              <td>1</td>
+                                              <td>2</td>
+                                              <td>3</td>
+                                              <td>4</td>
+                                              <td>5</td>
+                                              <td>6</td>
+                                              <td>7</td>
+                                              <td>8</td>
+                                              <td>9</td>
+                                              <td>10</td>
+                                              <td>11</td>
+                                              <td>12</td>
+                                              <td>13</td>
+                                          </tr>
+                                      </tbody></table>
+                                  </div><br>
+
+                                  <div class="table-responsive">
+                                      <table class="table">
+                                          <tbody><tr>
+                                              <td style="font-weight: normal">1 Shoe </td>
+                                              <td style="font-weight: normal">8 Deck cards</td>
+                                          </tr>
+                                          <tr>
+                                              </tr><tr>
+                                                  <td>1 Deck</td>
+                                                  <td>52 cards (exclude  jokers card)</td>
+                                              </tr>
+                                          
+                                      </tbody></table>
+                                  </div><br>
+
+                                  <p>
+                                      <b>How to Play</b><br>
+                                      1. At the start of the draw, place your bet on your selected bet types.<br>             
+                                      2. If you placing bet on Middle card - bet types ,  bet will be closed before the middle card is drawn.<br>             
+                                      3. You still can place bet  on the main game bet types until the timer runs out.<br>                
+                                      4. when the timer runs out, cards will be drawn randomly to Andar and Bahar side until matching card with middle card appear on either side.<br>                
+                                      5. If result match, you win else lose.              
+                                  </p>
+
+
+                                  <p>                  
+                                  In Andar Bahar game , the main goal is for player to predict the middle card will appear on Andar side or Bahar side.<br> <br>                    
+              
+                                  The game comprise of 2 sessions, the pre-game session and the main game session.<br> <br>                     
+                                                  
+                                  <b>The Pre-Game Session</b> :<br>   
+                                  Player to  predict  Middle Card result.<br>              
+                                  The session start when draw is open before the first card (middle card) drawn by dealer.<br>                 
+                                  Once Dealer drawn the middle card , its end of the pre-game session.<br> <br>                 
+                                                  
+                                  <!-- Main Game Session:<br>   
+                                  Player to predict which side  the  matching middle card will appear. Will it be on  Andar or Bahar?When the timer runs out, dealer will begin dealing single card face up on each side. <br>                 
+                                  The first card will drawn to Bahar and than to Andar. This wil continue until the same value card as middle card appear.<br>                  
+                                  Once the matching card appear on either side, the game ends.  -->
+
+                                  <b>Main Game Session:</b><br> 
+                                  Player to predict which side the matching middle card will appear. Will it be on Andar or Bahar?When the timer runs out, dealer will begin dealing single card face up on each side.<br> <br> 
+                                  
+                                  <!-- <b>IF middle card is Black color</b> (Spade or Club suit),  the first card drawn to Bahar<br> 
+                                  <b>IF middle card is Red color</b> (Heart or Diamond suit),  the first card drawn to Andar<br> <br>  -->
+
+                                  <b>IF middle card is Black color</b> (Spade or Club suit),  the first card drawn to Andar<br> 
+                                  <b>IF middle card is Red color </b>(Heart or Diamond suit),  the first card drawn to Bahar<br> <br> 
+
+
+                                  This will continue until the same value card as middle card appear. Once the matching card appear on either side, the game ends.               
+                                  </p>                     
+                  
+                                  <p><b>Bet Types</b></p>
+                                  <p>
+                                      <b>Pre- Game : Middle Card</b><br>              
+                                      <b>Color(Black | Red)</b><br>    
+                                      Bet on middle card result in black / red color cards, if match player win else lose.<br>             
+                                      Example :  player bet on  Red . Middle card result is  <img src="games/andar-bahar/images/7-hearts.png" style="width: 30px;"> Player Wins.<br><br>            
+                                                      
+                                      <b>Suit (Spade| Heart | Club | Diamond)</b><br>    
+                                      Bet on middle card result in Spade/Heart/ Club or Diamond suit, if match player win else lose.          
+                                      Example :  player bet on Heart . Middle card result is  <img src="games/andar-bahar/images/7-hearts.png" style="width: 30px;"> Player Wins.<br><br>             
+                                                      
+                                      <b>Card Value (Above | Exact | Below)</b><br> 
+                                      Bet on middle card result in above / Exact / Below 8, if match player win else lose.<br>            
+                                      Example :  player bet on card value above 8 . Middle card result is <img src="games/andar-bahar/images/Ace-Hearts.png" style="width: 30px;"> Player Wins.<br><br>            
+
+                                      ** note: Ace card  rank and counts as 13th card.<br><br>  
+
+                                      <b>Main Game<br>               
+                                      Andar | Bahar</b><br>   
+                                      Bet on matching middle card will appear on Andar/ Bahar Side.<br>           
+                                      Example :<br>           
+                                      Middle card Result  <img src="games/andar-bahar/images/7-hearts.png" style="width: 30px;">  Player bet on  Bahar.<br>         
+                                      Andar Result :  A-heart,  10 Spade,  3 Heart,  2 club,-             
+                                      Bahar Result : 6 Club ,  4 Heart,  3 Club,  7 Heart Player wins<br><br>          
+                                                      
+                                      <b>Number of cards Drawn</b><br>   
+                                      Bet on total cards drawn until matching card with middle card appear.<br>           
+                                      Example : <br>          
+                                      Middle card Result  <img src="games/andar-bahar/images/7-hearts.png" style="width: 30px;">  Player bet on  6 -10 range.<br>           
+                                      Andar Result :  A-heart,  10 Spade,  3 Heart,  2 club,- <br>            
+                                      Bahar Result : 6 Club ,  4 Heart,  3 Club,  7 Heart<br>         
+                                      Total card drawn 8.  Player wins.<br>           
+                                      ** note : card counted including the matching card with middle card.            
+                                  </p>
+
+                                  <div class="table-responsive">
+                                      <table class="table">
+                                          <tbody><tr class="rowheader">
+                                              <td colspan="4"><b>Paytable</b></td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="2" width="50%"><b>Bet Type</b></td>
+                                              <td colspan="2" width="50%"><b>Payout</b></td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="2">Andar</td>
+                                              <td colspan="2">0.90</td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="2">Bahar</td>
+                                              <td colspan="2">0.97</td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="2">Number card drawn</td>
+                                              <td colspan="2"></td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="2">1-5</td>
+                                              <td colspan="2">2.5</td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="2">6-10</td>
+                                              <td colspan="2">3.5</td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="2">11-15</td>
+                                              <td colspan="2">4.5</td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="2">16-25</td>
+                                              <td colspan="2">3.5</td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="2">26-30</td>
+                                              <td colspan="2">14</td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="2">31-35</td>
+                                              <td colspan="2">24</td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="2">36-40</td>
+                                              <td colspan="2">49</td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="2">41 or more</td>
+                                              <td colspan="2">119</td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="2">Color Black or Red</td>
+                                              <td colspan="2"></td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="2">
+                                                  <img class="img-responsive center-block" src="games/andar-bahar/images/black-box.jpg" width="110px">
+                                                  &nbsp;&nbsp; OR &nbsp;&nbsp;
+                                                  <img class="img-responsive center-block" src="games/andar-bahar/images/red-box.jpg" width="110px">
+                                              </td>
+                                              <td colspan="2">0.95</td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="2">Card Suit</td>
+                                              <td colspan="2"></td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="2"><img class="img-responsive center-block" src="games/andar-bahar/images/card-suit.png" width="155px"></td>
+                                              <td colspan="2">2.8</td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="2">Card value</td>
+                                              <td colspan="2"></td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="2">Below 8</td>
+                                              <td colspan="2">1.05</td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="2">Exactly 8</td>
+                                              <td colspan="2">8.75</td>
+                                          </tr>
+                                          <tr>
+                                              <td colspan="2">Above 8</td>
+                                              <td colspan="2">1.05</td>
+                                          </tr>                                            
+                                      </tbody></table>
+                                  </div>
+       
+                                  <p><b>Andar Bahar - Information Chart</b></p>
+                                  <div class="table-responsive">
+                                      <table class="table">
+                                          <tbody><tr class="rowheader">
+                                              <td width="27%">Market</td>
+                                              <td colspan="2">Draw Frequency</td>
+                                              <td>Start Time</td>
+                                              <td>End Time</td>
+                                          </tr>
+                                          <tr>
+                                              <td rowspan="2">Andar Bahar</td>
+                                              <td colspan="2">20 seconds</td>
+                                              <td colspan="2" rowspan="2">0:00:00</td>
+                                          </tr>
+                                          <tr>
+                                              <td>Pre-game : 10 seconds</td>
+                                              <td>Main Game : 20 seconds</td>
+                                          </tr>
+                                      </tbody></table>
+                                  </div>
+                                  <p>*GMT+8</p>
+                                  </div>
+
+                        </div>
             
          </div>
       </div>
    </div> 
 </div>
 
-<div class="col-lg-2 col-md-4 col-sm-6  result well">
+<div class="col-lg-3 col-md-4 col-sm-6 result well">
    <div class="row mb-4">
       <div class="col text-center">
          <a href="#"><img src="../images/thumbnails/HiLo-EN.jpg" class="thumbnail-img" data-toggle="modal" data-target="#Hilo"></a>
@@ -221,7 +515,7 @@ h1 {
 
 </div>
 
-<div class="col-lg-2 col-md-4 col-sm-6 result well">
+<div class="col-lg-3 col-md-4 col-sm-6 result well">
     <div class="row mb-4">
        <div class="col text-center">
           <a href="#"><img src="../images/thumbnails/Snow-Sweeper-EN.jpg"  class="thumbnail-img" data-toggle="modal" data-target="#SnowSweeper"></a>
@@ -242,24 +536,24 @@ h1 {
        </div>
     </div>
  </div>
-  </div></div>
-  <div class="col" id="searchNotfound" style="display: none;">
-     <img src="https://www.gpislots.info/shared/images/no-results-cn.png">
-     <h3 style="font-family: 'Helvetica', sans-serif;;
-  ">未找到结果</h3>
-     <p style="font-family: 'Helvetica', sans-serif;;
-  ">请修改您的查找内容，并重新尝试。
-  </p>
-  </div>
-  <div class="paginationCustom">
-     <div id="pagingControls"></div>
-   <!--   <div id="showingInfo" class="well" style="margin-top:20px"></div> -->
-  </div>   
-  </div>
-    
-  
-  
-  
+</div>
+</div>
+<div class="col" id="searchNotfound" style="display: none;">
+   <img src="https://www.gpislots.info/shared/images/no-results-en.png">
+   <h3 style="font-family: 'Helvetica', sans-serif;;
+">No results found</h3>
+   <p style="font-family: 'Helvetica', sans-serif;;
+">Please modify your search and try again.
+</p>
+</div>
+<div class="paginationCustom">
+   <div id="pagingControls"></div>
+
+</div>   
+</div>
+
+
+
 </div>
 
 <script src="https://www.gpislots.info/shared/js/jquery.js"></script>

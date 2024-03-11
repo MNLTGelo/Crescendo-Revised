@@ -34,6 +34,10 @@
     text-align: center;
 }
 
+.bg-dark {
+    background-color: #4439a1 !important;
+}
+
 .topnav {
   padding: 15px;
   background-color: black;
@@ -43,6 +47,23 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    color: white;
+}
+
+.game {
+   color: #4439a1 !important;
+}
+
+#content img {
+    border-radius: 0px !important;
+}
+
+#content p {
+      margin-top: 10px !important;
+    margin-bottom: 15px !important;
 }
 
 @media (max-width: 991px){
@@ -73,24 +94,17 @@ h1 {
 <div class="header">
     <nav class="navbar sticky-top navbar-expand-lg bg-dark">
        <div class="container d-flex justify-content-between align-items-center">
-          <a class="navbar-brand" href="#"><img src="../images/thumbnails/logo.png" width="240"
+          <a class="navbar-brand" href="#"><img src="../images/thumbnails/logo.png" width="189"
                 height="50"></a>
           <!-- Center right alignment -->
-          <button class="btn btn-secondary" onclick="goBack()">Back</button>
        </div>
     </nav>
     <div class="blue-bar-head">
         <div class="container">
-            Info Centre 
         </div>           
     </div>
 </div>
 
-<script>
-    function goBack() {
-        window.history.back();
-    }
-</script>
 
 <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -101,15 +115,15 @@ h1 {
     <div class="container" id="jar">
         <div class="row pb-5">
           <div class="col-lg-2 col-md-4 col-sm-3 page-header" style="margin-top: -7px;">
-            <h1>GAMES</h1>
+            <h1 class="game">Games</h1>
           </div>
           <div class="col-lg-8 col-md-4 col-sm-5">
-            <input class="searchBox form-control" placeholder="พิมพ์ชื่อเกม">
+            <input class="searchBox form-control" placeholder="Type game title">
           </div>
           <div class="col-lg-2 col-md-4 col-sm-4">
             <div class="search-group ">
               <div class="col-xs-8">
-      <select onchange="window.location.href=this.value">
+               <select onchange="window.location.href=this.value">
                   <!-- <option value="0">----- Select -----</option> -->
                   <option value="rules_slots_th-my.html">ไทย</option> 
                   <option value="rules_slots_en-my.html">English</option>
@@ -119,8 +133,7 @@ h1 {
                   <option value="rules_slots_kh-my.html">Khmer</option>
                   <option value="rules_slots_kr-my.html">한국어</option>
                   <option value="rules_slots_vn-my.html">Tiếng Việt</option>
-
-      </select>             
+               </select>             
               </div>
             </div>
           </div>  
@@ -145,8 +158,8 @@ h1 {
  </style>
  <a id="bttbutton"></a>
  <div class="row" id="content">
-   
-<div class="col-lg-2 col-md-4 col-sm-6 result well">
+
+<div class="col-lg-3 col-md-4 col-sm-6 result well">
    <div class="row mb-4">
       <div class="col text-center  ">
          <a href="#"><img src="../images/thumbnails/Crypto-Crash-EN.png" class="thumbnail-img" data-toggle="modal" data-target="#CrytoCrash"></a>
@@ -170,7 +183,7 @@ h1 {
 
 </div>
 
-   <div class="col-lg-2 col-md-4 col-sm-6 result well">
+   <div class="col-lg-3 col-md-4 col-sm-6 result well">
    
    <div class="row mb-4 ">
       <div class="col text-center ">
@@ -197,7 +210,7 @@ h1 {
    </div> 
 </div>
 
-<div class="col-lg-2 col-md-4 col-sm-6  result well">
+<div class="col-lg-3 col-md-4 col-sm-6 result well">
    <div class="row mb-4">
       <div class="col text-center">
          <a href="#"><img src="../images/thumbnails/HiLo-EN.jpg" class="thumbnail-img" data-toggle="modal" data-target="#Hilo"></a>
@@ -222,7 +235,7 @@ h1 {
 
 </div>
 
-<div class="col-lg-2 col-md-4 col-sm-6 result well">
+<div class="col-lg-3 col-md-4 col-sm-6 result well">
     <div class="row mb-4">
        <div class="col text-center">
           <a href="#"><img src="../images/thumbnails/Snow-Sweeper-EN.jpg"  class="thumbnail-img" data-toggle="modal" data-target="#SnowSweeper"></a>
@@ -243,18 +256,19 @@ h1 {
        </div>
     </div>
  </div>
-</div></div>
+</div>
+</div>
 <div class="col" id="searchNotfound" style="display: none;">
-   <img src="https://www.gpislots.info/shared/images/no-results-th.png">
+   <img src="https://www.gpislots.info/shared/images/no-results-en.png">
    <h3 style="font-family: 'Helvetica', sans-serif;;
-">ไม่พบผลลัพธ์ที่คุณค้นหา</h3>
+">No results found</h3>
    <p style="font-family: 'Helvetica', sans-serif;;
-">กรุณาแก้ไขการค้นหาและลองใหม่อีกครั้ง
+">Please modify your search and try again.
 </p>
 </div>
 <div class="paginationCustom">
    <div id="pagingControls"></div>
- <!--   <div id="showingInfo" class="well" style="margin-top:20px"></div> -->
+
 </div>   
 </div>
 
