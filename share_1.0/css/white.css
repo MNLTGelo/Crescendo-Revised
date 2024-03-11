@@ -963,3 +963,20 @@ img.thumbnail-img {
     background-color: #373737 !important;
 }
 
+  .no-indent {
+    text-indent: 0;
+  }
+
+  .indented {
+    text-indent: 2em; /* You can adjust the indentation value */
+    margin-left: 20%;  
+  }
+
+  .indented.red {
+    margin-left: 20%;
+    color: red;
+  }
+
+  .red {
+    color: red;
+  }
