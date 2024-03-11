@@ -84,8 +84,9 @@ h1 {
 
 /* thumbnail */
 img.thumbnail-img {
-  height: 189;
-  width: 146;
+  height: 280;
+  width: 250; 
+
 }
 
 
@@ -961,3 +962,4 @@ img.thumbnail-img {
 .bg-dark {
     background-color: #373737 !important;
 }
+
