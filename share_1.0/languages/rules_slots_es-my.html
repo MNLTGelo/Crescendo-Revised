@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://www.gpislots.info/shared/css/bootstrap.css">
 <link rel="stylesheet" href="https://www.gpislots.info/shared/css/bootstrap-table.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Info Centre - Slots</title>
+<title>Info Centre - Games</title>
 <link rel="icon" type="image/x-icon" href="../images/cresendo_favicon.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -126,8 +126,8 @@ h1 {
               <div class="col-xs-8">
                <select onchange="window.location.href=this.value">
                   <!-- <option value="0">----- Select -----</option> -->
-                  <option value="rules_slots_es-my.html">Español</option>
                   <option value="rules_slots_en-my.html">English</option>
+                  <option value="rules_slots_es-my.html">Español</option>
                   <option value="rules_slots_cn-my.html">简体中文</option>
                   <option value="rules_slots_id-my.html"> Bhs Indonesia</option>
                   <option value="rules_slots_kh-my.html">Khmer</option>
@@ -196,19 +196,31 @@ h1 {
                                             2. When the timer runs out , the rocket will move with payout indicator.<br>
                                             3. If player cashout before it explodes, player win with the same payout indicator value when cashout.<br>
                                                If player cashout when it explode, player lose.
-                                        </p>
-
+                                        </p> <br>
                                         <p>
                                             <b>Bet Types</b><br>
-                                        <p>
-                                            <b class="no-indent">Bet</b> <span class="indented"> Bet on the game round.
-                                            </span>
-                                        </p>
-                                        <p class="indented red">** Player can only place a bet on a round game.</p>
-                                        <p class="indented"><b>Example 1 :</b></p>
-                                        <p class="indented">Player bet  $ 1.-</p>
-                                        <p class="indented"><b>Cashout Result :   x5.2</b></p>
-                                        <p class="indented">Player win 5.2</p>
+
+                                        <div class="table-responsive">
+                                            <table class="table-left">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2" width="50%"><b>Bet</b></td>
+                                                        <td colspan="2" width="50%">Bet on the game round.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"></td>
+                                                        <td colspan="2">
+                                                            <p class="red">** Player can only place a bet on a round game.</p>
+                                                            <p><b>Example 1 :</b></p>
+                                                            <p>Player bet $1.-</p>
+                                                            <p><b>Cashout Result : x5.2</b></p>
+                                                            <p>Player win 5.2</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
 
                                         </p>
 
@@ -313,28 +325,40 @@ h1 {
 
                                         <p>
                                             <b>Bet Types</b><br>
-                                        <p>
-                                            <b class="no-indent">Black Red</b> <span class="indented"> Bet on Black, Red  or Green colored numbers.
-                                            </span>
-                                        </p>
-                                        <p>
-                                            <b class="no-indent">Green</b> <span class="indented red"> ** Player cannot bet on Black and Red on the same round
-                                            </span>
-                                        </p>
-                                        <p class="indented"><b>Example 1 :</b></p>
-                                        <p class="indented">Player bet on Black  $ 1.-</p>
-                                        <p class="indented"><b>Roulette Result :  Black</b></p>
-                                        <p class="indented">Player wins</p>
 
-                                        <p class="indented"><b>Example 2 :</b></p>
-                                        <p class="indented">Player bet on Red  $ 1.-</p>
-                                        <p class="indented"><b>Roulette Result :  Red</b></p>
-                                        <p class="indented">Player wins</p>
+                                            <div class="table-responsive">
+                                                <table class="table-left">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="2" width="50%"><b>Black, Red</b></td>
+                                                            <td colspan="2" width="50%">Bet on Black, Red  or Green colored numbers.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2" width="50%"><b>Green</b></td>
+                                                            <td colspan="2" width="50%"><p class="red">** Player cannot bet on Black and Red on the same round</p></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2"></td>
+                                                            <td colspan="2">
+                                                                <p><b>Example 1 :</b></p>
+                                                                <p>Player bet on Black  $ 1.-</p>
+                                                                <p><b>Roulette Result :  Black</b></p>
+                                                                <p>Player wins</p>
 
-                                        <p class="indented"><b>Example 3 :</b></p>
-                                        <p class="indented">Player bet on Red  $ 1.-</p>
-                                        <p class="indented"><b>Roulette Result :  Green</b></p>
-                                        <p class="indented">Player Lose</p>
+                                                                <p><b>Example 2 :</b></p>
+                                                                <p>Player bet on Red  $ 1.-</p>
+                                                                <p><b>Roulette Result :  Red</b></p>
+                                                                <p>Player wins</p>
+
+                                                                <p><b>Example 3 :</b></p>
+                                                                <p>Player bet on Red  $ 1.-</p>
+                                                                <p><b>Roulette Result :  Green</b></p>
+                                                                <p>Player Lose</p></td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
 
                                         </p>
 
