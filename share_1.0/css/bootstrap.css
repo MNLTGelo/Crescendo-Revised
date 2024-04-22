@@ -1720,8 +1720,9 @@ pre code{
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
-    border-radius: 10px;
+    border-radius: 0;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    text-align: center;
 }
 @media (prefers-reduced-motion:reduce){
     .form-control{
@@ -8355,27 +8356,64 @@ a.text-dark:focus,a.text-dark:hover{
 
 button, select {
     text-transform: none;
-    height: 38px;
-    border-radius: 10px;
 }
 
 .search-group select{
+    text-align: center;
   display: block;
     width: 100%;
     height: calc(2.25rem + 2px);
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
+    color: whitesmoke;
+    background-color: transparent;
     background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 1rem;
+    border: 0;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.form-control{
-    border-radius:1rem!important;
-}
 /*# sourceMappingURL=bootstrap.min.css.map */
  
+
+    .outer {
+        background-color: whitesmoke;
+    
+        height: 800px;
+    }
+
+    #content img {
+    border-radius: 0px !important;
+    border: 1px solid lightgrey;
+}
+
+    #content p {
+        color: #4843ca;
+        font-weight: 600;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#content img {
+    border-radius: 5px !important;
+    transition: opacity 0.3s ease; /* Adding transition for smooth effect */
+}
+
+#content img:hover {
+    opacity: 0.7; /* Adjust opacity value to dim the image */
+}
+
+
+.black-select select{
+    color: white; /* Set font color to white for select button */
+}
+
+.black-select option {
+    color: black;
+    text-align: center;
+    padding: 0!important;
+    margin: 0!important;
+}
