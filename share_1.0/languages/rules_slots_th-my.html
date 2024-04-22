@@ -1,784 +1,845 @@
 <html lang="en">
+
 <head>
-<link href="../css/white.css" rel="stylesheet">
+    <link href="../css/white.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.css">
-<title>Info Centre - Games</title>
-<link rel="icon" type="image/x-icon" href="../images/cresendo_favicon.png">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Info Centre - Games</title>
+    <link rel="icon" type="image/x-icon" href="../images/cresendo_favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
- 
+
 </head>
+
 <body>
-<style type="text/css">
-     
-    .w-100{
-        text-align: center!important;
+    <style type="text/css">
+        .w-100 {
+            text-align: center !important;
 
-    }
+        }
 
-.justify-content-end {
-    justify-content: center!important;
-}
-.fa-bars:before {
-    content: "\f0c9";
-    color: #fff;
-}
-    .navbar-brand {
-    width: 100%!important;
-    margin: 0 auto;
-    text-align: center;
-}
+        .justify-content-end {
+            justify-content: center !important;
+        }
 
-.bg-dark {
-    background-color: #4439a1 !important;
-}
+        .fa-bars:before {
+            content: "\f0c9";
+            color: #fff;
+        }
 
-.topnav {
-  padding: 15px;
-  background-color: black;
-}
+        .navbar-brand {
+            width: 100% !important;
+            margin: 0 auto;
+            text-align: center;
+        }
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+        .bg-dark {
+            background-color: #4439a1 !important;
+        }
 
-.btn:not(:disabled):not(.disabled) {
-    color: white;
-}
+        .topnav {
+            padding: 15px;
+            background-color: black;
+        }
 
-.game {
-   color: #4439a1 !important;
-}
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-#content img {
-    border-radius: 0px !important;
-}
+        .btn:not(:disabled):not(.disabled) {
+            color: white;
+        }
 
-#content p {
-      margin-top: 10px !important;
-    margin-bottom: 15px !important;
-}
+        .game {
+            color: #4439a1 !important;
+        }
 
-@media (max-width: 991px){
-.navbar-brand {
-    width: 90%!important;
-    margin: 0 auto;
-    text-align: center;
-}
+        #content img {
+            border-radius: 0px !important;
+        }
 
-.w-100{
+        #content p {
+            margin-top: 10px !important;
+            margin-bottom: 15px !important;
+        }
 
-    text-align: left!important;
-}
-}
-h1 {
-   color: black;
-}
-@media (min-width: 992px){
-.navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
-    -ms-flex-wrap: nowrap;
-    display: block;
-}
+        @media (max-width: 991px) {
+            .navbar-brand {
+                width: 90% !important;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .w-100 {
+
+                text-align: left !important;
+            }
+        }
+
+        h1 {
+            color: black;
+        }
+
+        @media (min-width: 992px) {
+
+            .navbar-expand-lg>.container,
+            .navbar-expand-lg>.container-fluid {
+                -ms-flex-wrap: nowrap;
+                display: block;
+            }
 
 
-}
-</style>
+        }
+    </style>
 
-<div class="header">
-    <nav class="navbar sticky-top navbar-expand-lg bg-dark">
-       <div class="container d-flex justify-content-between align-items-center">
-          <a class="navbar-brand" href="#"><img src="../images/thumbnails/logo.png" width="189"
-                height="50"></a>
-          <!-- Center right alignment -->
-       </div>
-    </nav>
-    <div class="blue-bar-head">
+    <div class="header">
+
         <div class="container">
-        </div>           
-    </div>
-</div>
-
-
-<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
-<div class="container pt-5 pb-5">
-
-    <div class="container" id="jar">
-        <div class="row pb-5">
-          <div class="col-lg-2 col-md-6 col-sm-3 page-header" style="margin-top: -7px;">
-            <h1 class="game">Games</h1>
-          </div>
-          <div class="col-lg-8 col-md-6 col-sm-5">
-            <input class="searchBox form-control" placeholder="Type game title">
-          </div>
-          <div class="col-lg-2 col-md-6 col-sm-4">
-            <div class="search-group ">
-              <div class="col-xs-8">
-               <select onchange="window.location.href=this.value">
-                  <!-- <option value="0">----- Select -----</option> -->
-                  <option value="rules_slots_th-my.html">ไทย</option> 
-                  <option value="rules_slots_en-my.html">English</option>
-                  <option value="rules_slots_es-my.html">Español</option>
-                  <option value="rules_slots_cn-my.html">简体中文</option>
-                  <option value="rules_slots_id-my.html"> Bhs Indonesia</option>
-                  <option value="rules_slots_kh-my.html">Khmer</option>
-                  <option value="rules_slots_kr-my.html">한국어</option>
-                  <option value="rules_slots_vn-my.html">Tiếng Việt</option>
-               </select>             
-              </div>
+            <a class="navbar-brand" href="#"><img src="../images/thumbnails/logo.png" width="189" height="50"
+                    class="nav-photo"></a>
+            <!-- Center right alignment -->
+        </div>
+        </nav>
+        <div class="blue-bar-head">
+            <div class="container">
             </div>
-          </div>  
+        </div>
+    </div>
+
+
+    <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <div class="container mt-5 mb-3 games ">
+        <div class="row">
+            <div class="col-lg-9 col-md-6 col-sm-3 page-header" style="margin-top: -7px;">
+                <h1 class="game">เกมส์</h1>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-5 justify-content-end">
+                <input class="searchBox form-control" placeholder="Type game title">
+            </div>
         </div>
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
- 
-    #content{
-    display: flex;
-    }
-    .btn-success {
-    color: #fff;
-    background-color: #A8C62C;
-    border-color: #A8C62C;
-    }
-    .btn-success:hover {
-    color: #fff;
-    background-color: #839a23;
-    border-color: #839a23;
-    }
- </style>
- <a id="bttbutton"></a>
- <div class="row" id="content">
+    </div>
 
-<div class="col-lg-3 col-md-6 col-sm-6 result well">
-   <div class="row mb-4">
-      <div class="col text-center  ">
-         <a href="#"><img src="../images/thumbnails/Crypto-Crash-EN.png" class="thumbnail-img" data-toggle="modal" data-target="#CrytoCrash"></a>
-         <p>CRYPTO CRASH</p>
-      </div>
-   </div>
-   <!-- large modal -->
-   <div class="modal fade" id="CrytoCrash" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-         <div class="modal-content">
-            <div class="modal-header">
-               <h4 class="modal-title" id="myModalLabel">CRYPTO CRASH</h4>
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-               <span aria-hidden="true">×</span>
-               </button>
-            </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 
-                                            <div class="modal-body">
+        #content {
+            display: flex;
+        }
 
-                                    <div class="game-modal">
-                                        <p>
-                                            <b>เกี่ยวกับเกม</b><br>
-                                            Crypto Crash เป็นเกมยิงจรวดที่น่าตื่นเต้นซึ่งผู้เล่นจะต้องคาดเดาว่าจรวดจะบินได้สูงแค่ไหน ก่อนที่จรวดจะระเบิด
-                                            หากผู้เล่นทำนายหรือคาดเดาได้ถูกต้อง ก่อนที่จรวดจะระเบิด ถือว่าผู้เล่นชนะ และถ้าทำนายไม่ถูกต้อง จะถือว่าผู้เล่นแพ้
-                                        </p>
-                                        <br>
+        .btn-success {
+            color: #fff;
+            background-color: #A8C62C;
+            border-color: #A8C62C;
+        }
 
-                                        <p>
-                                            <b>วิธีการเล่น</b><br>
-                                            1. เมื่อเริ่มการแข่งขัน ผู้เล่นจะต้องวางเดิมพัน<br>
-                                            2. เมื่อหมดเวลา จรวดจะเคลื่อนที่พร้อมแสดงอัตราการจ่ายเงินขึ้นไปเรื่อยๆ<br>
-                                            3. หากผู้เล่นถอนเงินออก ก่อนที่จรวดจะระเบิด ผู้เล่นจะชนะด้วยอัตราการจ่ายเงินที่แสดงไว้ในขณะนั้น<br>
-                                               หากผู้เล่นถอนเงิน ตอนที่จรวดระเบิด จะถือว่าผู้เล่นแพ้
-                                        </p>
+        .btn-success:hover {
+            color: #fff;
+            background-color: #839a23;
+            border-color: #839a23;
+        }
+    </style>
+    <a id="bttbutton"></a>
+    <div class="container contents">
+        <div class="row" id="content">
+    
+            <div class="col-lg-3 col-md-6 col-sm-6 result well">
+                <div class="row card">
+    
+                    <a href="#"><img src="../images/thumbnails/Crypto-Crash-EN.png" class="thumbnail-img"
+                            data-toggle="modal" data-target="#CrytoCrash"></a>
+                    <div class="info">
+                        <h1>CRYPTO CRASH</h1>
+                        <button data-toggle="modal" data-target="#CrytoCrash">READ</button>
+                    </div>
+                </div>
+                <!-- large modal -->
+                <div class="modal fade" id="CrytoCrash" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">CRYPTO CRASH</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+    
+                            <div class="modal-body">
 
-                                        <p>
-                                            <b>ประเภทการเดิมพัน</b><br>
+                            <div class="game-modal">
+                                <p>
+                                    <b>เกี่ยวกับเกม</b><br>
+                                    Crypto Crash
+                                    เป็นเกมยิงจรวดที่น่าตื่นเต้นซึ่งผู้เล่นจะต้องคาดเดาว่าจรวดจะบินได้สูงแค่ไหน
+                                    ก่อนที่จรวดจะระเบิด
+                                    หากผู้เล่นทำนายหรือคาดเดาได้ถูกต้อง ก่อนที่จรวดจะระเบิด ถือว่าผู้เล่นชนะ
+                                    และถ้าทำนายไม่ถูกต้อง จะถือว่าผู้เล่นแพ้
+                                </p>
+                                <br>
 
-                                            <div class="table-responsive">
-                                                <table class="table-left">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td colspan="2" width="50%"><b>เดิมพัน</b></td>
-                                                            <td colspan="2" width="50%">เดิมพันในรอบเกม</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td colspan="2"></td>
-                                                            <td colspan="2">
-                                                                <p class="red">** ผู้เล่นสามารถเดิมพันได้ในรอบเกมเท่านั้น</p>
-                                                                <p><b>ตัวอย่างที่ 1 :</b></p>
-                                                                <p>ผู้เล่นเดิมพัน $ 1.-</p>
-                                                                <p><b>ถอนเงินออก : x5.2</b></p>
-                                                                <p>ผู้เล่นชนะ 5.2</p>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                <p>
+                                    <b>วิธีการเล่น</b><br>
+                                    1. เมื่อเริ่มการแข่งขัน ผู้เล่นจะต้องวางเดิมพัน<br>
+                                    2. เมื่อหมดเวลา จรวดจะเคลื่อนที่พร้อมแสดงอัตราการจ่ายเงินขึ้นไปเรื่อยๆ<br>
+                                    3. หากผู้เล่นถอนเงินออก ก่อนที่จรวดจะระเบิด
+                                    ผู้เล่นจะชนะด้วยอัตราการจ่ายเงินที่แสดงไว้ในขณะนั้น<br>
+                                    หากผู้เล่นถอนเงิน ตอนที่จรวดระเบิด จะถือว่าผู้เล่นแพ้
+                                </p>
 
-                                            </div>
+                                <p>
+                                    <b>ประเภทการเดิมพัน</b><br>
 
-                                        </p>
-
-                                        <p>
-                                            <b>ตารางการจ่าย</b><br>
-
-
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="2" width="50%"><b>ประเภท</b></td>
-                                                        <td colspan="2" width="50%"><b>อัตราการจ่าย</b></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2">เดิมพัน</td>
-                                                        <td colspan="2"> 1 - 50,000</td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        </p>
-
-                                        <p class="red">
-                                            <b>สำคัญ</b>
-                                        </p>
-                                        <p>หากเกิดข้อผิดพลาด การชนะและเล่นทั้งหมดจะถือเป็นโมฆะ</p>
-
-
-                                        <p><b>Crypto Crash - แผนภูมิข้อมูล</b></p>
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="2"><b>ตลาด</b></td>
-                                                        <td colspan="2"><b>ระยะเวลาของเกม</b></td>
-                                                        <td colspan="2"><b>เริ่มเวลา</b></td>
-                                                        <td colspan="2"><b>สิ้นสุดเวลา</b></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2">Crypto Crash</td>
-                                                        <td colspan="2">15 วินาที</td>
-                                                        <td colspan="2">00:00:00</td>
-                                                        <td colspan="2">00:00:00</td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <p>*GMT+8</p>
-                                    </div>
-
-                                </div>
-            
-         </div>
-      </div>
-   </div> 
-
-</div>
-
-   <div class="col-lg-3 col-md-6 col-sm-6 result well">
-   
-   <div class="row mb-4 ">
-      <div class="col text-center ">
-         
-         <a href="#"><img src="../images/thumbnails/Roulette-EN.jpg" class="thumbnail-img" data-toggle="modal" data-target="#CryptoRoulette"></a>
-         
-         <p>รูเล็ต</p>
-      </div>   
-   </div>
-
-   <!-- large modal -->
-   <div class="modal fade" id="CryptoRoulette" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-         <div class="modal-content">
-            <div class="modal-header">
-               <h4 class="modal-title" id="myModalLabel">รูเล็ต</h4>
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-               <span aria-hidden="true">×</span>
-               </button>
-            </div>
-            
-                                            <div class="modal-body">
-
-                                    <div class="game-modal">
-                                        <p>
-                                            <b>เกี่ยวกับเกมส์</b><br>
-                                            รูเล็ต เป็นหนึ่งในเกมออนไลน์ ยอดนิยมที่เป็นการเดิมพันตัวเลข 0 – 36
-                                        </p>
-                                        <br>
-
-                                        <p>
-                                            <b>วิธีเล่น</b><br>
-                                            1. เมื่อเริ่มเกม ให้วางเดิมพันในประเภทเดิมพันที่ผู้เล่นต้องการ<br>
-                                            2. เมื่อหมดเวลา ระบบจะสุ่มเลือกผลลัพธ์ ตั้งแต่เลข 0-36<br>
-                                            3. หากผล รูเล็ต ตรงกับการเดิมพันของผู้เล่น ก็จะได้รับเงินรางวัล<br>
-
-                                        </p> <br>
-
-                                        <p>
-                                            <b>ประเภทเดิมพัน</b><br>
-
-                                            <div class="table-responsive">
-                                                <table class="table-left">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td colspan="2" width="50%"><b>ดำ แดง</b></td>
-                                                            <td colspan="2" width="50%">เดิมพันตัวเลขสีดำ สีแดง หรือสีเขียว</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td colspan="2" width="50%"><b>เขียว</b></td>
-                                                            <td colspan="2" width="50%"><p class="red">** ผู้เล่นไม่สามารถเดิมพันสีดำและสีแดงในรอบเดียวกัน</p></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td colspan="2"></td>
-                                                            <td colspan="2">
-                                                                <p><b>ตัวอย่างที่ 1 :</b></p>
-                                                                <p>ผู้เล่นเดิมพันสีดำ $ 1.-</p>
-                                                                <p><b>ผลรูเล็ต : สีดำ</b></p>
-                                                                <p>ผู้เล่นชนะ</p>
-
-                                                                <p><b>ตัวอย่างที่ 2 :</b></p>
-                                                                <p>ผู้เล่นเดิมพันสีแดง $ 1.-</p>
-                                                                <p><b>ผลรูเล็ต : สีแดง</b></p>
-                                                                <p>ผู้เล่นชนะ</p>
-
-                                                                <p><b>ตัวอย่างที่ 3 :</b></p>
-                                                                <p>ผู้เล่นเดิมพันสีแดง $ 1.-</p>
-                                                                <p><b>ผลรูเล็ต : สีเขียว</b></p>
-                                                                <p>ผู้เล่นแพ้</p></td>
-                                                        </tr>
-
-                                                    </tbody>
-                                                </table>
-                                            </div>
-
-                                        </p>
-
-                                        <p>
-                                            <b>ตารางการจ่าย</b><br>
-
-
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="2" width="50%"><b>ประเภทการเดิมพัน</b></td>
-                                                        <td colspan="2" width="50%"><b>การจ่าย</b></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2">สีดำ สีแดง</td>
-                                                        <td colspan="2"> 1 </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2">สีเขียว</td>
-                                                        <td colspan="2"> 13 </td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <p class="red">
-                                            ข้อสำคัญ!
-                                        </p>
-                                        <p>เกมไม่อนุญาตให้ผู้เล่นวางเดิมพันสีดำและสีแดงในรอบเดียวกัน</p>
-                                        <p>หากเกิดการขัดข้องระหว่างเกมเดิมพันจะถือว่ารอบเกมดังกล่าวเป็นโมฆะ</p>
-                                        </p>
-                                        
-                                        <p><b>ตารางข้อมูล รูเล็ต</b></p>
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="2"><b>ตลาด</b></td>
-                                                        <td colspan="2"><b>เวลาวางเดิมพัน</b></td>
-                                                        <td colspan="2"><b>เริ่มเวลา</b></td>
-                                                        <td colspan="2"><b>สิ้นสุดเวลา</b></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2">รูเล็ต</td>
-                                                        <td colspan="2">Xxx …</td>
-                                                        <td colspan="2">HH:HH:HH</td>
-                                                        <td colspan="2">HH:HH:HH</td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <p>*GMT+8</p>
-                                    </div>
+                                <div class="table-responsive">
+                                    <table class="table-left">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2" width="50%"><b>เดิมพัน</b></td>
+                                                <td colspan="2" width="50%">เดิมพันในรอบเกม</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"></td>
+                                                <td colspan="2">
+                                                    <p class="red">** ผู้เล่นสามารถเดิมพันได้ในรอบเกมเท่านั้น</p>
+                                                    <p><b>ตัวอย่างที่ 1 :</b></p>
+                                                    <p>ผู้เล่นเดิมพัน $ 1.-</p>
+                                                    <p><b>ถอนเงินออก : x5.2</b></p>
+                                                    <p>ผู้เล่นชนะ 5.2</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
 
                                 </div>
 
+                                </p>
 
-         </div>
-      </div>
-   </div> 
-</div>
-
-<div class="col-lg-3 col-md-6 col-sm-6 result well">
-   <div class="row mb-4">
-       <div class="col text-center">
-           <a href="#"><img src="../images/thumbnails/HiLo-EN.jpg" class="thumbnail-img"
-                   data-toggle="modal" data-target="#HiLo"></a>
-           <p>สูง-ต่ำ </p>
-       </div>
-   </div>
-   <!-- large modal -->
-   <div class="modal fade" id="Hilo" tabindex="-1" role="dialog" aria-labelledby="basicModal"
-       aria-hidden="true">
-       <div class="modal-dialog modal-lg">
-           <div class="modal-content">
-               <div class="modal-header">
-                   <h4 class="modal-title" id="myModalLabel">สูง-ต่ำ </h4>
-                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                       <span aria-hidden="true">×</span>
-                   </button>
-               </div>
-
-               <div class="modal-body">
-
-                   <p>
-                       <b>เกี่ยวกับเกมส์</b><br>
-                       ไฮโล เป็นเกมไพ่ง่ายๆ ที่ทายว่าไพ่ที่แจกถัดไปคือ สูง / ต่ำ หรือ เสมอ 
-                       เกมนี้เป็นเกมสำหรับเล่นคนเดียว
-                   </p><br>
-
-                   <b>วิธีเล่น</b> <br>
-                   <p>1. ผู้เล่นสามารถเลือกการ์ดเริ่มต้น ด้วยตนเองหรือให้ระบบเลือกให้ได้
-                   <br>2. เมื่อเลือกไพ่เริ่มต้นแล้ว ผู้เล่นจะต้องวางเดิมพัน
-                   <br>3. เลือกไพ่ที่ต้องการทายไม่ว่าจะเป็น สูง, ต่ำ หรือเสมอ , ต่ำกว่าหรือเสมอ / สูงหรือเสมอ
-                   <br>4. เมื่อไพ่แจกถัดไปเป็น ;
-                   <br>ถูกต้อง - ชนะ - เกมดำเนินต่อไปด้วยตัวคูณที่สูงกว่าเพื่อชนะ
-                   <br>ไม่ถูกต้อง - แพ้ - เกมจบลง ผู้เล่นที่จะต่อรอบใหม่
-                   <br>5. เมื่อผู้เล่นเดาต่อไปได้อย่างถูกต้อง ผู้เล่นสามารถตัดสินใจจบเกมได้โดยการถอนเงินจากจำนวนเงินที่ชนะ<br><br><br>
+                                <p>
+                                    <b>ตารางการจ่าย</b><br>
 
 
-                   <b>ตารางการจ่าย</b><br>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2" width="50%"><b>ประเภท</b></td>
+                                                <td colspan="2" width="50%"><b>อัตราการจ่าย</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">เดิมพัน</td>
+                                                <td colspan="2"> 1 - 50,000</td>
+                                            </tr>
 
-                   <div style="text-align: center;" class="table-responsive">
-                       <table class="table">
-                           <thead>
-                               <tr>
-                                 <th>ไพ่</th>
-                                 <th colspan="2">ตัวคูณ</th>
-                               </tr>
-                             </thead>
-                             <tbody>
-                               <tr>
-                                 <td></td>
-                                 <td>ต่ำกว่าหรือเสมอ</td>
-                                 <td>สูงกว่าหรือเสมอ</td>
-                               </tr>
-                               <tr>
-                                 <td>เอซ</td>
-                                 <td>11.87</td>
-                                 <td>0.07</td>
-                               </tr>
-                               <tr>
-                                 <td>2</td>
-                                 <td>5.43</td>
-                                 <td>0.07</td>
-                               </tr>
-                               <tr>
-                                 <td>3</td>
-                                 <td>3.29</td>
-                                 <td>0.07</td>
-                               </tr>
-                               <tr>
-                                 <td>4</td>
-                                 <td>2.21</td>
-                                 <td>0.17</td>
-                               </tr>
-                               <tr>
-                                 <td>5</td>
-                                 <td>1.57</td>
-                                 <td>0.43</td>
-                               </tr>
-                               <tr>
-                                 <td>6</td>
-                                 <td>1.14</td>
-                                 <td>0.60</td>
-                               </tr>
-                               <tr>
-                                 <td>7</td>
-                                 <td>0.83</td>
-                                 <td>0.83</td>
-                               </tr>
-                               <tr>
-                                 <td>8</td>
-                                 <td>0.60</td>
-                                 <td>1.14</td>
-                               </tr>
-                               <tr>
-                                 <td>9</td>
-                                 <td>0.43</td>
-                                 <td>1.57</td>
-                               </tr>
-                               <tr>
-                                 <td>10</td>
-                                 <td>0.17</td>
-                                 <td>2.21</td>
-                               </tr>
-                               <tr>
-                                 <td>J</td>
-                                 <td>0.07</td>
-                                 <td>3.29</td>
-                               </tr>
-                               <tr>
-                                 <td>Q</td>
-                                 <td>0.07</td>
-                                 <td>5.43</td>
-                               </tr>
-                               <tr>
-                                 <td>K</td>
-                                 <td>0.07</td>
-                                 <td>11.87</td>
-                               </tr>
-                             </tbody>
-                       </table>
-                   </div>
-                   <p><span style="font-style: italic;">* สามารถสะสมเงินรางวัลที่ชนะเพื่อจ่ายออกได้in</span></p>
-                   <p><span style="color: red; font-style: italic;">สำคัญ!</span><br>
-                       <span style="font-style: italic;">หากเกิดข้อผิดพลาดในการเดิมพัน เกมส์จะถือเป็นโมฆะ</span>
-                   </p>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                </p>
 
-                   
+                                <p class="red">
+                                    <b>สำคัญ</b>
+                                </p>
+                                <p>หากเกิดข้อผิดพลาด การชนะและเล่นทั้งหมดจะถือเป็นโมฆะ</p>
 
 
-               </div>
+                                <p><b>Crypto Crash - แผนภูมิข้อมูล</b></p>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2"><b>ตลาด</b></td>
+                                                <td colspan="2"><b>ระยะเวลาของเกม</b></td>
+                                                <td colspan="2"><b>เริ่มเวลา</b></td>
+                                                <td colspan="2"><b>สิ้นสุดเวลา</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Crypto Crash</td>
+                                                <td colspan="2">15 วินาที</td>
+                                                <td colspan="2">00:00:00</td>
+                                                <td colspan="2">00:00:00</td>
+                                            </tr>
 
-           </div>
-       </div>
-   
-</div>
-</div>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p>*GMT+8</p>
+                            </div>
 
+                        </div>
 
-<div class="col-lg-3 col-md-6 col-sm-6 result well">
-   <div class="row mb-4">
-      <div class="col text-center">
-         <a href="#"><img src="../images/thumbnails/Snow-Sweeper-EN.jpg"  class="thumbnail-img" data-toggle="modal" data-target="#SnowSweeper"></a>
-         <p>เพนกวินตะลุยขั้วโลก</p>
-  </div>
-  </div>
-<!-- large modal -->
-  <div class="modal fade" id="SnowSweeper" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-   <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-         <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">เพนกวินตะลุยขั้วโลก</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-            </button>
-         </div>
-           
-           <div class="modal-body">
+                    </div>
+                </div>
+            </div>
 
-                                      <p>
-                                         <b>เกี่ยวกับเกมส์</b><br>
-                                         Snow Sweeper เป็นเกมคลาสสิกของกับดักทุ่นระเบิดที่เป็นที่รู้จักกันดี เป้าหมายของเกมนี้คือต้องผ่านกับระเบิด
-                                         และหลีกเลี่ยงเหมือง ยิ่งผู้เล่นอยู่ในเกมนานเท่าไร รางวัลก็จะยิ่งสูงขึ้น!
-                                      </p><br>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 result well">
+            <div class="row card">
 
-                                      <b>วิธีเล่น</b> <br>
-                                      <p>ผู้เล่นสามารถเลือก สนามแผนที่ เพื่อเล่นได้</p>
-                                      <div style="text-align: center;" class="table-responsive">
-                                         <table class="table">
-                                            <tbody>
+                <a href="#"><img src="../images/thumbnails/Roulette-EN.jpg" class="thumbnail-img"
+                        data-toggle="modal" data-target="#Roulette"></a>
+                <div class="info">
+                    <h1>รูเล็ต</h1>
+                    <button data-toggle="modal" data-target="#Roulette">READ</button>
+                </div>
+            </div>
+            <!-- large modal -->
+            <div class="modal fade" id="Roulette" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">รูเล็ต</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
 
-                                               <tr>
-                                                  <td></td>
-                                                  <td><img src="photo1.jpg" alt="Photo 1"></td>
-                                                  <td><img src="photo2.jpg" alt="Photo 2"></td>
-                                                  <td><img src="photo3.jpg" alt="Photo 3"></td>
-                                              </tr>
+                        <div class="modal-body">
 
+                            <div class="game-modal">
+                                <p>
+                                    <b>เกี่ยวกับเกมส์</b><br>
+                                    รูเล็ต เป็นหนึ่งในเกมออนไลน์ ยอดนิยมที่เป็นการเดิมพันตัวเลข 0 – 36
+                                </p>
+                                <br>
 
-                                               <tr>
-                                                  <td>Field</td>
-                                                  <td>7</td>
-                                                  <td>19</td>
-                                                  <td>37</td>
-                                               </tr>
+                                <p>
+                                    <b>วิธีเล่น</b><br>
+                                    1. เมื่อเริ่มเกม ให้วางเดิมพันในประเภทเดิมพันที่ผู้เล่นต้องการ<br>
+                                    2. เมื่อหมดเวลา ระบบจะสุ่มเลือกผลลัพธ์ ตั้งแต่เลข 0-36<br>
+                                    3. หากผล รูเล็ต ตรงกับการเดิมพันของผู้เล่น ก็จะได้รับเงินรางวัล<br>
 
-                                               <tr>
-                                                  <td>Comb</td>
-                                                  <td>1-3</td>
-                                                  <td>3-9</td>
-                                                  <td>8-15</td>
+                                </p> <br>
 
-                                               </tr>
-                                               <tr>
-                                                  <td>Multiplier Range</td>
-                                                  <td>X-XX</td>
-                                                  <td>X-XX</td>
-                                                  <td>X-XX</td>
-                                               </tr>
-                                               <tr>
-                                                  <td>RTP Range</td>
-                                                  <td></td>
-                                                  <td>XX.XX</td>
-                                                  <td></td>
-                                               </tr>
-                                            </tbody>
-                                         </table>
-                                      </div>
-                                      <p><span style="color: red; font-style: italic;">สำคัญ</span><br>
-                                         <span style="font-style: italic;">หากเกิดข้อผิดพลาดในการเดิมพัน เกมส์จะถือเป็นโมฆะ</span>
-                                      </p>
+                                <p>
+                                    <b>ประเภทเดิมพัน</b><br>
 
-                                      <b>สัญลักษณ์ของเกม</b>
-                                      <div style="margin: 0 auto; width: 80%;">
-                                         <div style="text-align: center;" class="table-responsive">
-                                            <table class="table" style="margin: 0 auto;">
-                                               <tbody>
-                                                  <tr>
-                                                     </tr><tr>
-                                                        <td><img src="photo1.jpg" alt="Photo 4"></td>
-                                                        <td><img src="photo2.jpg" alt="Photo 5"></td>
-                                                        <td><img src="photo3.jpg" alt="Photo 6"></td>
-                                                    </tr>
-                                                  
-                                                  <tr>
-                                                     <td>เพนกวิน </td>
-                                                     <td>โบนัสเพนกวิน</td>
-                                                     <td>ระเบิด</td>
-                                                  </tr>
-                                               </tbody>
-                                            </table>
-                                         </div>
-                                      </div>
+                                <div class="table-responsive">
+                                    <table class="table-left">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2" width="50%"><b>ดำ แดง</b></td>
+                                                <td colspan="2" width="50%">เดิมพันตัวเลขสีดำ สีแดง หรือสีเขียว</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" width="50%"><b>เขียว</b></td>
+                                                <td colspan="2" width="50%">
+                                                    <p class="red">** ผู้เล่นไม่สามารถเดิมพันสีดำและสีแดงในรอบเดียวกัน
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"></td>
+                                                <td colspan="2">
+                                                    <p><b>ตัวอย่างที่ 1 :</b></p>
+                                                    <p>ผู้เล่นเดิมพันสีดำ $ 1.-</p>
+                                                    <p><b>ผลรูเล็ต : สีดำ</b></p>
+                                                    <p>ผู้เล่นชนะ</p>
 
-                                      <p>การเดิมพันแต่ละครั้ง ผู้เล่นสามารถหลีกเลี่ยงกับระเบิดได้ นกเพนกวินจะปรากฏขึ้น และผู้เล่นจะได้รับรางวัลเป็นเพิ่มมากขึ้น <br>
-                                         เมื่อผู้เล่นโดนกับระเบิด จะเกิดการระเบิด ทำให้ผู้เล่นเสียเงินเดิมพัน และเงินรางวัลใดๆ ก่อนหน้านี้
-                                      </p>
+                                                    <p><b>ตัวอย่างที่ 2 :</b></p>
+                                                    <p>ผู้เล่นเดิมพันสีแดง $ 1.-</p>
+                                                    <p><b>ผลรูเล็ต : สีแดง</b></p>
+                                                    <p>ผู้เล่นชนะ</p>
 
-                                      <b>วิธีเล่น</b>
-                                      <p>* เลือกสนามสำหรับจำนวนกับระเบิด<br>
-                                         * เลือกจำนวนระเบิดบนแผนที่<br>
-                                         * กด <span style="font-style: italic;"><b>"เริ่ม"</b></span> <br>
-                                         * เลือกสนาม; หลบกับระเบิด เพื่อชนะรางวัล<br>
-                                         * <b>สามารถสะสม</b>หรือ กดรับรางวัล ได้ตลอดเวลา
-                                      </p>
+                                                    <p><b>ตัวอย่างที่ 3 :</b></p>
+                                                    <p>ผู้เล่นเดิมพันสีแดง $ 1.-</p>
+                                                    <p><b>ผลรูเล็ต : สีเขียว</b></p>
+                                                    <p>ผู้เล่นแพ้</p>
+                                                </td>
+                                            </tr>
 
-                                      <b>การขาดการเชื่อมต่อจากเกม</b>
-                                      <p>
-                                       รอบเกมที่เล่นไม่จบทั้งหมดจะถูกยกเลิกทุกๆ 20 นาที<br>
-                                       รอบเกมที่เล่นไม่จบ หลังผ่านไป 20 นาที จะถูกเล่นโดยอัตโนมัติ และหากมีการชนะจะจ่ายรางวัลไปยังกระเป๋าของผู้เล่น
-                                      </p>
+                                        </tbody>
+                                    </table>
+                                </div>
 
-                                      <b>ปุ่มต่างๆภายในเกม</b>
+                                </p>
 
-                                      <div style="text-align: center;" class="table-responsive">
-                                         <table class="table">
-                                            <tbody>
-                                               <tr>
-                                                  <td>ปุ่ม</td>
-                                                  <td>คำอธิบาย</td>
-                                              </tr>
-                                              
-                                              <tr>
-                                                  <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                  <td>จำนวนสนามที่เปิดไว้และคงเหลือ</td>
-                                              </tr>
-                                              
-                                              <tr>
-                                                  <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                  <td>จำนวนระเบิด/กับระเบิดที่จะวางบนสนามสำหรับรอบเกมนั้นๆ</td>
-                                              </tr>
-                                              
-                                              <tr>
-                                                  <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                  <td>เลือกชิปเดิมพันเพื่อเล่นเกม</td>
-                                              </tr>
-                                              
-                                              <tr>
-                                                  <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                  <td>คลิก เริ่ม เพื่อเล่นเกม<br>
-                                                   ยอดเงินชนะในปัจจุบัน คลิกเพื่อรับเงิน
-                                                  </td>
-                                              </tr>
-                                              
-                                              <tr>
-                                                  <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                  <td>สุ่มเลือกสนาม</td>
-                                              </tr>
-                                              
-                                              <tr>
-                                                  <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                  <td>สุ่มเลือกสามสนามในครั้งเดียว</td>
-                                              </tr>
-                                              
-                                              <tr>
-                                                  <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                  <td>โหมดอัตโนมัติ เปิดและปิด</td>
-                                              </tr>
-                                              
-                                              <tr>
-                                                  <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                  <td>จำนวนรอบที่จะเล่นในโหมดอัตโนมัติ</td>
-                                              </tr>
-                                              
-                                              <tr>
-                                                  <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                  <td>คลิกที่ "เทอร์โบ" เพื่อสลับเปิดโหมดเกม<br>
-                                                      เลือกจำนวนช่องที่จะเล่นอัตโนมัติด้วยตนเองหรือแบบสุ่ม<br>
-                                                      เลือกจำนวนรอบที่จะเล่นในโหมดอัตโนมัติ
-                                                  </td>
-                                              </tr>
-                                              
-                                              <tr>
-                                                  <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                  <td>การจ่ายเงินสนามถัดไป</td>
-                                              </tr>
-                                              
-                                              <tr>
-                                                  <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                  <td>ยอดคงเหลือปัจจุบันของผู้เล่น (คลิกเพื่อซ่อน/แสดง)</td>
-                                              </tr>
-                                              
-                                              <tr>
-                                                  <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                  <td>จำนวนเงินเดิมพันของผู้เล่นและจำนวนเงินชนะในรอบนั้น</td>
-                                              </tr>
+                                <p>
+                                    <b>ตารางการจ่าย</b><br>
 
 
-                                            </tbody>
-                                         </table>
-                                      </div>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2" width="50%"><b>ประเภทการเดิมพัน</b></td>
+                                                <td colspan="2" width="50%"><b>การจ่าย</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">สีดำ สีแดง</td>
+                                                <td colspan="2"> 1 </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">สีเขียว</td>
+                                                <td colspan="2"> 13 </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="red">
+                                    ข้อสำคัญ!
+                                </p>
+                                <p>เกมไม่อนุญาตให้ผู้เล่นวางเดิมพันสีดำและสีแดงในรอบเดียวกัน</p>
+                                <p>หากเกิดการขัดข้องระหว่างเกมเดิมพันจะถือว่ารอบเกมดังกล่าวเป็นโมฆะ</p>
+                                </p>
+
+                                <p><b>ตารางข้อมูล รูเล็ต</b></p>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2"><b>ตลาด</b></td>
+                                                <td colspan="2"><b>เวลาวางเดิมพัน</b></td>
+                                                <td colspan="2"><b>เริ่มเวลา</b></td>
+                                                <td colspan="2"><b>สิ้นสุดเวลา</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">รูเล็ต</td>
+                                                <td colspan="2">Xxx …</td>
+                                                <td colspan="2">HH:HH:HH</td>
+                                                <td colspan="2">HH:HH:HH</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p>*GMT+8</p>
+                            </div>
+
+                        </div>
 
 
-                                   </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-      </div>
-   </div>
-</div>
-</div>
-</div>
-<div class="col" id="searchNotfound" style="display: none;">
-   <img src="https://www.gpislots.info/shared/images/no-results-en.png">
-   <h3 style="font-family: 'Helvetica', sans-serif;;
+        <div class="col-lg-3 col-md-6 col-sm-6 result well">
+            <div class="row card">
+
+                <a href="#"><img src="../images/thumbnails/HiLo-EN.jpg" class="thumbnail-img" data-toggle="modal"
+                        data-target="#HiLo"></a>
+                <div class="info">
+                    <h1>สูง-ต่ำ</h1>
+                    <button data-toggle="modal" data-target="#HiLo">READ</button>
+                </div>
+            </div>
+            <!-- large modal -->
+            <div class="modal fade" id="HiLo" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">สูง-ต่ำ</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <p>
+                                <b>เกี่ยวกับเกมส์</b><br>
+                                ไฮโล เป็นเกมไพ่ง่ายๆ ที่ทายว่าไพ่ที่แจกถัดไปคือ สูง / ต่ำ หรือ เสมอ
+                                เกมนี้เป็นเกมสำหรับเล่นคนเดียว
+                            </p><br>
+
+                            <b>วิธีเล่น</b> <br>
+                            <p>1. ผู้เล่นสามารถเลือกการ์ดเริ่มต้น ด้วยตนเองหรือให้ระบบเลือกให้ได้
+                                <br>2. เมื่อเลือกไพ่เริ่มต้นแล้ว ผู้เล่นจะต้องวางเดิมพัน
+                                <br>3. เลือกไพ่ที่ต้องการทายไม่ว่าจะเป็น สูง, ต่ำ หรือเสมอ , ต่ำกว่าหรือเสมอ /
+                                สูงหรือเสมอ
+                                <br>4. เมื่อไพ่แจกถัดไปเป็น ;
+                                <br>ถูกต้อง - ชนะ - เกมดำเนินต่อไปด้วยตัวคูณที่สูงกว่าเพื่อชนะ
+                                <br>ไม่ถูกต้อง - แพ้ - เกมจบลง ผู้เล่นที่จะต่อรอบใหม่
+                                <br>5. เมื่อผู้เล่นเดาต่อไปได้อย่างถูกต้อง
+                                ผู้เล่นสามารถตัดสินใจจบเกมได้โดยการถอนเงินจากจำนวนเงินที่ชนะ<br><br><br>
+
+
+                                <b>ตารางการจ่าย</b><br>
+
+                            <div style="text-align: center;" class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>ไพ่</th>
+                                            <th colspan="2">ตัวคูณ</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td>ต่ำกว่าหรือเสมอ</td>
+                                            <td>สูงกว่าหรือเสมอ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>เอซ</td>
+                                            <td>11.87</td>
+                                            <td>0.07</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>5.43</td>
+                                            <td>0.07</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>3.29</td>
+                                            <td>0.07</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>2.21</td>
+                                            <td>0.17</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>1.57</td>
+                                            <td>0.43</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>1.14</td>
+                                            <td>0.60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>0.83</td>
+                                            <td>0.83</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>0.60</td>
+                                            <td>1.14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>0.43</td>
+                                            <td>1.57</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>0.17</td>
+                                            <td>2.21</td>
+                                        </tr>
+                                        <tr>
+                                            <td>J</td>
+                                            <td>0.07</td>
+                                            <td>3.29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Q</td>
+                                            <td>0.07</td>
+                                            <td>5.43</td>
+                                        </tr>
+                                        <tr>
+                                            <td>K</td>
+                                            <td>0.07</td>
+                                            <td>11.87</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p><span style="font-style: italic;">* สามารถสะสมเงินรางวัลที่ชนะเพื่อจ่ายออกได้in</span>
+                            </p>
+                            <p><span style="color: red; font-style: italic;">สำคัญ!</span><br>
+                                <span style="font-style: italic;">หากเกิดข้อผิดพลาดในการเดิมพัน
+                                    เกมส์จะถือเป็นโมฆะ</span>
+                            </p>
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 result well">
+            <div class="row card">
+
+                <a href="#"><img src="../images/thumbnails/Snow-Sweeper-EN.jpg" class="thumbnail-img"
+                        data-toggle="modal" data-target="#SnowSweeper"></a>
+                <div class="info">
+                    <h1>เพนกวินตะลุยขั้วโลก</h1>
+                    <button data-toggle="modal" data-target="#SnowSweeper">READ</button>
+                </div>
+            </div>
+            <!-- large modal -->
+            <div class="modal fade" id="SnowSweeper" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">เพนกวินตะลุยขั้วโลก</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <p>
+                                <b>เกี่ยวกับเกมส์</b><br>
+                                Snow Sweeper เป็นเกมคลาสสิกของกับดักทุ่นระเบิดที่เป็นที่รู้จักกันดี
+                                เป้าหมายของเกมนี้คือต้องผ่านกับระเบิด
+                                และหลีกเลี่ยงเหมือง ยิ่งผู้เล่นอยู่ในเกมนานเท่าไร รางวัลก็จะยิ่งสูงขึ้น!
+                            </p><br>
+
+                            <b>วิธีเล่น</b> <br>
+                            <p>ผู้เล่นสามารถเลือก สนามแผนที่ เพื่อเล่นได้</p>
+                            <div style="text-align: center;" class="table-responsive">
+                                <table class="table">
+                                    <tbody>
+
+                                        <tr>
+                                            <td></td>
+                                            <td><img src="photo1.jpg" alt="Photo 1"></td>
+                                            <td><img src="photo2.jpg" alt="Photo 2"></td>
+                                            <td><img src="photo3.jpg" alt="Photo 3"></td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>Field</td>
+                                            <td>7</td>
+                                            <td>19</td>
+                                            <td>37</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Comb</td>
+                                            <td>1-3</td>
+                                            <td>3-9</td>
+                                            <td>8-15</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Multiplier Range</td>
+                                            <td>X-XX</td>
+                                            <td>X-XX</td>
+                                            <td>X-XX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>RTP Range</td>
+                                            <td></td>
+                                            <td>XX.XX</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p><span style="color: red; font-style: italic;">สำคัญ</span><br>
+                                <span style="font-style: italic;">หากเกิดข้อผิดพลาดในการเดิมพัน
+                                    เกมส์จะถือเป็นโมฆะ</span>
+                            </p>
+
+                            <b>สัญลักษณ์ของเกม</b>
+                            <div style="margin: 0 auto; width: 80%;">
+                                <div style="text-align: center;" class="table-responsive">
+                                    <table class="table" style="margin: 0 auto;">
+                                        <tbody>
+                                            <tr>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="photo1.jpg" alt="Photo 4"></td>
+                                                <td><img src="photo2.jpg" alt="Photo 5"></td>
+                                                <td><img src="photo3.jpg" alt="Photo 6"></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>เพนกวิน </td>
+                                                <td>โบนัสเพนกวิน</td>
+                                                <td>ระเบิด</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <p>การเดิมพันแต่ละครั้ง ผู้เล่นสามารถหลีกเลี่ยงกับระเบิดได้ นกเพนกวินจะปรากฏขึ้น
+                                และผู้เล่นจะได้รับรางวัลเป็นเพิ่มมากขึ้น <br>
+                                เมื่อผู้เล่นโดนกับระเบิด จะเกิดการระเบิด ทำให้ผู้เล่นเสียเงินเดิมพัน และเงินรางวัลใดๆ
+                                ก่อนหน้านี้
+                            </p>
+
+                            <b>วิธีเล่น</b>
+                            <p>* เลือกสนามสำหรับจำนวนกับระเบิด<br>
+                                * เลือกจำนวนระเบิดบนแผนที่<br>
+                                * กด <span style="font-style: italic;"><b>"เริ่ม"</b></span> <br>
+                                * เลือกสนาม; หลบกับระเบิด เพื่อชนะรางวัล<br>
+                                * <b>สามารถสะสม</b>หรือ กดรับรางวัล ได้ตลอดเวลา
+                            </p>
+
+                            <b>การขาดการเชื่อมต่อจากเกม</b>
+                            <p>
+                                รอบเกมที่เล่นไม่จบทั้งหมดจะถูกยกเลิกทุกๆ 20 นาที<br>
+                                รอบเกมที่เล่นไม่จบ หลังผ่านไป 20 นาที จะถูกเล่นโดยอัตโนมัติ
+                                และหากมีการชนะจะจ่ายรางวัลไปยังกระเป๋าของผู้เล่น
+                            </p>
+
+                            <b>ปุ่มต่างๆภายในเกม</b>
+
+                            <div style="text-align: center;" class="table-responsive">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>ปุ่ม</td>
+                                            <td>คำอธิบาย</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img src="penguin.jpg" alt="Penguin"></td>
+                                            <td>จำนวนสนามที่เปิดไว้และคงเหลือ</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img src="penguin.jpg" alt="Penguin"></td>
+                                            <td>จำนวนระเบิด/กับระเบิดที่จะวางบนสนามสำหรับรอบเกมนั้นๆ</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img src="penguin.jpg" alt="Penguin"></td>
+                                            <td>เลือกชิปเดิมพันเพื่อเล่นเกม</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img src="penguin.jpg" alt="Penguin"></td>
+                                            <td>คลิก เริ่ม เพื่อเล่นเกม<br>
+                                                ยอดเงินชนะในปัจจุบัน คลิกเพื่อรับเงิน
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img src="penguin.jpg" alt="Penguin"></td>
+                                            <td>สุ่มเลือกสนาม</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img src="penguin.jpg" alt="Penguin"></td>
+                                            <td>สุ่มเลือกสามสนามในครั้งเดียว</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img src="penguin.jpg" alt="Penguin"></td>
+                                            <td>โหมดอัตโนมัติ เปิดและปิด</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img src="penguin.jpg" alt="Penguin"></td>
+                                            <td>จำนวนรอบที่จะเล่นในโหมดอัตโนมัติ</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img src="penguin.jpg" alt="Penguin"></td>
+                                            <td>คลิกที่ "เทอร์โบ" เพื่อสลับเปิดโหมดเกม<br>
+                                                เลือกจำนวนช่องที่จะเล่นอัตโนมัติด้วยตนเองหรือแบบสุ่ม<br>
+                                                เลือกจำนวนรอบที่จะเล่นในโหมดอัตโนมัติ
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img src="penguin.jpg" alt="Penguin"></td>
+                                            <td>การจ่ายเงินสนามถัดไป</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img src="penguin.jpg" alt="Penguin"></td>
+                                            <td>ยอดคงเหลือปัจจุบันของผู้เล่น (คลิกเพื่อซ่อน/แสดง)</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img src="penguin.jpg" alt="Penguin"></td>
+                                            <td>จำนวนเงินเดิมพันของผู้เล่นและจำนวนเงินชนะในรอบนั้น</td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col" id="searchNotfound" style="display: none; text-align:center;">
+        <img src="https://www.gpislots.info/shared/images/no-results-en.png">
+        <h3 style="font-family: 'Helvetica', sans-serif;;
 ">No results found</h3>
-   <p style="font-family: 'Helvetica', sans-serif;;
+        <p style="font-family: 'Helvetica', sans-serif;;
 ">Please modify your search and try again.
-</p>
-</div>
-<div class="paginationCustom">
-   <div id="pagingControls"></div>
+        </p>
+    </div>
+    <div class="paginationCustom">
+        <div id="pagingControls"></div>
 
-</div>   
-</div>
-
-
-
-</div>
-
-<script src="https://www.gpislots.info/shared/js/jquery.js"></script>
-<script src="https://www.gpislots.info/shared/js/flexible-pagination.js"></script>
-<script src="https://www.gpislots.info/shared/js/scripts.js"></script>
-<script src="https://www.gpislots.info/shared/js/bootstrap.js"></script>
+    </div>
+    </div>
 
 
 
+    </div>
+    <footer class="footer" style="background-color: #e8e8e8;">
 
-</body></html>
+
+        <div class="container">
+        
+
+
+                <div class="dropup">
+                    <button class="btn btn-black dropdown-toggle" type="button" id="languageDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false"
+                        style="margin: 1rem; border-radius: 1rem; width: 10rem;">
+                        <span">ไทย</span>
+                    </button>
+
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="rules_slots_en-my.html">English</a></li>
+                        <li><a class="dropdown-item" href="rules_slots_cn-my.html">简体中文</a></li>
+                        <li><a class="dropdown-item" href="rules_slots_id-my.html">Bahasa Indonesia</a></li>
+                        <li><a class="dropdown-item" href="rules_slots_kh-my.html">ខ្មែរ</a></li>
+                        <li><a class="dropdown-item" href="rules_slots_kr-my.html">한국어</a></li>
+                        <li><a class="dropdown-item" href="rules_slots_vn-my.html">Tiếng Việt</a></li>
+                        <li><a class="dropdown-item" href="rules_slots_es-my.html">Español</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+       
+    </footer>
+
+    <script src="https://www.gpislots.info/shared/js/jquery.js"></script>
+    <script src="https://www.gpislots.info/shared/js/flexible-pagination.js"></script>
+    <script src="https://www.gpislots.info/shared/js/scripts.js"></script>
+    <script src="https://www.gpislots.info/shared/js/bootstrap.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>

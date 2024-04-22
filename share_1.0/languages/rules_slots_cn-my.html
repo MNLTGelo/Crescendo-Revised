@@ -115,353 +115,344 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-    <div class="container pt-5 pb-5">
+    <div class="container mt-5 mb-3 games ">
+        <div class="row">
+            <div class="col-lg-9 col-md-6 col-sm-3 page-header" style="margin-top: -7px;">
+                <h1 class="game">游戏</h1>
+            </div>
 
-        <div class="container" id="jar">
-            <div class="row pb-5">
-                <div class="col-lg-2 col-md-6 col-sm-3 page-header" style="margin-top: -7px;">
-                    <h1 class="game">Games</h1>
+            <div class="col-lg-3 col-md-6 col-sm-5 justify-content-end">
+                <input class="searchBox form-control" placeholder="Type game title">
+            </div>
+        </div>
+
+    </div>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+        #content {
+            display: flex;
+        }
+
+        .btn-success {
+            color: #fff;
+            background-color: #A8C62C;
+            border-color: #A8C62C;
+        }
+
+        .btn-success:hover {
+            color: #fff;
+            background-color: #839a23;
+            border-color: #839a23;
+        }
+    </style>
+    <a id="bttbutton"></a>
+
+    <div class="container contents">
+        <div class="row" id="content">
+
+            <div class="col-lg-3 col-md-6 col-sm-6 result well">
+                <div class="row card">
+
+                    <a href="#"><img src="../images/thumbnails/Crypto-Crash-EN.png" class="thumbnail-img"
+                            data-toggle="modal" data-target="#CrytoCrash"></a>
+                    <div class="info">
+                        <h1>CRYPTO CRASH</h1>
+                        <button data-toggle="modal" data-target="#CrytoCrash">READ</button>
+                    </div>
                 </div>
-                <div class="col-lg-8 col-md-6 col-sm-5">
-                    <input class="searchBox form-control" placeholder="Type game title">
+                <!-- large modal -->
+                <div class="modal fade" id="CrytoCrash" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">CRYPTO CRASH</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+
+                                <div class="game-modal">
+                                    <p>
+                                        <b>简介</b><br>
+                                        虚拟股市是一款激动人心的火箭游戏，玩家要预测火箭在爆炸前会飞多高。
+                                        在爆炸前预测正确将获胜，预测错误将失败。
+                                    </p>
+                                    <br>
+
+                                    <p>
+                                        <b>如何开始</b><br>
+                                        1. 抽签开始时，玩家下注。<br>
+                                        2. 计时器计时结束后，火箭将移动并显示赔率。<br>
+                                        3. 如果玩家在爆炸前兑奖，玩家将以兑奖时相同的赔率指标值获胜。<br>
+                                        如果玩家在爆炸时提现，玩家就输了。
+                                    </p>
+
+                                    <p>
+                                        <b>投注类型</b><br>
+
+                                    <div class="table-responsive">
+                                        <table class="table-left">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2" width="50%"><b>投注</b></td>
+                                                    <td colspan="2" width="50%">投注游戏回合。</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2"></td>
+                                                    <td colspan="2">
+                                                        <p class="red">** 玩家在一轮游戏中只能下注一次。</p>
+                                                        <p><b>举例 1 :</b></p>
+                                                        <p>玩家投注 1元</p>
+                                                        <p><b>兑现结果 : x5.2</b></p>
+                                                        <p>玩家盈利 5.2</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                    </p>
+
+                                    <p>
+                                        <b>支付表</b><br>
+
+
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2" width="50%"><b>投注类型</b></td>
+                                                    <td colspan="2" width="50%"><b>赔付</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">投注</td>
+                                                    <td colspan="2"> 1 - 50,000</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    </p>
+
+                                    <p class="red">
+                                        <b>简介</b>
+                                    </p>
+                                    <p>故障会导致所有胜利和游戏失效</p>
+
+
+                                    <p><b>虚拟股市 - 信息图表</b></p>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2"><b>游戏名称</b></td>
+                                                    <td colspan="2"><b>开奖频率</b></td>
+                                                    <td colspan="2"><b>开始时间</b></td>
+                                                    <td colspan="2"><b>结束时间</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">虚拟股市</td>
+                                                    <td colspan="2">15 秒</td>
+                                                    <td colspan="2">00:00:00</td>
+                                                    <td colspan="2">00:00:00</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p>*北京时间</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-4">
-                    <div class="search-group ">
-                        <div class="col-xs-8">
-                            <select onchange="window.location.href=this.value">
-                                <!-- <option value="0">----- Select -----</option> -->
-                                <option value="rules_slots_cn-my.html">简体中文</option>
-                                <option value="rules_slots_en-my.html">English</option>
-                                <option value="rules_slots_es-my.html">Español</option>
-                                <option value="rules_slots_id-my.html"> Bhs Indonesia</option>
-                                <option value="rules_slots_kh-my.html">Khmer</option>
-                                <option value="rules_slots_kr-my.html">한국어</option>
-                                <option value="rules_slots_th-my.html">ไทย</option>
-                                <option value="rules_slots_vn-my.html">Tiếng Việt</option>
-                            </select>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 result well">
+                <div class="row card">
+
+                    <a href="#"><img src="../images/thumbnails/Roulette-EN.jpg" class="thumbnail-img"
+                            data-toggle="modal" data-target="#Roulette"></a>
+                    <div class="info">
+                        <h1>轮盘</h1>
+                        <button data-toggle="modal" data-target="#Roulette">READ</button>
+                    </div>
+                </div>
+                <!-- large modal -->
+                <div class="modal fade" id="Roulette" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">轮盘</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+
+                                <div class="game-modal">
+                                    <p>
+                                        <b>简介</b><br>
+                                        轮盘是流行的线上游戏之一，数字号码为0-36。
+                                    </p>
+                                    <br>
+
+                                    <p>
+                                        <b>如何开始</b><br>
+                                        1. 在抽签开始时，您需要在您选择的投注类型上下注。<br>
+                                        2. 当计时器终止时，系统将从0-36中随机出现结果。<br>
+                                        3. 如果游戏结果与你的投注的相符，则为赢，不一致为输。<br>
+
+                                    </p> <br>
+
+                                    <p>
+                                        <b>投注类型</b><br>
+
+                                    <div class="table-responsive">
+                                        <table class="table-left">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2" width="50%"><b>黑红</b></td>
+                                                    <td colspan="2" width="50%">投注于黑、红或绿的数字。</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" width="50%"><b>绿</b></td>
+                                                    <td colspan="2" width="50%">
+                                                        <p class="red">**** 玩家不能在同一回合内同时投注于黑和红。</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2"></td>
+                                                    <td colspan="2">
+                                                        <p><b>举例 1 :</b></p>
+                                                        <p>玩家投注在黑 1美元.-</p>
+                                                        <p><b>轮盘最终结果为 : 黑</b></p>
+                                                        <p>玩家赢</p>
+
+                                                        <p><b>举例 2 :</b></p>
+                                                        <p>玩家投注在红 1美元.-</p>
+                                                        <p><b>轮盘最终结果为 : 红</b></p>
+                                                        <p>玩家赢</p>
+
+                                                        <p><b>举例 3 :</b></p>
+                                                        <p>玩家投注在红 1美元.-</p>
+                                                        <p><b>轮盘最终结果为 : 绿</b></p>
+                                                        <p>玩家输</p>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    </p>
+
+                                    <p>
+                                        <b>赔付表</b><br>
+
+
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2" width="50%"><b>投注类型</b></td>
+                                                    <td colspan="2" width="50%"><b>赔付</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">黑红</td>
+                                                    <td colspan="2"> 1 </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">绿</td>
+                                                    <td colspan="2"> 13 </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p class="red">
+                                        重要信息
+                                    </p>
+                                    <p>游戏不允许玩家在同一回合对黑色和红色同时投注。</p>
+                                    <p>系统故障期间，所有游戏及赔付无效</p>
+                                    </p>
+
+
+                                    <p>故障会导致所有胜利和游戏失效</p>
+
+
+                                    <p><b>轮盘 - 信息表</b></p>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2"><b>游戏类型</b></td>
+                                                    <td colspan="2"><b>每局时间</b></td>
+                                                    <td colspan="2"><b>开始时间</b></td>
+                                                    <td colspan="2"><b>结束时间</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">轮盘</td>
+                                                    <td colspan="2">20 秒</td>
+                                                    <td colspan="2">00:00:00</td>
+                                                    <td colspan="2">00:00:00</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p>*北京时间</p>
+                                </div>
+
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
 
-            <style>
-                @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+            <div class="col-lg-3 col-md-6 col-sm-6 result well">
+                <div class="row card">
 
-                #content {
-                    display: flex;
-                }
-
-                .btn-success {
-                    color: #fff;
-                    background-color: #A8C62C;
-                    border-color: #A8C62C;
-                }
-
-                .btn-success:hover {
-                    color: #fff;
-                    background-color: #839a23;
-                    border-color: #839a23;
-                }
-            </style>
-            <a id="bttbutton"></a>
-            <div class="row" id="content">
-
-                <div class="col-lg-3 col-md-6 col-sm-6 result well">
-                    <div class="row mb-4">
-                        <div class="col text-center  ">
-                            <a href="#"><img src="../images/thumbnails/Crypto-Crash-EN.png" class="thumbnail-img"
-                                    data-toggle="modal" data-target="#CrytoCrash"></a>
-                            <p>虚拟股市</p>
-                        </div>
-                    </div>
-                    <!-- large modal -->
-                    <div class="modal fade" id="CrytoCrash" tabindex="-1" role="dialog" aria-labelledby="basicModal"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title" id="myModalLabel">虚拟股市</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
-                                    </button>
-                                </div>
-
-                                <div class="modal-body">
-
-                                    <div class="game-modal">
-                                        <p>
-                                            <b>简介</b><br>
-                                            虚拟股市是一款激动人心的火箭游戏，玩家要预测火箭在爆炸前会飞多高。
-                                            在爆炸前预测正确将获胜，预测错误将失败。
-                                        </p>
-                                        <br>
-
-                                        <p>
-                                            <b>如何开始</b><br>
-                                            1. 抽签开始时，玩家下注。<br>
-                                            2. 计时器计时结束后，火箭将移动并显示赔率。<br>
-                                            3. 如果玩家在爆炸前兑奖，玩家将以兑奖时相同的赔率指标值获胜。<br>
-                                            如果玩家在爆炸时提现，玩家就输了。
-                                        </p>
-
-                                        <p>
-                                            <b>投注类型</b><br>
-                                            
-                                            <div class="table-responsive">
-                                                <table class="table-left">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td colspan="2" width="50%"><b>投注</b></td>
-                                                            <td colspan="2" width="50%">投注游戏回合。</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td colspan="2"></td>
-                                                            <td colspan="2">
-                                                                <p class="red">** 玩家在一轮游戏中只能下注一次。</p>
-                                                                <p><b>举例 1 :</b></p>
-                                                                <p>玩家投注 1元</p>
-                                                                <p><b>兑现结果 : x5.2</b></p>
-                                                                <p>玩家盈利 5.2</p>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-
-                                            </div>
-                                        </p>
-
-                                        <p>
-                                            <b>支付表</b><br>
-
-
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="2" width="50%"><b>投注类型</b></td>
-                                                        <td colspan="2" width="50%"><b>赔付</b></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2">投注</td>
-                                                        <td colspan="2"> 1 - 50,000</td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        </p>
-
-                                        <p class="red">
-                                            <b>简介</b>
-                                        </p>
-                                        <p>故障会导致所有胜利和游戏失效</p>
-
-
-                                        <p><b>虚拟股市 - 信息图表</b></p>
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="2"><b>游戏名称</b></td>
-                                                        <td colspan="2"><b>开奖频率</b></td>
-                                                        <td colspan="2"><b>开始时间</b></td>
-                                                        <td colspan="2"><b>结束时间</b></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2">虚拟股市</td>
-                                                        <td colspan="2">15 秒</td>
-                                                        <td colspan="2">00:00:00</td>
-                                                        <td colspan="2">00:00:00</td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <p>*北京时间</p>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-6 result well">
-
-                    <div class="row mb-4 ">
-                        <div class="col text-center ">
-
-                            <a href="#"><img src="../images/thumbnails/Roulette-EN.jpg" class="thumbnail-img"
-                                    data-toggle="modal" data-target="#CryptoRoulette"></a>
-
-                            <p>轮盘</p>
-                        </div>
-                    </div>
-
-                    <!-- large modal -->
-                    <div class="modal fade" id="CryptoRoulette" tabindex="-1" role="dialog" aria-labelledby="basicModal"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title" id="myModalLabel">轮盘</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
-                                    </button>
-                                </div>
-
-                                <div class="modal-body">
-
-                                    <div class="game-modal">
-                                        <p>
-                                            <b>简介</b><br>
-                                            轮盘是流行的线上游戏之一，数字号码为0-36。
-                                        </p>
-                                        <br>
-
-                                        <p>
-                                            <b>如何开始</b><br>
-                                            1. 在抽签开始时，您需要在您选择的投注类型上下注。<br>
-                                            2. 当计时器终止时，系统将从0-36中随机出现结果。<br>
-                                            3. 如果游戏结果与你的投注的相符，则为赢，不一致为输。<br>
-
-                                        </p> <br>
-
-                                        <p>
-                                            <b>投注类型</b><br>
-
-                                            <div class="table-responsive">
-                                                <table class="table-left">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td colspan="2" width="50%"><b>黑红</b></td>
-                                                            <td colspan="2" width="50%">投注于黑、红或绿的数字。</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td colspan="2" width="50%"><b>绿</b></td>
-                                                            <td colspan="2" width="50%"><p class="red">**** 玩家不能在同一回合内同时投注于黑和红。</p></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td colspan="2"></td>
-                                                            <td colspan="2">
-                                                                <p><b>举例 1 :</b></p>
-                                                                <p>玩家投注在黑 1美元.-</p>
-                                                                <p><b>轮盘最终结果为 : 黑</b></p>
-                                                                <p>玩家赢</p>
-
-                                                                <p><b>举例 2 :</b></p>
-                                                                <p>玩家投注在红 1美元.-</p>
-                                                                <p><b>轮盘最终结果为 : 红</b></p>
-                                                                <p>玩家赢</p>
-
-                                                                <p><b>举例 3 :</b></p>
-                                                                <p>玩家投注在红 1美元.-</p>
-                                                                <p><b>轮盘最终结果为 : 绿</b></p>
-                                                                <p>玩家输</p></td>
-                                                        </tr>
-
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </p>
-
-                                        <p>
-                                            <b>赔付表</b><br>
-
-
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="2" width="50%"><b>投注类型</b></td>
-                                                        <td colspan="2" width="50%"><b>赔付</b></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2">黑红</td>
-                                                        <td colspan="2"> 1 </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2">绿</td>
-                                                        <td colspan="2"> 13 </td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <p class="red">
-                                            重要信息
-                                        </p>
-                                        <p>游戏不允许玩家在同一回合对黑色和红色同时投注。</p>
-                                        <p>系统故障期间，所有游戏及赔付无效</p>
-                                        </p>
-
-
-                                        <p>故障会导致所有胜利和游戏失效</p>
-
-
-                                        <p><b>轮盘 - 信息表</b></p>
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="2"><b>游戏类型</b></td>
-                                                        <td colspan="2"><b>每局时间</b></td>
-                                                        <td colspan="2"><b>开始时间</b></td>
-                                                        <td colspan="2"><b>结束时间</b></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2">轮盘</td>
-                                                        <td colspan="2">20 秒</td>
-                                                        <td colspan="2">00:00:00</td>
-                                                        <td colspan="2">00:00:00</td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <p>*北京时间</p>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
+                    <a href="#"><img src="../images/thumbnails/HiLo-EN.jpg" class="thumbnail-img" data-toggle="modal"
+                            data-target="#HiLo"></a>
+                    <div class="info">
+                        <h1>高低</h1>
+                        <button data-toggle="modal" data-target="#HiLo">READ</button>
                     </div>
                 </div>
+                <!-- large modal -->
+                <div class="modal fade" id="HiLo" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">高低</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
 
-                <div class="col-lg-3 col-md-6 col-sm-6 result well">
-                    <div class="row mb-4">
-                        <div class="col text-center">
-                            <a href="#"><img src="../images/thumbnails/HiLo-EN.jpg" class="thumbnail-img"
-                                    data-toggle="modal" data-target="#HiLo"></a>
-                            <p>高低</p>
-                        </div>
-                    </div>
-                    <!-- large modal -->
-                    <div class="modal fade" id="Hilo" tabindex="-1" role="dialog" aria-labelledby="basicModal"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title" id="myModalLabel">高低</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
-                                    </button>
-                                </div>
+                            <div class="modal-body">
 
-                                <div class="modal-body">
+                                <p>
+                                    <b>简介</b><br>
+                                    高低 是一种简单的纸牌游戏，玩家需要猜测下一张发牌是 高、低还是相同牌型。
+                                    该游戏为单人游戏。
+                                </p><br>
 
-                                    <p>
-                                        <b>简介</b><br>
-                                        高低 是一种简单的纸牌游戏，玩家需要猜测下一张发牌是 高、低还是相同牌型。
-                                        该游戏为单人游戏。
-                                    </p><br>
-
-                                    <b>如何开始</b> <br>
-                                    <p>1. 玩家可手动或由系统自动选择开始卡片
-                                    <br>2. 选择起始牌后，玩家下注。 
+                                <b>如何开始</b> <br>
+                                <p>1. 玩家可手动或由系统自动选择开始卡片
+                                    <br>2. 选择起始牌后，玩家下注。
                                     <br>3. 选择下一张发牌：高、低、高或相同、低或相同或相同
                                     <br>4. 当下一张牌的结果是；
                                     <br>正确 - 获胜 - 游戏继续，以更高的倍数获胜
@@ -470,328 +461,370 @@
 
 
                                     <b>赔付表</b><br>
- 
-                                    <div style="text-align: center;" class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                  <th>牌面</th>
-                                                  <th colspan="2">倍数</th>
-                                                </tr>
-                                              </thead>
-                                              <tbody>
-                                                <tr>
-                                                  <td></td>
-                                                  <td>低或相同</td>
-                                                  <td>高或相同</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>Ace</td>
-                                                  <td>11.87</td>
-                                                  <td>0.07</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>2</td>
-                                                  <td>5.43</td>
-                                                  <td>0.07</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>3</td>
-                                                  <td>3.29</td>
-                                                  <td>0.07</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>4</td>
-                                                  <td>2.21</td>
-                                                  <td>0.17</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>5</td>
-                                                  <td>1.57</td>
-                                                  <td>0.43</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>6</td>
-                                                  <td>1.14</td>
-                                                  <td>0.60</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>7</td>
-                                                  <td>0.83</td>
-                                                  <td>0.83</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>8</td>
-                                                  <td>0.60</td>
-                                                  <td>1.14</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>9</td>
-                                                  <td>0.43</td>
-                                                  <td>1.57</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>10</td>
-                                                  <td>0.17</td>
-                                                  <td>2.21</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>J</td>
-                                                  <td>0.07</td>
-                                                  <td>3.29</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>Q</td>
-                                                  <td>0.07</td>
-                                                  <td>5.43</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>K</td>
-                                                  <td>0.07</td>
-                                                  <td>11.87</td>
-                                                </tr>
-                                              </tbody>
-                                        </table>
-                                    </div>
-                                    <p><span style="font-style: italic;">* 每次赢钱都有累计赔付</span></p>
-                                    <p><span style="color: red; font-style: italic;">重要提示</span><br>
-                                        <span style="font-style: italic;">故障会导致所有胜利和游戏失效</span>
-                                    </p>
 
-                                    
-
-
+                                <div style="text-align: center;" class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>牌面</th>
+                                                <th colspan="2">倍数</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td>低或相同</td>
+                                                <td>高或相同</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ace</td>
+                                                <td>11.87</td>
+                                                <td>0.07</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>5.43</td>
+                                                <td>0.07</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>3.29</td>
+                                                <td>0.07</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>2.21</td>
+                                                <td>0.17</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>1.57</td>
+                                                <td>0.43</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>1.14</td>
+                                                <td>0.60</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>0.83</td>
+                                                <td>0.83</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>0.60</td>
+                                                <td>1.14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>0.43</td>
+                                                <td>1.57</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>0.17</td>
+                                                <td>2.21</td>
+                                            </tr>
+                                            <tr>
+                                                <td>J</td>
+                                                <td>0.07</td>
+                                                <td>3.29</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Q</td>
+                                                <td>0.07</td>
+                                                <td>5.43</td>
+                                            </tr>
+                                            <tr>
+                                                <td>K</td>
+                                                <td>0.07</td>
+                                                <td>11.87</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
+                                <p><span style="font-style: italic;">* 每次赢钱都有累计赔付</span></p>
+                                <p><span style="color: red; font-style: italic;">重要提示</span><br>
+                                    <span style="font-style: italic;">故障会导致所有胜利和游戏失效</span>
+                                </p>
+
+
+
 
                             </div>
-                        </div>
 
-                    </div>
+                        </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-6 result well">
-                        <div class="row mb-4">
-                           <div class="col text-center">
-                              <a href="#"><img src="../images/thumbnails/Snow-Sweeper-EN.jpg"  class="thumbnail-img" data-toggle="modal" data-target="#SnowSweeper"></a>
-                              <p>破冰企鹅</p>
-                       </div>
-                       </div>
-                    <!-- large modal -->
-                       <div class="modal fade" id="SnowSweeper" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                           <div class="modal-content">
-                              <div class="modal-header">
-                                 <h4 class="modal-title" id="myModalLabel">破冰企鹅</h4>
-                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                 <span aria-hidden="true">×</span>
-                                 </button>
-                              </div>
-                                
-                                <div class="modal-body">
-                    
-                                                           <p>
-                                                              <b>简介</b><br>
-                                                              破冰企鹅游戏是众所周知的经典扫雷游戏。 这款游戏的目标是穿过雷区
-                                                              并避开地雷。 玩家在游戏中停留的时间越长，奖励就越高！
-                                                           </p><br>
-                    
-                                                           <b>游戏详情</b> <br>
-                                                           <p>玩家可以选择雷区地图进行游戏。</p>
-                                                           <div style="text-align: center;" class="table-responsive">
-                                                              <table class="table">
-                                                                 <tbody>
-                    
-                                                                    <tr>
-                                                                       <td></td>
-                                                                       <td><img src="photo1.jpg" alt="Photo 1"></td>
-                                                                       <td><img src="photo2.jpg" alt="Photo 2"></td>
-                                                                       <td><img src="photo3.jpg" alt="Photo 3"></td>
-                                                                   </tr>
-                    
-                    
-                                                                    <tr>
-                                                                       <td>Field</td>
-                                                                       <td>7</td>
-                                                                       <td>19</td>
-                                                                       <td>37</td>
-                                                                    </tr>
-                    
-                                                                    <tr>
-                                                                       <td>Comb</td>
-                                                                       <td>1-3</td>
-                                                                       <td>3-9</td>
-                                                                       <td>8-15</td>
-                    
-                                                                    </tr>
-                                                                    <tr>
-                                                                       <td>Multiplier Range</td>
-                                                                       <td>X-XX</td>
-                                                                       <td>X-XX</td>
-                                                                       <td>X-XX</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                       <td>RTP Range</td>
-                                                                       <td></td>
-                                                                       <td>XX.XX</td>
-                                                                       <td></td>
-                                                                    </tr>
-                                                                 </tbody>
-                                                              </table>
-                                                           </div>
-                                                           <p><span style="color: red; font-style: italic;">注意！</span><br>
-                                                              <span style="font-style: italic;">故障会导致所有胜利和游戏失效</span>
-                                                           </p>
-                    
-                                                           <b>游戏符号</b>
-                                                           <div style="margin: 0 auto; width: 80%;">
-                                                              <div style="text-align: center;" class="table-responsive">
-                                                                 <table class="table" style="margin: 0 auto;">
-                                                                    <tbody>
-                                                                       <tr>
-                                                                          </tr><tr>
-                                                                             <td><img src="photo1.jpg" alt="Photo 4"></td>
-                                                                             <td><img src="photo2.jpg" alt="Photo 5"></td>
-                                                                             <td><img src="photo3.jpg" alt="Photo 6"></td>
-                                                                         </tr>
-                                                                       
-                                                                       <tr>
-                                                                          <td>Penguin</td>
-                                                                          <td>Bonus Penguin</td>
-                                                                          <td>Bomb</td>
-                                                                       </tr>
-                                                                    </tbody>
-                                                                 </table>
-                                                              </div>
-                                                           </div>
-                    
-                                                           <p>每当玩家避开地雷，企鹅就会出现，玩家将获得倍数奖励。 <br>
-                                                            当玩家踩中地雷时，炸弹将爆炸，玩家将输掉赌注和之前赢的钱。
-                                                           </p>
-                    
-                                                           <b>如何开始</b>
-                                                           <p>* 根据地雷适数量选择地图<br>
-                                                            * 在地图上选择炸弹数量。<br>
-                                                              *  按<span style="font-style: italic;"><b>"开始"</b></span> <br>
-                                                              * 选择区域，避开地雷可获得奖励 <br>
-                                                              * <b> 随时收集</b> 赢得游戏。
-                                                           </p>
-                    
-                                                           <b>断开连接</b>
-                                                           <p>
-                                                              之前未完成的回合每20分钟系统将终止一次。<br>
-                                                              未完成的回合将在 20 分钟后自动结束，赢利的金额将计入玩家的余额。
-                                                           </p>
-                    
-                                                           <b>游戏控制</b>
-                    
-                                                           <div style="text-align: center;" class="table-responsive">
-                                                              <table class="table">
-                                                                 <tbody>
-                                                                    <tr>
-                                                                       <td>控制装置</td>
-                                                                       <td>简介</td>
-                                                                   </tr>
-                                                                   
-                                                                   <tr>
-                                                                       <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                       <td>开放和剩余的空地数量</td>
-                                                                   </tr>
-                                                                   
-                                                                   <tr>
-                                                                       <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                       <td>游戏回合中要在场地上设置的炸弹/地雷数量</td>
-                                                                   </tr>
-                                                                   
-                                                                   <tr>
-                                                                       <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                       <td>选择投注筹码进行游戏</td>
-                                                                   </tr>
-                                                                   
-                                                                   <tr>
-                                                                       <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                       <td>要玩游戏，请单击 "开始<br>
-                                                                        当前中奖金额。 点击领取
-                                                                       </td>
-                                                                   </tr>
-                                                                   
-                                                                   <tr>
-                                                                       <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                       <td>每次随机抽取一个空地</td>
-                                                                   </tr>
-                                                                   
-                                                                   <tr>
-                                                                       <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                       <td>每次随机抽取三块地砖</td>
-                                                                   </tr>
-                                                                   
-                                                                   <tr>
-                                                                       <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                       <td>开启和关闭自动播放模式</td>
-                                                                   </tr>
-                                                                   
-                                                                   <tr>
-                                                                       <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                       <td>自动模式下的回合数</td>
-                                                                   </tr>
-                                                                   
-                                                                   <tr>
-                                                                       <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                       <td>点击 "Turbo"切换按钮打开游戏模式<br>
-                                                                        选择手动或随机自动播放的瓦片数量。<br>
-                                                                        选择自动模式下的回合数
-                                                                       </td>
-                                                                   </tr>
-                                                                   
-                                                                   <tr>
-                                                                       <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                       <td>下一次派奖</td>
-                                                                   </tr>
-                                                                   
-                                                                   <tr>
-                                                                       <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                       <td>玩家当前余额（点击可显示/隐藏）</td>
-                                                                   </tr>
-                                                                   
-                                                                   <tr>
-                                                                       <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                       <td>玩家在本轮游戏中的投注金额和获胜金额</td>
-                                                                   </tr>
-                    
-                    
-                                                                 </tbody>
-                                                              </table>
-                                                           </div>
-                    
-                    
-                                                        </div>
-                    
-                           </div>
-                        </div>
-                     </div>
-                    </div>
-                    </div>
-                <div class="col" id="searchNotfound" style="display: none;">
-                    <img src="https://www.gpislots.info/shared/images/no-results-en.png">
-                    <h3 style="font-family: 'Helvetica', sans-serif;;
-">No results found</h3>
-                    <p style="font-family: 'Helvetica', sans-serif;;
-">Please modify your search and try again.
-                    </p>
                 </div>
-                <div class="paginationCustom">
-                    <div id="pagingControls"></div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 result well">
+                <div class="row card">
 
+                    <a href="#"><img src="../images/thumbnails/Snow-Sweeper-EN.jpg" class="thumbnail-img"
+                            data-toggle="modal" data-target="#SnowSweeper"></a>
+                    <div class="info">
+                        <h1>破冰企鹅</h1>
+                        <button data-toggle="modal" data-target="#SnowSweeper">READ</button>
+                    </div>
+                </div>
+                <!-- large modal -->
+                <div class="modal fade" id="SnowSweeper" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">破冰企鹅</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+
+
+                                <p>
+                                    <b>简介</b><br>
+                                    破冰企鹅游戏是众所周知的经典扫雷游戏。 这款游戏的目标是穿过雷区
+                                    并避开地雷。 玩家在游戏中停留的时间越长，奖励就越高！
+                                </p><br>
+
+                                <b>游戏详情</b> <br>
+                                <p>玩家可以选择雷区地图进行游戏。</p>
+                                <div style="text-align: center;" class="table-responsive">
+                                    <table class="table">
+                                        <tbody>
+
+                                            <tr>
+                                                <td></td>
+                                                <td><img src="photo1.jpg" alt="Photo 1"></td>
+                                                <td><img src="photo2.jpg" alt="Photo 2"></td>
+                                                <td><img src="photo3.jpg" alt="Photo 3"></td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Field</td>
+                                                <td>7</td>
+                                                <td>19</td>
+                                                <td>37</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Comb</td>
+                                                <td>1-3</td>
+                                                <td>3-9</td>
+                                                <td>8-15</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Multiplier Range</td>
+                                                <td>X-XX</td>
+                                                <td>X-XX</td>
+                                                <td>X-XX</td>
+                                            </tr>
+                                            <tr>
+                                                <td>RTP Range</td>
+                                                <td></td>
+                                                <td>XX.XX</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p><span style="color: red; font-style: italic;">注意！</span><br>
+                                    <span style="font-style: italic;">故障会导致所有胜利和游戏失效</span>
+                                </p>
+
+                                <b>游戏符号</b>
+                                <div style="margin: 0 auto; width: 80%;">
+                                    <div style="text-align: center;" class="table-responsive">
+                                        <table class="table" style="margin: 0 auto;">
+                                            <tbody>
+                                                <tr>
+                                                </tr>
+                                                <tr>
+                                                    <td><img src="photo1.jpg" alt="Photo 4"></td>
+                                                    <td><img src="photo2.jpg" alt="Photo 5"></td>
+                                                    <td><img src="photo3.jpg" alt="Photo 6"></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Penguin</td>
+                                                    <td>Bonus Penguin</td>
+                                                    <td>Bomb</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <p>每当玩家避开地雷，企鹅就会出现，玩家将获得倍数奖励。 <br>
+                                    当玩家踩中地雷时，炸弹将爆炸，玩家将输掉赌注和之前赢的钱。
+                                </p>
+
+                                <b>如何开始</b>
+                                <p>* 根据地雷适数量选择地图<br>
+                                    * 在地图上选择炸弹数量。<br>
+                                    * 按<span style="font-style: italic;"><b>"开始"</b></span> <br>
+                                    * 选择区域，避开地雷可获得奖励 <br>
+                                    * <b> 随时收集</b> 赢得游戏。
+                                </p>
+
+                                <b>断开连接</b>
+                                <p>
+                                    之前未完成的回合每20分钟系统将终止一次。<br>
+                                    未完成的回合将在 20 分钟后自动结束，赢利的金额将计入玩家的余额。
+                                </p>
+
+                                <b>游戏控制</b>
+
+                                <div style="text-align: center;" class="table-responsive">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>控制装置</td>
+                                                <td>简介</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>开放和剩余的空地数量</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>游戏回合中要在场地上设置的炸弹/地雷数量</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>选择投注筹码进行游戏</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>要玩游戏，请单击 "开始<br>
+                                                    当前中奖金额。 点击领取
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>每次随机抽取一个空地</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>每次随机抽取三块地砖</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>开启和关闭自动播放模式</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>自动模式下的回合数</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>点击 "Turbo"切换按钮打开游戏模式<br>
+                                                    选择手动或随机自动播放的瓦片数量。<br>
+                                                    选择自动模式下的回合数
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>下一次派奖</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>玩家当前余额（点击可显示/隐藏）</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>玩家在本轮游戏中的投注金额和获胜金额</td>
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col" id="searchNotfound" style="display: none; text-align:center;">
+            <img src="https://www.gpislots.info/shared/images/no-results-en.png">
+            <h3 style="font-family: 'Helvetica', sans-serif;;
+        ">No results found</h3>
+                    <p style="font-family: 'Helvetica', sans-serif;;
+        ">Please modify your search and try again.
+            </p>
+        </div>
+        <div class="paginationCustom">
+            <div id="pagingControls"></div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="footer" style="background-color: #e8e8e8;">
+
+
+        <div class="container">
+        
+
+
+                <div class="dropup">
+                    <button class="btn btn-black dropdown-toggle" type="button" id="languageDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false"
+                        style="margin: 1rem; border-radius: 1rem; width: 10rem;">
+                        <span">简体中文</span>
+                    </button>
+
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="rules_slots_en-my.html">English</a></li>
+                        <li><a class="dropdown-item" href="rules_slots_id-my.html">Bahasa Indonesia</a></li>
+                        <li><a class="dropdown-item" href="rules_slots_kh-my.html">ខ្មែរ</a></li>
+                        <li><a class="dropdown-item" href="rules_slots_kr-my.html">한국어</a></li>
+                        <li><a class="dropdown-item" href="rules_slots_th-my.html">ไทย</a></li>
+                        <li><a class="dropdown-item" href="rules_slots_vn-my.html">Tiếng Việt</a></li>
+                        <li><a class="dropdown-item" href="rules_slots_es-my.html">Español</a></li>
+                    </ul>
                 </div>
             </div>
 
 
-
         </div>
+        </div>
+       
+    </footer>
 
-        <script src="https://www.gpislots.info/shared/js/jquery.js"></script>
-        <script src="https://www.gpislots.info/shared/js/flexible-pagination.js"></script>
-        <script src="https://www.gpislots.info/shared/js/scripts.js"></script>
-        <script src="https://www.gpislots.info/shared/js/bootstrap.js"></script>
+    <script src="https://www.gpislots.info/shared/js/jquery.js"></script>
+    <script src="https://www.gpislots.info/shared/js/flexible-pagination.js"></script>
+    <script src="https://www.gpislots.info/shared/js/scripts.js"></script>
+    <script src="https://www.gpislots.info/shared/js/bootstrap.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
 
 
 
