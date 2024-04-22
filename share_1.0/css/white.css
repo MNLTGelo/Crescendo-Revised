@@ -1006,20 +1006,14 @@ img.thumbnail-img {
   text-align: left!important;
 }
 
-.outer {
-  background-color: #7f286d  ;
-  padding: 10px;
-  height: 330px;
-}
-
 .header {
   margin-bottom: 10px;
   background: #4439a1 !important;
 }
 
-.game {
+h1.game {
   position:relative;
-  color: #4439a1 !important;
+  color: black !important;
 }
 
 .nav-photo {
@@ -1169,3 +1163,8 @@ img.thumbnail-img {
 .btn:not(:disabled):not(.disabled) {
   color: rgb(68, 68, 68) !important;
 }
+
+.header {
+  background: #4439a1;
+}
+
