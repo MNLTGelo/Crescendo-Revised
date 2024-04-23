@@ -1,188 +1,207 @@
 <html lang="en">
+
 <head>
-<link href="../css/white.css" rel="stylesheet">
+    <link href="../css/white.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.css">
-<title>Info Centre - Games</title>
-<link rel="icon" type="image/x-icon" href="../images/cresendo_favicon.png">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Info Centre - Games</title>
+    <link rel="icon" type="image/x-icon" href="../images/cresendo_favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
- 
+
 </head>
+
 <body>
-<style type="text/css">
-     
-    .w-100{
-        text-align: center!important;
+    <style type="text/css">
+        .w-100 {
+            text-align: center !important;
 
-    }
+        }
 
-.justify-content-end {
-    justify-content: center!important;
-}
-.fa-bars:before {
-    content: "\f0c9";
-    color: #fff;
-}
-    .navbar-brand {
-    width: 100%!important;
-    margin: 0 auto;
-    text-align: center;
-}
+        .justify-content-end {
+            justify-content: center !important;
+        }
 
-.bg-dark {
-    background-color: #4439a1 !important;
-}
+        .fa-bars:before {
+            content: "\f0c9";
+            color: #fff;
+        }
 
-.topnav {
-  padding: 15px;
-  background-color: black;
-}
+        .navbar-brand {
+            width: 100% !important;
+            margin: 0 auto;
+            text-align: center;
+        }
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+        .bg-dark {
+            background-color: #4439a1 !important;
+        }
 
-.btn:not(:disabled):not(.disabled) {
-    color: white;
-}
+        .topnav {
+            padding: 15px;
+            background-color: black;
+        }
 
-.game {
-   color: #4439a1 !important;
-}
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-#content img {
-    border-radius: 0px !important;
-}
+        .btn:not(:disabled):not(.disabled) {
+            color: white;
+        }
 
-#content p {
-      margin-top: 10px !important;
-    margin-bottom: 15px !important;
-}
+        #content img {
+            border-radius: 0px !important;
+        }
 
-@media (max-width: 991px){
-.navbar-brand {
-    width: 90%!important;
-    margin: 0 auto;
-    text-align: center;
-}
+        #content p {
+            margin-top: 10px !important;
+            margin-bottom: 15px !important;
+        }
 
-.w-100{
+        @media (max-width: 991px) {
+            .navbar-brand {
+                width: 90% !important;
+                margin: 0 auto;
+                text-align: center;
+            }
 
-    text-align: left!important;
-}
-}
-h1 {
-   color: black;
-}
-@media (min-width: 992px){
-.navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
-    -ms-flex-wrap: nowrap;
-    display: block;
-}
+            .w-100 {
 
+                text-align: left !important;
+            }
+        }
 
-}
-</style>
+        h1 {
+            color: black;
+        }
 
-<div class="header">
+        @media (min-width: 992px) {
 
-    <div class="container">
-        <a class="navbar-brand" href="#"><img src="../images/thumbnails/logo.png" width="189" height="50"
-                class="nav-photo"></a>
-        <!-- Center right alignment -->
-    </div>
-    </nav>
-    <div class="blue-bar-head">
-        <div class="container">
-        </div>
-    </div>
-</div>
+            .navbar-expand-lg>.container,
+            .navbar-expand-lg>.container-fluid {
+                -ms-flex-wrap: nowrap;
+                display: block;
+            }
 
 
-<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        }
+    </style>
 
-<div class="container mt-5 mb-3 games ">
-    <div class="row">
-        <div class="col-lg-9 col-md-6 col-sm-3 page-header" style="margin-top: -7px;">
-            <h1 class="game">게임</h1>
-        </div>
+    <div class="header">
+        <div class="container header">
 
-        <div class="col-lg-3 col-md-6 col-sm-5 justify-content-end">
-            <input class="searchBox form-control" placeholder="Type game title">
-        </div>
-    </div>
 
-</div>
-
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
- 
-    #content{
-    display: flex;
-    }
-    .btn-success {
-    color: #fff;
-    background-color: #A8C62C;
-    border-color: #A8C62C;
-    }
-    .btn-success:hover {
-    color: #fff;
-    background-color: #839a23;
-    border-color: #839a23;
-    }
- </style>
- <a id="bttbutton"></a>
- <div class="container contents">
-    <div class="row" id="content">
-
-        <div class="col-lg-3 col-md-6 col-sm-6 result well">
-            <div class="row card">
-
-                <a href="#"><img src="../images/thumbnails/Crypto-Crash-EN.png" class="thumbnail-img"
-                        data-toggle="modal" data-target="#CrytoCrash"></a>
-                <div class="info">
-                    <h1>CRYPTO CRASH</h1>
-                    <button data-toggle="modal" data-target="#CrytoCrash">READ</button>
+            <div class="container">
+                <div class="row">
+                    <div class="nav-photo">
+                        <a class="navbar-brand" href="#"><img src="../images/thumbnails/logo.png" width="189"
+                                height="50" class="nav-photo"></a>
+                        <!-- Center right alignment -->
+                    </div>
                 </div>
             </div>
-            <!-- large modal -->
-            <div class="modal fade" id="CrytoCrash" tabindex="-1" role="dialog" aria-labelledby="basicModal"
-                aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="myModalLabel">CRYPTO CRASH</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
+            </nav>
+
+        </div>
+
+
+        <div class="blue-bar-head">
+            <div class="container">
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <div class="container mt-5 mb-3 games ">
+        <div class="row">
+            <div class="col-lg-9 col-md-6 col-sm-3 page-header" style="margin-top: -7px;">
+                <h1 class="game">게임</h1>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-5 justify-content-end">
+                <input class="searchBox form-control" placeholder="Search game">
+            </div>
+        </div>
+
+    </div>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+        #content {
+            display: flex;
+        }
+
+        .btn-success {
+            color: #fff;
+            background-color: #A8C62C;
+            border-color: #A8C62C;
+        }
+
+        .btn-success:hover {
+            color: #fff;
+            background-color: #839a23;
+            border-color: #839a23;
+        }
+    </style>
+    <a id="bttbutton"></a>
+    <div class="container contents">
+        <div class="row" id="content">
+
+            <div class="container contents">
+                <div class="row" id="content">
+
+                    <div class="col-lg-2 col-4 result well">
+                        <div class="row mb-4">
+                            <div class="text-center">
+                                <a href="#"><img src="../images/thumbnails/Crypto-Crash-146x189-KR.png"
+                                        class="thumbnails" data-toggle="modal" data-target="#CryptoCrash"></a>
+
+                                <p>Crypto Crash</p>
+                            </div>
                         </div>
+                        <!-- large modal -->
+                        <div class="modal fade" id="CryptoCrash" tabindex="-1" role="dialog"
+                            aria-labelledby="basicModal" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="myModalLabel">Crypto Crash</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
 
-                        <div class="modal-body">
+                                        <div class="game-modal">
+                                            <p>
+                                                <b>소개</b><br>
+                                                크립토 크래쉬는 플레이어가 로켓이 폭발하기 전에 얼마나 높이 이동할지 예측하는 흥미진진한 로켓 게임입니다.
+                                                폭발하기 전에 올바른 예측은 승리하고 잘못된 예측은 패배합니다.
+                                            </p>
+                                            <br>
 
-                                    <div class="game-modal">
-                                        <p>
-                                            <b>소개</b><br>
-                                            크립토 크래쉬는 플레이어가 로켓이 폭발하기 전에 얼마나 높이 이동할지 예측하는 흥미진진한 로켓 게임입니다.
-                                            폭발하기 전에 올바른 예측은 승리하고 잘못된 예측은 패배합니다.
-                                        </p>
-                                        <br>
+                                            <p>
+                                                <b>게임 방법</b><br>
+                                                1. 추첨이 시작되면 플레이어는 베팅을 합니다.<br>
+                                                2. 타이머가 종료되면 로켓은 페이 아웃 표시와 함께 이동합니다.<br>
+                                                3. 플레이어가 폭발하기 전에 캐시아웃하면 캐시아웃 시 동일한 페이 아웃 값으로 플레이어가 승리합니다.<br>
+                                                폭발 시 플레이어가 캐시아웃을 하면 플레이어는 패배합니다.
+                                            </p>
 
-                                        <p>
-                                            <b>게임 방법</b><br>
-                                            1. 추첨이 시작되면 플레이어는 베팅을 합니다.<br>
-                                            2. 타이머가 종료되면 로켓은 페이 아웃 표시와 함께 이동합니다.<br>
-                                            3. 플레이어가 폭발하기 전에 캐시아웃하면 캐시아웃 시 동일한 페이 아웃 값으로 플레이어가 승리합니다.<br>
-                                               폭발 시 플레이어가 캐시아웃을 하면 플레이어는 패배합니다.
-                                        </p>
+                                            <p>
+                                                <b>베팅 종류</b><br>
 
-                                        <p>
-                                            <b>베팅 종류</b><br>
-                                            
                                             <div class="table-responsive">
                                                 <table class="table-left">
                                                     <tbody>
@@ -196,7 +215,7 @@ h1 {
                                                                 <p class="red">** 플레이어는 라운드 게임에만 베팅할 수 있습니다.</p>
                                                                 <p><b>예시 1 :</b></p>
                                                                 <p>플레이어 베팅 $ 1.-</p>
-                                                                <p><b>캐시아웃 결과 :   x5.2</b></p>
+                                                                <p><b>캐시아웃 결과 : x5.2</b></p>
                                                                 <p>플레이어 당첨 5.2</p>
                                                             </td>
                                                         </tr>
@@ -204,119 +223,119 @@ h1 {
                                                 </table>
 
                                             </div>
-                                        </p>
+                                            </p>
 
-                                        <p>
-                                            <b>페이테이블</b><br>
+                                            <p>
+                                                <b>페이테이블</b><br>
 
 
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="2" width="50%"><b>베팅 종류</b></td>
-                                                        <td colspan="2" width="50%"><b>페이아웃</b></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2">베팅</td>
-                                                        <td colspan="2"> 1 - 50,000</td>
-                                                    </tr>
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="2" width="50%"><b>베팅 종류</b></td>
+                                                            <td colspan="2" width="50%"><b>페이아웃</b></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">베팅</td>
+                                                            <td colspan="2"> 1 - 50,000</td>
+                                                        </tr>
 
-                                                </tbody>
-                                            </table>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            </p>
+
+                                            <p class="red">
+                                                <b>중요!</b>
+                                            </p>
+                                            <p>오작동으로 인해 모든 승리와 플레이가 무효화됩니다.</p>
+
+
+                                            <p><b>크립토 크래쉬 - 정보 차트</b></p>
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="2"><b>마켓</b></td>
+                                                            <td colspan="2"><b>추첨 빈도</b></td>
+                                                            <td colspan="2"><b>시작 시간</b></td>
+                                                            <td colspan="2"><b>종료 시간</b></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">크립토 크래쉬</td>
+                                                            <td colspan="2">15 초</td>
+                                                            <td colspan="2">00:00:00</td>
+                                                            <td colspan="2">00:00:00</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <p>*GMT+8</p>
                                         </div>
-                                        </p>
 
-                                        <p class="red">
-                                            <b>중요!</b>
-                                        </p>
-                                        <p>오작동으로 인해 모든 승리와 플레이가 무효화됩니다.</p>
-
-
-                                        <p><b>크립토 크래쉬 - 정보 차트</b></p>
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="2"><b>마켓</b></td>
-                                                        <td colspan="2"><b>추첨 빈도</b></td>
-                                                        <td colspan="2"><b>시작 시간</b></td>
-                                                        <td colspan="2"><b>종료 시간</b></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2">크립토 크래쉬</td>
-                                                        <td colspan="2">15 초</td>
-                                                        <td colspan="2">00:00:00</td>
-                                                        <td colspan="2">00:00:00</td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <p>*GMT+8</p>
                                     </div>
 
                                 </div>
-
                             </div>
                         </div>
+
                     </div>
 
-                </div>
+                    <div class="col-lg-2 col-4 result well">
+                        <div class="row mb-4">
+                            <div class="text-center">
+                                <a href="#"><img src="../images/thumbnails/Roulette-146x189-KR.jpg" class="thumbnails"
+                                        data-toggle="modal" data-target="#Roulette"></a>
 
-
-                <div class="col-lg-3 col-md-6 col-sm-6 result well">
-                    <div class="row card">
-    
-                        <a href="#"><img src="../images/thumbnails/Roulette-EN.jpg" class="thumbnail-img"
-                                data-toggle="modal" data-target="#Roulette"></a>
-                        <div class="info">
-                            <h1>룰렛</h1>
-                            <button data-toggle="modal" data-target="#Roulette">READ</button>
+                                <p>룰렛</p>
+                            </div>
                         </div>
-                    </div>
-                    <!-- large modal -->
-                    <div class="modal fade" id="Roulette" tabindex="-1" role="dialog" aria-labelledby="basicModal"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title" id="myModalLabel">룰렛</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
-                                    </button>
-                                </div>
-    
-                                <div class="modal-body">
+                        <!-- large modal -->
+                        <div class="modal fade" id="Roulette" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="myModalLabel">룰렛</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
 
-                                    <div class="game-modal">
-                                        <p>
-                                            <b>소개</b><br>
-                                            룰렛은 0~36까지의 인기 온라인 게임 중 하나입니다.
-                                        </p>
-                                        <br>
+                                        <div class="game-modal">
+                                            <p>
+                                                <b>소개</b><br>
+                                                룰렛은 0~36까지의 인기 온라인 게임 중 하나입니다.
+                                            </p>
+                                            <br>
 
-                                        <p>
-                                            <b>게임 방법</b><br>
-                                            1. 추첨이 시작될 때 선택한 베팅 종류에 베팅하십시오.<br>
-                                            2. 타이머가 종료되면 시스템이 0-36 중에서 무작위로 결과를 선택합니다.<br>
-                                            3. 룰렛 결과가 베팅과 일치하면 이기거나 집니다.<br>
+                                            <p>
+                                                <b>게임 방법</b><br>
+                                                1. 추첨이 시작될 때 선택한 베팅 종류에 베팅하십시오.<br>
+                                                2. 타이머가 종료되면 시스템이 0-36 중에서 무작위로 결과를 선택합니다.<br>
+                                                3. 룰렛 결과가 베팅과 일치하면 이기거나 집니다.<br>
 
-                                        </p> <br>
+                                            </p> <br>
 
-                                        <p>
-                                            <b>베팅 종류</b><br>
+                                            <p>
+                                                <b>베팅 종류</b><br>
 
                                             <div class="table-responsive">
                                                 <table class="table-left">
                                                     <tbody>
                                                         <tr>
                                                             <td colspan="2" width="50%"><b>블랙, 레드</b></td>
-                                                            <td colspan="2" width="50%">블랙, 레드, 또는 그린 색깔에 숫자에 베팅하세요.</td>
+                                                            <td colspan="2" width="50%">블랙, 레드, 또는 그린 색깔에 숫자에 베팅하세요.
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td colspan="2" width="50%"><b>그린</b></td>
-                                                            <td colspan="2" width="50%"><p class="red">** 플레이어는 동일 라운드에 블랙과 레드에 베팅할 수 없습니다.</p></td>
+                                                            <td colspan="2" width="50%">
+                                                                <p class="red">** 플레이어는 동일 라운드에 블랙과 레드에 베팅할 수 없습니다.</p>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td colspan="2"></td>
@@ -334,474 +353,476 @@ h1 {
                                                                 <p><b>예시 3 :</b></p>
                                                                 <p>플레이어 : 레드 베팅 $1</p>
                                                                 <p><b>룰렛 결과 : 그린</b></p>
-                                                                <p>플레이어 미당첨</p></td>
+                                                                <p>플레이어 미당첨</p>
+                                                            </td>
                                                         </tr>
 
                                                     </tbody>
                                                 </table>
                                             </div>
-                                        </p>
+                                            </p>
+
+                                            <p>
+                                                <b>페이테이블</b><br>
+
+
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="2" width="50%"><b>베팅 종류</b></td>
+                                                            <td colspan="2" width="50%"><b>페이 아웃</b></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">블랙, 레드</td>
+                                                            <td colspan="2"> 1 </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">그린</td>
+                                                            <td colspan="2"> 13 </td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <p class="red">
+                                                중요!
+                                            </p>
+                                            <p>게임은 플레이어가 동일 라운드에 블랙과 레드에 베팅을 허용하지 않습니다.</p>
+                                            <p>시스템 장애로 인한 우승 상금과 플레이는 모두 무효로 처리됩니다.</p>
+                                            </p>
+
+                                            <p><b>룰렛 - 정보 차트</b></p>
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="2"><b>마켓</b></td>
+                                                            <td colspan="2"><b>추첨 빈도</b></td>
+                                                            <td colspan="2"><b>시작 시간</b></td>
+                                                            <td colspan="2"><b>종료 시간</b></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">룰렛</td>
+                                                            <td colspan="2">20초</td>
+                                                            <td colspan="2">00:00:00</td>
+                                                            <td colspan="2">00:00:00</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <p>*GMT+8</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-2 col-4 result well">
+                        <div class="row mb-4">
+                            <div class="text-center">
+                                <a href="#"><img src="../images/thumbnails/HiLo-146x189-KR.jpg" class="thumbnails"
+                                        data-toggle="modal" data-target="#HiLo"></a>
+
+                                <p>하이 로</p>
+                            </div>
+                        </div>
+                        <!-- large modal -->
+                        <div class="modal fade" id="HiLo" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="myModalLabel">하이 로</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
 
                                         <p>
-                                            <b>페이테이블</b><br>
+                                            <b>Introduction</b><br>
+                                            하이 로는 다음 거래카드가 하이,로일지 같을지 추측하고, 베팅하는 간단한 카드 게임으로, 싱글 플레이 게임입니다.
+                                        </p><br>
+
+                                        <b>게임 방법</b> <br>
+                                        <p>1. 플레이어가 시스템에 의해 수동 또는 자동으로 시작 카드를 선택합니다.
+                                            <br>2. 시작 카드를 선택하면 플레이어가 베팅을 합니다.
+                                            <br>3. 다음 거래 카드가 하이, 로, 높거나 같음, 낮거나 같음 또는 같음을 선택합니다.
+                                            <br>4. 다음 딜 카드 결과가 다음인 경우;
+                                            <br>정답 - 승리 - 승리하려면 더 높은 승수로 게임을 계속하세요.
+                                            <br>틀림 - 패배 - 게임이 종료되었습니다. 플레이어는 새로운 라운드로 계속할 수 있습니다.
+                                            <br>5. 플레이어가 계속 추측을 올바르게 유지하면 플레이어는 승리 금액을 캐시 아웃하고 게임 종료를 결정할 수
+                                            있습니다.<br><br><br>
 
 
-                                        <div class="table-responsive">
+                                            <b>지불표</b><br>
+
+                                        <div style="text-align: center;" class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>카드</th>
+                                                        <th colspan="2">승수</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>낮거나 같음</td>
+                                                        <td>높거나 같음</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>에이스</td>
+                                                        <td>11.87</td>
+                                                        <td>0.07</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>5.43</td>
+                                                        <td>0.07</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>3.29</td>
+                                                        <td>0.07</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>2.21</td>
+                                                        <td>0.17</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>1.57</td>
+                                                        <td>0.43</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>1.14</td>
+                                                        <td>0.60</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7</td>
+                                                        <td>0.83</td>
+                                                        <td>0.83</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8</td>
+                                                        <td>0.60</td>
+                                                        <td>1.14</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>9</td>
+                                                        <td>0.43</td>
+                                                        <td>1.57</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10</td>
+                                                        <td>0.17</td>
+                                                        <td>2.21</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>J</td>
+                                                        <td>0.07</td>
+                                                        <td>3.29</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Q</td>
+                                                        <td>0.07</td>
+                                                        <td>5.43</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>K</td>
+                                                        <td>0.07</td>
+                                                        <td>11.87</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <p><span style="font-style: italic;">* 모든 승리에 대해 누적된 지불금</span></p>
+                                        <p><span style="color: red; font-style: italic;">중요!</span><br>
+                                            <span style="font-style: italic;">오작동으로 인해 모든 승리와 플레이가 무효화됩니다.</span>
+                                        </p>
+
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-4 result well">
+                        <div class="row mb-4">
+                            <div class="text-center">
+                                <a href="#"><img src="../images/thumbnails/w88-slots-Snow-Sweeper-EN.jpg"
+                                        class="thumbnails" data-toggle="modal" data-target="#SnowSweeper"></a>
+
+                                <p>Snow Sweeper</p>
+                            </div>
+                        </div>
+                        <!-- large modal -->
+                        <div class="modal fade" id="SnowSweeper" tabindex="-1" role="dialog"
+                            aria-labelledby="basicModal" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="myModalLabel">Snow Sweeper</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <p>
+                                            <b>설명</b><br>
+                                            스노우 스위퍼는 잘 알려진 지뢰 찾기의 고전 게임입니다. 이 게임의 목표는 지뢰를 피해 지뢰밭을 통과해야 합니다.
+                                            플레이어가 게임에 오래 머물수록 보상도가 높아집니다!
+                                        </p><br>
+
+                                        <b>게임 정보</b> <br>
+                                        <p>플레이어는 지뢰밭 지도를 선택하여 플레이할 수 있습니다.</p>
+                                        <div style="text-align: center;" class="table-responsive">
+                                            <table class="table">
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td></td>
+                                                        <td><img src="photo1.jpg" alt="Photo 1"></td>
+                                                        <td><img src="photo2.jpg" alt="Photo 2"></td>
+                                                        <td><img src="photo3.jpg" alt="Photo 3"></td>
+                                                    </tr>
+
+
+                                                    <tr>
+                                                        <td>Field</td>
+                                                        <td>7</td>
+                                                        <td>19</td>
+                                                        <td>37</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Comb</td>
+                                                        <td>1-3</td>
+                                                        <td>3-9</td>
+                                                        <td>8-15</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Multiplier Range</td>
+                                                        <td>X-XX</td>
+                                                        <td>X-XX</td>
+                                                        <td>X-XX</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>RTP Range</td>
+                                                        <td></td>
+                                                        <td>XX.XX</td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <p><span style="color: red; font-style: italic;">중요!</span><br>
+                                            <span style="font-style: italic;">오작동으로 인해 모든 승리와 플레이가 무효화됩니다.</span>
+                                        </p>
+
+                                        <b>게임 심볼</b>
+                                        <div style="margin: 0 auto; width: 80%;">
+                                            <div style="text-align: center;" class="table-responsive">
+                                                <table class="table" style="margin: 0 auto;">
+                                                    <tbody>
+                                                        <tr>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="photo1.jpg" alt="Photo 4"></td>
+                                                            <td><img src="photo2.jpg" alt="Photo 5"></td>
+                                                            <td><img src="photo3.jpg" alt="Photo 6"></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Penguin</td>
+                                                            <td>Bonus Penguin</td>
+                                                            <td>Bomb</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <p>플레이어가 지뢰를 피할 수 있을 때마다 펭귄이 나타나고 플레이어는 멀티플라이어로 보상을 받습니다.<br>
+                                            플레이어가 지뢰에 부딪히면 폭탄이 폭발하고 플레이어는 베팅과 이전 상금을 잃게 됩니다.
+                                        </p>
+
+                                        <b>게임 방법</b>
+                                        <p>* 지뢰 수에 따라 지뢰밭 지도를 선택하세요.<br>
+                                            * 지도에서 폭탄의 수를 선택하세요.<br>
+                                            * 을 누르세요.<span style="font-style: italic;"><b>"시작"</b></span> <br>
+                                            * 필드를 선택하고 지뢰를 피하여 보상을 받으세요<br>
+                                            * 언제든지 수집하여 게임에서 승리하세요.
+                                        </p>
+
+                                        <b>연결 끊김</b>
+                                        <p>
+                                            완료되지 않은 모든 라운드는 20분마다 종료됩니다.<br>
+                                            끝나지 않은 라운드는 20분 후에 자동으로 수집되며 승리는 플레이어의 잔액으로 지급됩니다.
+                                        </p>
+
+                                        <b>게임 컨트롤</b>
+
+                                        <div style="text-align: center;" class="table-responsive">
                                             <table class="table">
                                                 <tbody>
                                                     <tr>
-                                                        <td colspan="2" width="50%"><b>베팅 종류</b></td>
-                                                        <td colspan="2" width="50%"><b>페이 아웃</b></td>
+                                                        <td>컨트롤</td>
+                                                        <td>설명</td>
                                                     </tr>
+
                                                     <tr>
-                                                        <td colspan="2">블랙, 레드</td>
-                                                        <td colspan="2"> 1 </td>
+                                                        <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                        <td>오픈 필드와 남은 필드 수</td>
                                                     </tr>
+
                                                     <tr>
-                                                        <td colspan="2">그린</td>
-                                                        <td colspan="2"> 13 </td>
+                                                        <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                        <td>게임 라운드의 필드의 폭탄/지뢰 수</td>
                                                     </tr>
+
+                                                    <tr>
+                                                        <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                        <td>베팅 칩 선택하여 게임하기</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                        <td>시작을 클릭하여 게임하기<br>
+                                                            현재 당첨 금액. 당첨금 받기
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                        <td>한 번에 한 필드씩 랜덤으로 필드 선택</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                        <td>한 번에 타일 3개 필드를 랜덤으로 선택</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                        <td>자동 모드 재생 켜기 및 끄기</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                        <td>자동 모드에서 플레이한 라운드 수</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                        <td>게임 모드 변경을 원할 경우 "터보" 토글을 클릭하세요.<br>
+                                                            자동 재생될 타일 수를 수동 또는 랜덤으로 선택하세요.<br>
+                                                            자동 모드에서 플레이할 라운드 수를 선택하세요.
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                        <td>다음 필드 페이 아웃</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                        <td>플레이어의 현재 잔액(숨기기/숨기기를 해제하려면 탭 하세요)</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                        <td>플레이어의 베팅 금액 및 해당 라운드의 당첨 금액</td>
+                                                    </tr>
+
 
                                                 </tbody>
                                             </table>
                                         </div>
-                                        <p class="red">
-                                            중요!
-                                        </p>
-                                        <p>게임은 플레이어가 동일 라운드에 블랙과 레드에 베팅을 허용하지 않습니다.</p>
-                                        <p>시스템 장애로 인한 우승 상금과 플레이는 모두 무효로 처리됩니다.</p>
-                                        </p>
-                                        
-                                        <p><b>룰렛 - 정보 차트</b></p>
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="2"><b>마켓</b></td>
-                                                        <td colspan="2"><b>추첨 빈도</b></td>
-                                                        <td colspan="2"><b>시작 시간</b></td>
-                                                        <td colspan="2"><b>종료 시간</b></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2">룰렛</td>
-                                                        <td colspan="2">20초</td>
-                                                        <td colspan="2">00:00:00</td>
-                                                        <td colspan="2">00:00:00</td>
-                                                    </tr>
 
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <p>*GMT+8</p>
+
                                     </div>
 
                                 </div>
-
                             </div>
                         </div>
                     </div>
-                </div> 
-
-                <div class="col-lg-3 col-md-6 col-sm-6 result well">
-                    <div class="row card">
-    
-                        <a href="#"><img src="../images/thumbnails/HiLo-EN.jpg" class="thumbnail-img" data-toggle="modal"
-                                data-target="#HiLo"></a>
-                        <div class="info">
-                            <h1>하이 로 </h1>
-                            <button data-toggle="modal" data-target="#HiLo">READ</button>
-                        </div>
-                    </div>
-                    <!-- large modal -->
-                    <div class="modal fade" id="HiLo" tabindex="-1" role="dialog" aria-labelledby="basicModal"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title" id="myModalLabel">하이 로 </h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
-                                    </button>
-                                </div>
-    
-                                <div class="modal-body">
-                 
-                                    <p>
-                                        <b>Introduction</b><br>
-                                        하이 로는 다음 거래카드가 하이,로일지 같을지 추측하고, 베팅하는 간단한 카드 게임으로, 싱글 플레이 게임입니다.
-                                    </p><br>
-                 
-                                    <b>게임 방법</b> <br>
-                                    <p>1. 플레이어가 시스템에 의해 수동 또는 자동으로 시작 카드를 선택합니다.
-                                    <br>2. 시작 카드를 선택하면 플레이어가 베팅을 합니다.
-                                    <br>3. 다음 거래 카드가 하이, 로, 높거나 같음, 낮거나 같음 또는 같음을 선택합니다.
-                                    <br>4. 다음 딜 카드 결과가 다음인 경우;
-                                    <br>정답 - 승리 - 승리하려면 더 높은 승수로 게임을 계속하세요.
-                                    <br>틀림 - 패배 - 게임이 종료되었습니다. 플레이어는 새로운 라운드로 계속할 수 있습니다.
-                                    <br>5. 플레이어가 계속 추측을 올바르게 유지하면 플레이어는 승리 금액을 캐시 아웃하고 게임 종료를 결정할 수 있습니다.<br><br><br>
-                 
-                 
-                                    <b>지불표</b><br>
-                 
-                                    <div style="text-align: center;" class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                  <th>카드</th>
-                                                  <th colspan="2">승수</th>
-                                                </tr>
-                                              </thead>
-                                              <tbody>
-                                                <tr>
-                                                  <td></td>
-                                                  <td>낮거나 같음</td>
-                                                  <td>높거나 같음</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>에이스</td>
-                                                  <td>11.87</td>
-                                                  <td>0.07</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>2</td>
-                                                  <td>5.43</td>
-                                                  <td>0.07</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>3</td>
-                                                  <td>3.29</td>
-                                                  <td>0.07</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>4</td>
-                                                  <td>2.21</td>
-                                                  <td>0.17</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>5</td>
-                                                  <td>1.57</td>
-                                                  <td>0.43</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>6</td>
-                                                  <td>1.14</td>
-                                                  <td>0.60</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>7</td>
-                                                  <td>0.83</td>
-                                                  <td>0.83</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>8</td>
-                                                  <td>0.60</td>
-                                                  <td>1.14</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>9</td>
-                                                  <td>0.43</td>
-                                                  <td>1.57</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>10</td>
-                                                  <td>0.17</td>
-                                                  <td>2.21</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>J</td>
-                                                  <td>0.07</td>
-                                                  <td>3.29</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>Q</td>
-                                                  <td>0.07</td>
-                                                  <td>5.43</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>K</td>
-                                                  <td>0.07</td>
-                                                  <td>11.87</td>
-                                                </tr>
-                                              </tbody>
-                                        </table>
-                                    </div>
-                                    <p><span style="font-style: italic;">* 모든 승리에 대해 누적된 지불금</span></p>
-                                    <p><span style="color: red; font-style: italic;">중요!</span><br>
-                                        <span style="font-style: italic;">오작동으로 인해 모든 승리와 플레이가 무효화됩니다.</span>
-                                    </p>
-                 
-                                    
-                 
-                 
-                                </div>
-                 
-                            </div>
-                        </div>
-                    
-                 </div>
-                 </div>
-
-                 <div class="col-lg-3 col-md-6 col-sm-6 result well">
-                    <div class="row card">
-    
-                        <a href="#"><img src="../images/thumbnails/Snow-Sweeper-EN.jpg" class="thumbnail-img"
-                                data-toggle="modal" data-target="#SnowSweeper"></a>
-                        <div class="info">
-                            <h1>SNOW SWEEPER</h1>
-                            <button data-toggle="modal" data-target="#SnowSweeper">READ</button>
-                        </div>
-                    </div>
-                    <!-- large modal -->
-                    <div class="modal fade" id="SnowSweeper" tabindex="-1" role="dialog" aria-labelledby="basicModal"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title" id="myModalLabel">SNOW SWEEPER</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
-                                    </button>
-                                </div>
-    
-                                <div class="modal-body">
-                
-                                                       <p>
-                                                          <b>설명</b><br>
-                                                          스노우 스위퍼는 잘 알려진 지뢰 찾기의 고전 게임입니다. 이 게임의 목표는 지뢰를 피해 지뢰밭을 통과해야 합니다.
-                                                          플레이어가 게임에 오래 머물수록 보상도가 높아집니다!
-                                                       </p><br>
-                
-                                                       <b>게임 정보</b> <br>
-                                                       <p>플레이어는 지뢰밭 지도를 선택하여 플레이할 수 있습니다.</p>
-                                                       <div style="text-align: center;" class="table-responsive">
-                                                          <table class="table">
-                                                             <tbody>
-                
-                                                                <tr>
-                                                                   <td></td>
-                                                                   <td><img src="photo1.jpg" alt="Photo 1"></td>
-                                                                   <td><img src="photo2.jpg" alt="Photo 2"></td>
-                                                                   <td><img src="photo3.jpg" alt="Photo 3"></td>
-                                                               </tr>
-                
-                
-                                                                <tr>
-                                                                   <td>Field</td>
-                                                                   <td>7</td>
-                                                                   <td>19</td>
-                                                                   <td>37</td>
-                                                                </tr>
-                
-                                                                <tr>
-                                                                   <td>Comb</td>
-                                                                   <td>1-3</td>
-                                                                   <td>3-9</td>
-                                                                   <td>8-15</td>
-                
-                                                                </tr>
-                                                                <tr>
-                                                                   <td>Multiplier Range</td>
-                                                                   <td>X-XX</td>
-                                                                   <td>X-XX</td>
-                                                                   <td>X-XX</td>
-                                                                </tr>
-                                                                <tr>
-                                                                   <td>RTP Range</td>
-                                                                   <td></td>
-                                                                   <td>XX.XX</td>
-                                                                   <td></td>
-                                                                </tr>
-                                                             </tbody>
-                                                          </table>
-                                                       </div>
-                                                       <p><span style="color: red; font-style: italic;">중요!</span><br>
-                                                          <span style="font-style: italic;">오작동으로 인해 모든 승리와 플레이가 무효화됩니다.</span>
-                                                       </p>
-                
-                                                       <b>게임 심볼</b>
-                                                       <div style="margin: 0 auto; width: 80%;">
-                                                          <div style="text-align: center;" class="table-responsive">
-                                                             <table class="table" style="margin: 0 auto;">
-                                                                <tbody>
-                                                                   <tr>
-                                                                      </tr><tr>
-                                                                         <td><img src="photo1.jpg" alt="Photo 4"></td>
-                                                                         <td><img src="photo2.jpg" alt="Photo 5"></td>
-                                                                         <td><img src="photo3.jpg" alt="Photo 6"></td>
-                                                                     </tr>
-                                                                   
-                                                                   <tr>
-                                                                      <td>Penguin</td>
-                                                                      <td>Bonus Penguin</td>
-                                                                      <td>Bomb</td>
-                                                                   </tr>
-                                                                </tbody>
-                                                             </table>
-                                                          </div>
-                                                       </div>
-                
-                                                       <p>플레이어가 지뢰를 피할 수 있을 때마다 펭귄이 나타나고 플레이어는 멀티플라이어로 보상을 받습니다.<br>
-                                                          플레이어가 지뢰에 부딪히면 폭탄이 폭발하고 플레이어는 베팅과 이전 상금을 잃게 됩니다.
-                                                       </p>
-                
-                                                       <b>게임 방법</b>
-                                                       <p>* 지뢰 수에 따라 지뢰밭 지도를 선택하세요.<br>
-                                                          * 지도에서 폭탄의 수를 선택하세요.<br>
-                                                          * 을 누르세요.<span style="font-style: italic;"><b>"시작"</b></span> <br>
-                                                          * 필드를 선택하고 지뢰를 피하여 보상을 받으세요<br>
-                                                          * 언제든지 수집하여 게임에서 승리하세요.
-                                                       </p>
-                
-                                                       <b>연결 끊김</b>
-                                                       <p>
-                                                          완료되지 않은 모든 라운드는 20분마다 종료됩니다.<br>
-                                                          끝나지 않은 라운드는 20분 후에 자동으로 수집되며 승리는 플레이어의 잔액으로 지급됩니다.
-                                                       </p>
-                
-                                                       <b>게임 컨트롤</b>
-                
-                                                       <div style="text-align: center;" class="table-responsive">
-                                                          <table class="table">
-                                                             <tbody>
-                                                                <tr>
-                                                                   <td>컨트롤</td>
-                                                                   <td>설명</td>
-                                                               </tr>
-                                                               
-                                                               <tr>
-                                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                   <td>오픈 필드와 남은 필드 수</td>
-                                                               </tr>
-                                                               
-                                                               <tr>
-                                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                   <td>게임 라운드의 필드의 폭탄/지뢰 수</td>
-                                                               </tr>
-                                                               
-                                                               <tr>
-                                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                   <td>베팅 칩 선택하여 게임하기</td>
-                                                               </tr>
-                                                               
-                                                               <tr>
-                                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                   <td>시작을 클릭하여 게임하기<br>
-                                                                       현재 당첨 금액. 당첨금 받기
-                                                                   </td>
-                                                               </tr>
-                                                               
-                                                               <tr>
-                                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                   <td>한 번에 한 필드씩 랜덤으로 필드 선택</td>
-                                                               </tr>
-                                                               
-                                                               <tr>
-                                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                   <td>한 번에 타일 3개 필드를 랜덤으로 선택</td>
-                                                               </tr>
-                                                               
-                                                               <tr>
-                                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                   <td>자동 모드 재생 켜기 및 끄기</td>
-                                                               </tr>
-                                                               
-                                                               <tr>
-                                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                   <td>자동 모드에서 플레이한 라운드 수</td>
-                                                               </tr>
-                                                               
-                                                               <tr>
-                                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                   <td>게임 모드 변경을 원할 경우 "터보" 토글을 클릭하세요.<br>
-                                                                       자동 재생될 타일 수를 수동 또는 랜덤으로 선택하세요.<br>
-                                                                       자동 모드에서 플레이할 라운드 수를 선택하세요.
-                                                                   </td>
-                                                               </tr>
-                                                               
-                                                               <tr>
-                                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                   <td>다음 필드 페이 아웃</td>
-                                                               </tr>
-                                                               
-                                                               <tr>
-                                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                   <td>플레이어의 현재 잔액(숨기기/숨기기를 해제하려면 탭 하세요)</td>
-                                                               </tr>
-                                                               
-                                                               <tr>
-                                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                                   <td>플레이어의 베팅 금액 및 해당 라운드의 당첨 금액</td>
-                                                               </tr>
-                
-                
-                                                             </tbody>
-                                                          </table>
-                                                       </div>
-                
-                
-                                                    </div>
-                
-                       </div>
-                    </div>
-                 </div>
                 </div>
-                </div>
-<div class="col" id="searchNotfound" style="display: none; text-align:center;">
-   <img src="https://www.gpislots.info/shared/images/no-results-en.png">
-   <h3 style="font-family: 'Helvetica', sans-serif;;
+                <div class="col" id="searchNotfound" style="display: none; text-align:center;">
+                    <img src="https://www.gpislots.info/shared/images/no-results-en.png">
+                    <h3 style="font-family: 'Helvetica', sans-serif;;
 ">No results found</h3>
-   <p style="font-family: 'Helvetica', sans-serif;;
+                    <p style="font-family: 'Helvetica', sans-serif;;
 ">Please modify your search and try again.
-</p>
-</div>
-<div class="paginationCustom">
-   <div id="pagingControls"></div>
+                    </p>
+                </div>
+                <div class="paginationCustom">
+                    <div id="pagingControls"></div>
 
-</div>   
-</div>
-
-
-
-</div>
-
-<footer class="footer" style="background-color: #e8e8e8;">
+                </div>
+            </div>
 
 
-    <div class="container">
-    
+        </div>
+    </div>
 
 
-            <div class="dropup">
-                <button class="btn btn-black dropdown-toggle" type="button" id="languageDropdown"
-                    data-bs-toggle="dropdown" aria-expanded="false"
-                    style="margin: 1rem; border-radius: 1rem; width: 10rem;">
-                    <span">한국어</span>
-                </button>
+    <footer class="footer" style="background-color: #f5f5f5;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8 align-items-center">
+                    <!-- Your footer content here -->
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 align-items-center">
+                    <div class="dropup" style="position: relative; float: right;">
+                        <button class="btn btn-black dropdown-toggle d-flex justify-content-between align-items-center"
+                            type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false"
+                            style="margin: 1rem; width: 11rem;">
+                            <span>English</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="rules_slots_en-my.html">English</a></li>
+                            <li><a class="dropdown-item" href="rules_slots_cn-my.html">简体中文</a></li>
+                            <li><a class="dropdown-item" href="rules_slots_id-my.html">Bahasa Indonesia</a></li>
+                            <li><a class="dropdown-item" href="rules_slots_kh-my.html">ខ្មែរ</a></li>
+                            <li><a class="dropdown-item" href="rules_slots_th-my.html">ไทย</a></li>
+                            <li><a class="dropdown-item" href="rules_slots_vn-my.html">Tiếng Việt</a></li>
+                            <li><a class="dropdown-item" href="rules_slots_es-my.html">Español</a></li>
+                        </ul>
+                    </div>
 
-                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                    <li><a class="dropdown-item" href="rules_slots_en-my.html">English</a></li>
-                    <li><a class="dropdown-item" href="rules_slots_cn-my.html">简体中文</a></li>
-                    <li><a class="dropdown-item" href="rules_slots_id-my.html">Bahasa Indonesia</a></li>
-                    <li><a class="dropdown-item" href="rules_slots_kh-my.html">ខ្មែរ</a></li>
-                    <li><a class="dropdown-item" href="rules_slots_th-my.html">ไทย</a></li>
-                    <li><a class="dropdown-item" href="rules_slots_vn-my.html">Tiếng Việt</a></li>
-                    <li><a class="dropdown-item" href="rules_slots_es-my.html">Español</a></li>
-                </ul>
+
+
+                </div>
             </div>
         </div>
 
 
-    </div>
-    </div>
-   
-</footer>
 
-<script src="https://www.gpislots.info/shared/js/jquery.js"></script>
-<script src="https://www.gpislots.info/shared/js/flexible-pagination.js"></script>
-<script src="https://www.gpislots.info/shared/js/scripts.js"></script>
-<script src="https://www.gpislots.info/shared/js/bootstrap.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://www.gpislots.info/shared/js/jquery.js"></script>
+        <script src="https://www.gpislots.info/shared/js/flexible-pagination.js"></script>
+        <script src="https://www.gpislots.info/shared/js/scripts.js"></script>
+        <script src="https://www.gpislots.info/shared/js/bootstrap.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 
 

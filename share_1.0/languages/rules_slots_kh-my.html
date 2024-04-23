@@ -1,809 +1,841 @@
 <html lang="en">
+
 <head>
-<link href="../css/white.css" rel="stylesheet">
+    <link href="../css/white.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.css">
-<title>Info Centre - Games</title>
-<link rel="icon" type="image/x-icon" href="../images/cresendo_favicon.png">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Info Centre - Games</title>
+    <link rel="icon" type="image/x-icon" href="../images/cresendo_favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
- 
+
 </head>
+
 <body>
-<style type="text/css">
-     
-    .w-100{
-        text-align: center!important;
+    <style type="text/css">
+        .w-100 {
+            text-align: center !important;
 
-    }
+        }
 
-.justify-content-end {
-    justify-content: center!important;
-}
-.fa-bars:before {
-    content: "\f0c9";
-    color: #fff;
-}
-    .navbar-brand {
-    width: 100%!important;
-    margin: 0 auto;
-    text-align: center;
-}
+        .justify-content-end {
+            justify-content: center !important;
+        }
 
-.bg-dark {
-    background-color: #4439a1 !important;
-}
+        .fa-bars:before {
+            content: "\f0c9";
+            color: #fff;
+        }
 
-.topnav {
-  padding: 15px;
-  background-color: black;
-}
+        .navbar-brand {
+            width: 100% !important;
+            margin: 0 auto;
+            text-align: center;
+        }
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+        .bg-dark {
+            background-color: #4439a1 !important;
+        }
 
-.btn:not(:disabled):not(.disabled) {
-    color: white;
-}
+        .topnav {
+            padding: 15px;
+            background-color: black;
+        }
 
-.game {
-   color: #4439a1 !important;
-}
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-#content img {
-    border-radius: 0px !important;
-}
+        .btn:not(:disabled):not(.disabled) {
+            color: white;
+        }
 
-#content p {
-      margin-top: 10px !important;
-    margin-bottom: 15px !important;
-}
+        #content img {
+            border-radius: 0px !important;
+        }
 
-@media (max-width: 991px){
-.navbar-brand {
-    width: 90%!important;
-    margin: 0 auto;
-    text-align: center;
-}
+        #content p {
+            margin-top: 10px !important;
+            margin-bottom: 15px !important;
+        }
 
-.w-100{
+        @media (max-width: 991px) {
+            .navbar-brand {
+                width: 90% !important;
+                margin: 0 auto;
+                text-align: center;
+            }
 
-    text-align: left!important;
-}
-}
-h1 {
-   color: black;
-}
-@media (min-width: 992px){
-.navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
-    -ms-flex-wrap: nowrap;
-    display: block;
-}
+            .w-100 {
 
+                text-align: left !important;
+            }
+        }
 
-}
-</style>
+        h1 {
+            color: black;
+        }
 
-<div class="header">
+        @media (min-width: 992px) {
 
-    <div class="container">
-        <a class="navbar-brand" href="#"><img src="../images/thumbnails/logo.png" width="189" height="50"
-                class="nav-photo"></a>
-        <!-- Center right alignment -->
-    </div>
-    </nav>
-    <div class="blue-bar-head">
-        <div class="container">
-        </div>
-    </div>
-</div>
+            .navbar-expand-lg>.container,
+            .navbar-expand-lg>.container-fluid {
+                -ms-flex-wrap: nowrap;
+                display: block;
+            }
 
 
-<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        }
+    </style>
 
-<div class="container mt-5 mb-3 games ">
-    <div class="row">
-        <div class="col-lg-9 col-md-6 col-sm-3 page-header" style="margin-top: -7px;">
-            <h1 class="game">ហ្គេម</h1>
+    <div class="header">
+        <div class="container header">
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="nav-photo">
+                        <a class="navbar-brand" href="#"><img src="../images/thumbnails/logo.png" width="189"
+                                height="50" class="nav-photo"></a>
+                        <!-- Center right alignment -->
+                    </div>
+                </div>
+            </div>
+            </nav>
+
         </div>
 
-        <div class="col-lg-3 col-md-6 col-sm-5 justify-content-end">
-            <input class="searchBox form-control" placeholder="Type game title">
+
+        <div class="blue-bar-head">
+            <div class="container">
+            </div>
         </div>
     </div>
 
-</div>
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
- 
-    #content{
-    display: flex;
-    }
-    .btn-success {
-    color: #fff;
-    background-color: #A8C62C;
-    border-color: #A8C62C;
-    }
-    .btn-success:hover {
-    color: #fff;
-    background-color: #839a23;
-    border-color: #839a23;
-    }
- </style>
- <a id="bttbutton"></a>
- <div class="container contents">
+    <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <div class="container mt-5 mb-3 games ">
+        <div class="row">
+            <div class="col-lg-9 col-md-6 col-sm-3 page-header" style="margin-top: -7px;">
+                <h1 class="game">ហ្គេម</h1>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-5 justify-content-end">
+                <input class="searchBox form-control" placeholder="Search game">
+            </div>
+        </div>
+
+    </div>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+        #content {
+            display: flex;
+        }
+
+        .btn-success {
+            color: #fff;
+            background-color: #A8C62C;
+            border-color: #A8C62C;
+        }
+
+        .btn-success:hover {
+            color: #fff;
+            background-color: #839a23;
+            border-color: #839a23;
+        }
+    </style>
+    <a id="bttbutton"></a>
+    <div class="container contents">
         <div class="row" id="content">
 
-            <div class="col-lg-3 col-md-6 col-sm-6 result well">
-                <div class="row card">
+            <div class="col-lg-2 col-4 result well">
+                <div class="row mb-4">
+                    <div class="text-center">
+                        <a href="#"><img src="../images/thumbnails/Crypto-Crash-146x189-EN.png" class="thumbnails"
+                                data-toggle="modal" data-target="#CryptoCrash"></a>
 
-                    <a href="#"><img src="../images/thumbnails/Crypto-Crash-EN.png" class="thumbnail-img"
-                            data-toggle="modal" data-target="#CrytoCrash"></a>
-                    <div class="info">
-                        <h1>CRYPTO CRASH</h1>
-                        <button data-toggle="modal" data-target="#CrytoCrash">READ</button>
+                        <p>Crypto Crash</p>
                     </div>
                 </div>
                 <!-- large modal -->
-                <div class="modal fade" id="CrytoCrash" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                <div class="modal fade" id="CryptoCrash" tabindex="-1" role="dialog" aria-labelledby="basicModal"
                     aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title" id="myModalLabel">CRYPTO CRASH</h4>
+                                <h4 class="modal-title" id="myModalLabel">Crypto Crash</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
+                                    <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-
                             <div class="modal-body">
 
-                                    <div class="game-modal">
-                                        <p>
-                                            <b>ការណែនាំ</b><br>
-                                            Crypto Crash គឺជាហ្គេមដ៏រំជួលចិត្តមួយនៃគ្រាប់រូកែត ដែលសមាជិកត្រូវទស្សទាយថាតើគ្រាប់រូកែតអាចហោះខ្ពស់កំរិតណាមុនពេលដែលវាផ្ទុះ។
-                                            ការទស្សទាយត្រឹមត្រូវមុនពេលគ្រាប់រូកែតផ្ទុះនឹងឈ្នះ និងទស្សទាយមិនត្រឹមត្រូវនឹងចាញ់។
-                                        </p>
-                                        <br>
+                                <div class="game-modal">
+                                    <p>
+                                        <b>ការណែនាំ</b><br>
+                                        Crypto Crash គឺជាហ្គេមដ៏រំជួលចិត្តមួយនៃគ្រាប់រូកែត
+                                        ដែលសមាជិកត្រូវទស្សទាយថាតើគ្រាប់រូកែតអាចហោះខ្ពស់កំរិតណាមុនពេលដែលវាផ្ទុះ។
+                                        ការទស្សទាយត្រឹមត្រូវមុនពេលគ្រាប់រូកែតផ្ទុះនឹងឈ្នះ
+                                        និងទស្សទាយមិនត្រឹមត្រូវនឹងចាញ់។
+                                    </p>
+                                    <br>
 
-                                        <p>
-                                            <b>របៀបលេង</b><br>
-                                            1. នៅមុនពេលចាប់ផ្តើម សមាជិកត្រូវធ្វើការដាក់ភ្នាល់។<br>
-                                            2. នៅពេលអស់ម៉ោង គ្រាប់រូកែតនឹងត្រូវផ្លាស់ទី ជាមួយទ្រនិចនៃការទូទាត់សង។<br>
-                                            3. ប្រសិនមាជិកចុច Cash out មុនពេលគ្រាប់រូកែតផ្ទុះ សមាជិកនឹងឈ្នះទៅតាមទ្រនិចនៃការទូទាត់សងដែលបង្ហាញនៅពេល Cash out។<br>
-                                               ប្រសិនសមាជិកចុច Cash out នៅពេលរូកែតផ្ទុះ នោះសមាជិកនឹងចាញ់។
-                                        </p>
+                                    <p>
+                                        <b>របៀបលេង</b><br>
+                                        1. នៅមុនពេលចាប់ផ្តើម សមាជិកត្រូវធ្វើការដាក់ភ្នាល់។<br>
+                                        2. នៅពេលអស់ម៉ោង គ្រាប់រូកែតនឹងត្រូវផ្លាស់ទី ជាមួយទ្រនិចនៃការទូទាត់សង។<br>
+                                        3. ប្រសិនមាជិកចុច Cash out មុនពេលគ្រាប់រូកែតផ្ទុះ
+                                        សមាជិកនឹងឈ្នះទៅតាមទ្រនិចនៃការទូទាត់សងដែលបង្ហាញនៅពេល Cash out។<br>
+                                        ប្រសិនសមាជិកចុច Cash out នៅពេលរូកែតផ្ទុះ នោះសមាជិកនឹងចាញ់។
+                                    </p>
 
-                                        <p>
-                                            <b>ប្រភេទភ្នាល់</b><br>
-                                        
-                                        <div class="table-responsive">
-                                            <table class="table-left">
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="2" width="50%"><b>ការភ្នាល់</b></td>
-                                                        <td colspan="2" width="50%">ដាក់ការភ្នាល់នៅលើដៃនោះ។</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2"></td>
-                                                        <td colspan="2">
-                                                            <p class="red">** សមាជិកអាចធ្វើការដាក់ភ្នាល់តែនៅក្នុងដៃដែលលេងប៉ុណ្ណោះ។</p>
-                                                            <p><b>ឧទាហរណ៍ទី1៖</b></p>
-                                                            <p>សមាជិកភ្នាល់ $ 1.-</p>
-                                                            <p><b>លទ្ធផល Cash out៖ x5.2</b></p>
-                                                            <p>សមាជិកឈ្នះ 5.2</p>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                    <p>
+                                        <b>ប្រភេទភ្នាល់</b><br>
 
-                                        </div>
+                                    <div class="table-responsive">
+                                        <table class="table-left">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2" width="50%"><b>ការភ្នាល់</b></td>
+                                                    <td colspan="2" width="50%">ដាក់ការភ្នាល់នៅលើដៃនោះ។</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2"></td>
+                                                    <td colspan="2">
+                                                        <p class="red">**
+                                                            សមាជិកអាចធ្វើការដាក់ភ្នាល់តែនៅក្នុងដៃដែលលេងប៉ុណ្ណោះ។</p>
+                                                        <p><b>ឧទាហរណ៍ទី1៖</b></p>
+                                                        <p>សមាជិកភ្នាល់ $ 1.-</p>
+                                                        <p><b>លទ្ធផល Cash out៖ x5.2</b></p>
+                                                        <p>សមាជិកឈ្នះ 5.2</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
 
-                                        </p>
-
-                                        <p>
-                                            <b>តារាងទូទាត់</b><br>
-
-
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="2" width="50%"><b>ប្រភេទភ្នាល់</b></td>
-                                                        <td colspan="2" width="50%"><b>ការភ្នាល់</b></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2">ការសង</td>
-                                                        <td colspan="2"> 1 - 50,000</td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        </p>
-
-                                        <p class="red">
-                                            <b>ចំណាំ!</b>
-                                        </p>
-                                        <p>ដំណើរការខុសប្រក្រតីប្រព័ន្ធ ទុកជាមោឃៈ រាល់ការសង និងលេង។</p>
-
-
-                                        <p><b>Crypto Crash - តារាងព័ត៌មាន</b></p>
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="2"><b>ទីផ្សារ</b></td>
-                                                        <td colspan="2"><b>ការចេញដៃ</b></td>
-                                                        <td colspan="2"><b>ម៉ោងចាប់ផ្តើម</b></td>
-                                                        <td colspan="2"><b>ម៉ោងបញ្ចប់</b></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2">Crypto Crash</td>
-                                                        <td colspan="2">15 វិនាទី</td>
-                                                        <td colspan="2">00:00:00</td>
-                                                        <td colspan="2">00:00:00</td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <p>*GMT+8</p>
                                     </div>
 
+                                    </p>
+
+                                    <p>
+                                        <b>តារាងទូទាត់</b><br>
+
+
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2" width="50%"><b>ប្រភេទភ្នាល់</b></td>
+                                                    <td colspan="2" width="50%"><b>ការភ្នាល់</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">ការសង</td>
+                                                    <td colspan="2"> 1 - 50,000</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    </p>
+
+                                    <p class="red">
+                                        <b>ចំណាំ!</b>
+                                    </p>
+                                    <p>ដំណើរការខុសប្រក្រតីប្រព័ន្ធ ទុកជាមោឃៈ រាល់ការសង និងលេង។</p>
+
+
+                                    <p><b>Crypto Crash - តារាងព័ត៌មាន</b></p>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2"><b>ទីផ្សារ</b></td>
+                                                    <td colspan="2"><b>ការចេញដៃ</b></td>
+                                                    <td colspan="2"><b>ម៉ោងចាប់ផ្តើម</b></td>
+                                                    <td colspan="2"><b>ម៉ោងបញ្ចប់</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">Crypto Crash</td>
+                                                    <td colspan="2">15 វិនាទី</td>
+                                                    <td colspan="2">00:00:00</td>
+                                                    <td colspan="2">00:00:00</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p>*GMT+8</p>
                                 </div>
 
                             </div>
+
                         </div>
                     </div>
-
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-sm-6 result well">
-                    <div class="row card">
-    
-                        <a href="#"><img src="../images/thumbnails/Roulette-EN.jpg" class="thumbnail-img"
+            </div>
+
+            <div class="col-lg-2 col-4 result well">
+                <div class="row mb-4">
+                    <div class="text-center">
+                        <a href="#"><img src="../images/thumbnails/Roulette-146x189-EN.jpg" class="thumbnails"
                                 data-toggle="modal" data-target="#Roulette"></a>
-                        <div class="info">
-                            <h1>រ៉ូឡែត</h1>
-                            <button data-toggle="modal" data-target="#Roulette">READ</button>
-                        </div>
+
+                        <p>រ៉ូឡែត</p>
                     </div>
-                    <!-- large modal -->
-                    <div class="modal fade" id="Roulette" tabindex="-1" role="dialog" aria-labelledby="basicModal"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title" id="myModalLabel">រ៉ូឡែត</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
-                                    </button>
-                                </div>
-    
-                                <div class="modal-body">
+                </div>
+                <!-- large modal -->
+                <div class="modal fade" id="Roulette" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">រ៉ូឡែត</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
 
-                                    <div class="game-modal">
-                                        <p>
-                                            <b>ការណែនាំ</b><br>
-                                            រ៉ូឡែតជាហ្គេមអនឡាញដ៏ពេញនិយមដែលមានចាប់ពីលេខ 0 (សូន្យ) ដល់លេខ 36។
-                                        </p>
-                                        <br>
+                                <div class="game-modal">
 
-                                        <p>
-                                            <b>របៀបលេង</b><br>
-                                            1. នៅពេលចាប់ផ្តើមនៃដៃ សមាជិកត្រូវដាក់ភ្នាល់នៅលើប្រភេទភ្នាល់ណាមួយ។<br>
-                                            2. នៅពេលចប់ម៉ោង ប្រព័ន្ធនឹងធ្វើការជ្រើសរើសលទ្ធផលពីលេខ 0-36។<br>
-                                            3. ប្រសិនលទ្ធផលរ៉ូឡែតត្រូវជាមួយការភ្នាល់របស់អ្នក អ្នកនឹងឈ្នះ ពុំនោះទេគឺចាញ់។<br>
+                                    <p>
+                                        <b>ការណែនាំ</b><br>
+                                        រ៉ូឡែតជាហ្គេមអនឡាញដ៏ពេញនិយមដែលមានចាប់ពីលេខ 0 (សូន្យ) ដល់លេខ 36។
+                                    </p>
+                                    <br>
 
-                                        </p> <br>
+                                    <p>
+                                        <b>របៀបលេង</b><br>
+                                        1. នៅពេលចាប់ផ្តើមនៃដៃ សមាជិកត្រូវដាក់ភ្នាល់នៅលើប្រភេទភ្នាល់ណាមួយ។<br>
+                                        2. នៅពេលចប់ម៉ោង ប្រព័ន្ធនឹងធ្វើការជ្រើសរើសលទ្ធផលពីលេខ 0-36។<br>
+                                        3. ប្រសិនលទ្ធផលរ៉ូឡែតត្រូវជាមួយការភ្នាល់របស់អ្នក អ្នកនឹងឈ្នះ ពុំនោះទេគឺចាញ់។<br>
 
-                                        <p>
-                                            <b>ប្រភេទភ្នាល់</b><br>
-                                            
-                                            <div class="table-responsive">
-                                                <table class="table-left">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td colspan="2" width="50%"><b>ខ្មៅ ក្រហម</b></td>
-                                                            <td colspan="2" width="50%">ដាក់ភ្នាល់លើលេខដែលមានពណ៌ខ្មៅ ក្រហម ឬបៃតង។</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td colspan="2" width="50%"><b>បៃតង</b></td>
-                                                            <td colspan="2" width="50%"><p class="red">** សមាជិកមិនអាចដាក់ភ្នាល់ពណ៌ក្រហម និងពណ៌ខ្មៅក្នុងដៃតែមួយបានទេ។</p></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td colspan="2"></td>
-                                                            <td colspan="2">
-                                                                <p><b>ឧទាហរណ៍ទី1៖</b></p>
-                                                                <p>សមាជិកភ្នាល់លើពណ៌ខ្មៅ $ 1.-</p>
-                                                                <p><b>លទ្ធផល៖ ខ្មៅ</b></p>
-                                                                <p>សមាជិកឈ្នះ</p>
+                                    </p> <br>
 
-                                                                <p><b>ឧទាហរណ៍ទី2៖</b></p>
-                                                                <p>សមាជិកភ្នាល់លើពណ៌ក្រហម $ 1.-</p>
-                                                                <p><b>លទ្ធផល៖ ក្រហម</b></p>
-                                                                <p>សមាជិកឈ្នះ</p>
+                                    <p>
+                                        <b>ប្រភេទភ្នាល់</b><br>
 
-                                                                <p><b>ឧទាហរណ៍ទី3៖</b></p>
-                                                                <p>សមាជិកភ្នាល់លើពណ៌ក្រហម $ 1.-</p>
-                                                                <p><b>លទ្ធផល៖ បៃតង</b></p>
-                                                                <p>សមាជិកចាញ់</p></td>
-                                                        </tr>
+                                    <div class="table-responsive">
+                                        <table class="table-left">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2" width="50%"><b>ខ្មៅ ក្រហម</b></td>
+                                                    <td colspan="2" width="50%">ដាក់ភ្នាល់លើលេខដែលមានពណ៌ខ្មៅ ក្រហម
+                                                        ឬបៃតង។</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" width="50%"><b>បៃតង</b></td>
+                                                    <td colspan="2" width="50%">
+                                                        <p class="red">** សមាជិកមិនអាចដាក់ភ្នាល់ពណ៌ក្រហម
+                                                            និងពណ៌ខ្មៅក្នុងដៃតែមួយបានទេ។</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2"></td>
+                                                    <td colspan="2">
+                                                        <p><b>ឧទាហរណ៍ទី1៖</b></p>
+                                                        <p>សមាជិកភ្នាល់លើពណ៌ខ្មៅ $ 1.-</p>
+                                                        <p><b>លទ្ធផល៖ ខ្មៅ</b></p>
+                                                        <p>សមាជិកឈ្នះ</p>
 
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </p>
+                                                        <p><b>ឧទាហរណ៍ទី2៖</b></p>
+                                                        <p>សមាជិកភ្នាល់លើពណ៌ក្រហម $ 1.-</p>
+                                                        <p><b>លទ្ធផល៖ ក្រហម</b></p>
+                                                        <p>សមាជិកឈ្នះ</p>
 
-                                        <p>
-                                            <b>តារាងទូទាត់</b><br>
+                                                        <p><b>ឧទាហរណ៍ទី3៖</b></p>
+                                                        <p>សមាជិកភ្នាល់លើពណ៌ក្រហម $ 1.-</p>
+                                                        <p><b>លទ្ធផល៖ បៃតង</b></p>
+                                                        <p>សមាជិកចាញ់</p>
+                                                    </td>
+                                                </tr>
 
-
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="2" width="50%"><b>ប្រភេទភ្នាល់</b></td>
-                                                        <td colspan="2" width="50%"><b>ការសង</b></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2">ខ្មៅ ក្រហម</td>
-                                                        <td colspan="2"> 1 </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2">បៃតង</td>
-                                                        <td colspan="2"> 13 </td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <p class="red">
-                                            ចំណាំ!
-                                        </p>
-                                        <p>ហ្គេមមិនអនុញ្ញាតិអោយសមាជិកដាក់ភ្នាល់ពណ៌ក្រហម និងពណ៌ខ្មៅក្នុងដៃតែមួយបានទេ</p>
-                                        <p>ដំណើរការខុសប្រក្រតីប្រព័ន្ធ ទុកជាមោឃៈ រាល់ការសង និងលេង</p>
-                                        </p>
-                                        
-                                        <p><b>Roulette -  តារាងព័ត៌មាន</b></p>
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="2"><b>ទីផ្សារ</b></td>
-                                                        <td colspan="2"><b>ការចេញនៃដៃ</b></td>
-                                                        <td colspan="2"><b>ម៉ោងចាប់ផ្តើម</b></td>
-                                                        <td colspan="2"><b>ម៉ោងបញ្ចប់</b></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2">រ៉ូឡែត</td>
-                                                        <td colspan="2">20 វិនាទី</td>
-                                                        <td colspan="2">00:00:00</td>
-                                                        <td colspan="2">00:00:00</td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <p>*GMT+8</p>
+                                            </tbody>
+                                        </table>
                                     </div>
+                                    </p>
 
+                                    <p>
+                                        <b>តារាងទូទាត់</b><br>
+
+
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2" width="50%"><b>ប្រភេទភ្នាល់</b></td>
+                                                    <td colspan="2" width="50%"><b>ការសង</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">ខ្មៅ ក្រហម</td>
+                                                    <td colspan="2"> 1 </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">បៃតង</td>
+                                                    <td colspan="2"> 13 </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p class="red">
+                                        ចំណាំ!
+                                    </p>
+                                    <p>ហ្គេមមិនអនុញ្ញាតិអោយសមាជិកដាក់ភ្នាល់ពណ៌ក្រហម និងពណ៌ខ្មៅក្នុងដៃតែមួយបានទេ</p>
+                                    <p>ដំណើរការខុសប្រក្រតីប្រព័ន្ធ ទុកជាមោឃៈ រាល់ការសង និងលេង</p>
+                                    </p>
+
+                                    <p><b>Roulette - តារាងព័ត៌មាន</b></p>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2"><b>ទីផ្សារ</b></td>
+                                                    <td colspan="2"><b>ការចេញនៃដៃ</b></td>
+                                                    <td colspan="2"><b>ម៉ោងចាប់ផ្តើម</b></td>
+                                                    <td colspan="2"><b>ម៉ោងបញ្ចប់</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">រ៉ូឡែត</td>
+                                                    <td colspan="2">20 វិនាទី</td>
+                                                    <td colspan="2">00:00:00</td>
+                                                    <td colspan="2">00:00:00</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p>*GMT+8</p>
                                 </div>
 
                             </div>
+
                         </div>
                     </div>
-                </div> 
-                
-                <div class="col-lg-3 col-md-6 col-sm-6 result well">
-                    <div class="row card">
-    
-                        <a href="#"><img src="../images/thumbnails/HiLo-EN.jpg" class="thumbnail-img" data-toggle="modal"
-                                data-target="#HiLo"></a>
-                        <div class="info">
-                            <h1>ខ្ពស់-ទាប</h1>
-                            <button data-toggle="modal" data-target="#HiLo">READ</button>
-                        </div>
-                    </div>
-                    <!-- large modal -->
-                    <div class="modal fade" id="HiLo" tabindex="-1" role="dialog" aria-labelledby="basicModal"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title" id="myModalLabel">ខ្ពស់-ទាប</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
-                                    </button>
-                                </div>
-    
-                                <div class="modal-body">
-
-
-                   <p>
-                       <b>ការណែនាំ</b><br>
-                       ហ្គេម Hi Lo ជាហ្គេមសាមញ្ញមួយដោយគ្រាន់តែទស្សទាយថាតើបៀរដែលអូសបន្ទាប់ខ្ពស់ (Hi) ឬទាប (Lo)។
-                       ហ្គេមនេះជាហ្គេមដែលមានអ្នកលេងតែម្នាក់ប៉ុណ្ណោះ។ 
-                   </p><br>
-
-                   <b>របៀបលេង</b> <br>
-                   <p>1. សមាជិកជ្រើសរើសបៀរចាប់ផ្តើមដោយផ្ទាល់ ឬដោយស្វ័យប្រវត្តិតាមរយះប្រព័ន្ធ។
-                   <br>2. នៅពេលបៀរចាប់់ផ្តើមត្រូវបានជ្រើសរើស សមាជិកអាចធ្វើការដាក់ភ្នាល់បាន។
-                   <br>3. ជ្រើសរើសសន្លឹកបៀរបន្ទាប់ Hi / Lo / Hi ឬស្មើ / Lo ឬស្មើ។
-                   <br>4. នៅពេលដែលសន្លឹកបន្ទាប់មានលទ្ធផល៖
-                   <br>ត្រឹមត្រូវ - ឈ្នះ - ក្នុងហ្គេមនឹងបន្តជាមួយមេគុណកាន់តែខ្ពស់ដើម្បីឈ្នះ។
-                   <br>មិនត្រឹមត្រូវ - ចាញ់ - ហ្គេមត្រូវបានបញ្ចប់។ សមាជិកត្រូវបន្តជាមួយដៃថ្មី។
-                   <br>5. នៅពេលដែលសមាជិកបន្តទស្សទាយបានត្រឺមត្រូវ សមាជិកអាចសម្រេចចិត្តបន្តលេង ឬចុចដកប្រាក់ដែលឈ្នះបាន។<br><br><br>
-
-
-                   <b>តារាងទូទាត់</b><br>
-
-                   <div style="text-align: center;" class="table-responsive">
-                       <table class="table">
-                           <thead>
-                               <tr>
-                                 <th>សន្លឹកបៀរ</th>
-                                 <th colspan="2">មេគុណ</th>
-                               </tr>
-                             </thead>
-                             <tbody>
-                               <tr>
-                                 <td></td>
-                                 <td>ទាបជាង ឬស្មើ</td>
-                                 <td>ខ្ពស់ជាង ឬស្មើ</td>
-                               </tr>
-                               <tr>
-                                 <td>Ace</td>
-                                 <td>11.87</td>
-                                 <td>0.07</td>
-                               </tr>
-                               <tr>
-                                 <td>2</td>
-                                 <td>5.43</td>
-                                 <td>0.07</td>
-                               </tr>
-                               <tr>
-                                 <td>3</td>
-                                 <td>3.29</td>
-                                 <td>0.07</td>
-                               </tr>
-                               <tr>
-                                 <td>4</td>
-                                 <td>2.21</td>
-                                 <td>0.17</td>
-                               </tr>
-                               <tr>
-                                 <td>5</td>
-                                 <td>1.57</td>
-                                 <td>0.43</td>
-                               </tr>
-                               <tr>
-                                 <td>6</td>
-                                 <td>1.14</td>
-                                 <td>0.60</td>
-                               </tr>
-                               <tr>
-                                 <td>7</td>
-                                 <td>0.83</td>
-                                 <td>0.83</td>
-                               </tr>
-                               <tr>
-                                 <td>8</td>
-                                 <td>0.60</td>
-                                 <td>1.14</td>
-                               </tr>
-                               <tr>
-                                 <td>9</td>
-                                 <td>0.43</td>
-                                 <td>1.57</td>
-                               </tr>
-                               <tr>
-                                 <td>10</td>
-                                 <td>0.17</td>
-                                 <td>2.21</td>
-                               </tr>
-                               <tr>
-                                 <td>J</td>
-                                 <td>0.07</td>
-                                 <td>3.29</td>
-                               </tr>
-                               <tr>
-                                 <td>Q</td>
-                                 <td>0.07</td>
-                                 <td>5.43</td>
-                               </tr>
-                               <tr>
-                                 <td>K</td>
-                                 <td>0.07</td>
-                                 <td>11.87</td>
-                               </tr>
-                             </tbody>
-                       </table>
-                   </div>
-                   <p><span style="font-style: italic;">* ការទូទាត់សងត្រូវបានគណនារាល់ការឈ្នះ</span></p>
-                   <p><span style="color: red; font-style: italic;">ចំណាំ!</span><br>
-                       <span style="font-style: italic;">ដំណើរការខុសប្រក្រតីប្រព័ន្ធ ទុកជាមោឃៈ រាល់ការសង និងលេង។</span>
-                   </p>
-
-                   
-
-
-               </div>
-
-           </div>
-       </div>
-   
-</div>
-</div>
-
-<div class="col-lg-3 col-md-6 col-sm-6 result well">
-    <div class="row card">
-
-        <a href="#"><img src="../images/thumbnails/Snow-Sweeper-EN.jpg" class="thumbnail-img"
-                data-toggle="modal" data-target="#SnowSweeper"></a>
-        <div class="info">
-            <h1>SNOW SWEEPER</h1>
-            <button data-toggle="modal" data-target="#SnowSweeper">READ</button>
-        </div>
-    </div>
-    <!-- large modal -->
-    <div class="modal fade" id="SnowSweeper" tabindex="-1" role="dialog" aria-labelledby="basicModal"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">SNOW SWEEPER</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
                 </div>
+            </div>
 
-                <div class="modal-body">
+            <div class="col-lg-2 col-4 result well">
+                <div class="row mb-4">
+                    <div class="text-center">
+                        <a href="#"><img src="../images/thumbnails/HiLo-146x189-EN.jpg" class="thumbnails"
+                                data-toggle="modal" data-target="#HiLo"></a>
 
-                                       <p>
-                                          <b>ការណែនាំ</b><br>
-                                          Snow sweeper គឺជាហ្គេមបុរាណដែលត្រូវបានគេស្គាល់យ៉ាងច្បាស់ថាជាហ្គេមសំអាតមីន។ គោលបំណងនៃការលេងហ្គេមនេះ គឺធ្វើកំនើរឆ្លងកាត់ចំការមីន
-                                          និងដើរគេចពីមីន។ សមាជិកអាចលេងបានកាន់តែយូ ឈ្នះប្រាក់រង្វាន់កាន់តែច្រើន! 
-                                       </p><br>
+                        <p>Hi Lo</p>
+                    </div>
+                </div>
+                <!-- large modal -->
+                <div class="modal fade" id="HiLo" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">Hi Lo</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
 
-                                       <b>លំអិតពីហ្គេម</b> <br>
-                                       <p>សមាជិកអាចជ្រើសរើសផែនទីចំការមីនដើម្បីលេង។</p>
-                                       <div style="text-align: center;" class="table-responsive">
-                                          <table class="table">
-                                             <tbody>
 
+                                <p>
+                                    <b>ការណែនាំ</b><br>
+                                    ហ្គេម Hi Lo ជាហ្គេមសាមញ្ញមួយដោយគ្រាន់តែទស្សទាយថាតើបៀរដែលអូសបន្ទាប់ខ្ពស់ (Hi) ឬទាប
+                                    (Lo)។
+                                    ហ្គេមនេះជាហ្គេមដែលមានអ្នកលេងតែម្នាក់ប៉ុណ្ណោះ។
+                                </p><br>
+
+                                <b>របៀបលេង</b> <br>
+                                <p>1. សមាជិកជ្រើសរើសបៀរចាប់ផ្តើមដោយផ្ទាល់ ឬដោយស្វ័យប្រវត្តិតាមរយះប្រព័ន្ធ។
+                                    <br>2. នៅពេលបៀរចាប់់ផ្តើមត្រូវបានជ្រើសរើស សមាជិកអាចធ្វើការដាក់ភ្នាល់បាន។
+                                    <br>3. ជ្រើសរើសសន្លឹកបៀរបន្ទាប់ Hi / Lo / Hi ឬស្មើ / Lo ឬស្មើ។
+                                    <br>4. នៅពេលដែលសន្លឹកបន្ទាប់មានលទ្ធផល៖
+                                    <br>ត្រឹមត្រូវ - ឈ្នះ - ក្នុងហ្គេមនឹងបន្តជាមួយមេគុណកាន់តែខ្ពស់ដើម្បីឈ្នះ។
+                                    <br>មិនត្រឹមត្រូវ - ចាញ់ - ហ្គេមត្រូវបានបញ្ចប់។ សមាជិកត្រូវបន្តជាមួយដៃថ្មី។
+                                    <br>5. នៅពេលដែលសមាជិកបន្តទស្សទាយបានត្រឺមត្រូវ សមាជិកអាចសម្រេចចិត្តបន្តលេង
+                                    ឬចុចដកប្រាក់ដែលឈ្នះបាន។<br><br><br>
+
+
+                                    <b>តារាងទូទាត់</b><br>
+
+                                <div style="text-align: center;" class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>សន្លឹកបៀរ</th>
+                                                <th colspan="2">មេគុណ</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td>ទាបជាង ឬស្មើ</td>
+                                                <td>ខ្ពស់ជាង ឬស្មើ</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ace</td>
+                                                <td>11.87</td>
+                                                <td>0.07</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>5.43</td>
+                                                <td>0.07</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>3.29</td>
+                                                <td>0.07</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>2.21</td>
+                                                <td>0.17</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>1.57</td>
+                                                <td>0.43</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>1.14</td>
+                                                <td>0.60</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>0.83</td>
+                                                <td>0.83</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>0.60</td>
+                                                <td>1.14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>0.43</td>
+                                                <td>1.57</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>0.17</td>
+                                                <td>2.21</td>
+                                            </tr>
+                                            <tr>
+                                                <td>J</td>
+                                                <td>0.07</td>
+                                                <td>3.29</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Q</td>
+                                                <td>0.07</td>
+                                                <td>5.43</td>
+                                            </tr>
+                                            <tr>
+                                                <td>K</td>
+                                                <td>0.07</td>
+                                                <td>11.87</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p><span style="font-style: italic;">* ការទូទាត់សងត្រូវបានគណនារាល់ការឈ្នះ</span></p>
+                                <p><span style="color: red; font-style: italic;">ចំណាំ!</span><br>
+                                    <span style="font-style: italic;">ដំណើរការខុសប្រក្រតីប្រព័ន្ធ ទុកជាមោឃៈ រាល់ការសង
+                                        និងលេង។</span>
+                                </p>
+
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-4 result well">
+                <div class="row mb-4">
+                    <div class="text-center">
+                        <a href="#"><img src="../images/thumbnails/w88-slots-Snow-Sweeper-EN.jpg" class="thumbnails"
+                                data-toggle="modal" data-target="#SnowSweeper"></a>
+
+                        <p>Snow Sweeper</p>
+                    </div>
+                </div>
+                <!-- large modal -->
+                <div class="modal fade" id="SnowSweeper" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">Snow Sweeper</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                                <p>
+                                    <b>ការណែនាំ</b><br>
+                                    Snow sweeper គឺជាហ្គេមបុរាណដែលត្រូវបានគេស្គាល់យ៉ាងច្បាស់ថាជាហ្គេមសំអាតមីន។
+                                    គោលបំណងនៃការលេងហ្គេមនេះ គឺធ្វើកំនើរឆ្លងកាត់ចំការមីន
+                                    និងដើរគេចពីមីន។ សមាជិកអាចលេងបានកាន់តែយូ ឈ្នះប្រាក់រង្វាន់កាន់តែច្រើន!
+                                </p><br>
+
+                                <b>លំអិតពីហ្គេម</b> <br>
+                                <p>សមាជិកអាចជ្រើសរើសផែនទីចំការមីនដើម្បីលេង។</p>
+                                <div style="text-align: center;" class="table-responsive">
+                                    <table class="table">
+                                        <tbody>
+
+                                            <tr>
+                                                <td></td>
+                                                <td><img src="photo1.jpg" alt="Photo 1"></td>
+                                                <td><img src="photo2.jpg" alt="Photo 2"></td>
+                                                <td><img src="photo3.jpg" alt="Photo 3"></td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Field</td>
+                                                <td>7</td>
+                                                <td>19</td>
+                                                <td>37</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Comb</td>
+                                                <td>1-3</td>
+                                                <td>3-9</td>
+                                                <td>8-15</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Multiplier Range</td>
+                                                <td>X-XX</td>
+                                                <td>X-XX</td>
+                                                <td>X-XX</td>
+                                            </tr>
+                                            <tr>
+                                                <td>RTP Range</td>
+                                                <td></td>
+                                                <td>XX.XX</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p><span style="color: red; font-style: italic;">ចំណាំ!</span><br>
+                                    <span style="font-style: italic;">ដំណើរការខុសប្រក្រតីប្រព័ន្ធ ទុកជាមោឃៈ រាល់ការសង
+                                        និងលេង។</span>
+                                </p>
+
+                                <b>និមិត្តសញ្ញាហ្គេម</b>
+                                <div style="margin: 0 auto; width: 80%;">
+                                    <div style="text-align: center;" class="table-responsive">
+                                        <table class="table" style="margin: 0 auto;">
+                                            <tbody>
                                                 <tr>
-                                                   <td></td>
-                                                   <td><img src="photo1.jpg" alt="Photo 1"></td>
-                                                   <td><img src="photo2.jpg" alt="Photo 2"></td>
-                                                   <td><img src="photo3.jpg" alt="Photo 3"></td>
-                                               </tr>
-
-
+                                                </tr>
                                                 <tr>
-                                                   <td>Field</td>
-                                                   <td>7</td>
-                                                   <td>19</td>
-                                                   <td>37</td>
+                                                    <td><img src="photo1.jpg" alt="Photo 4"></td>
+                                                    <td><img src="photo2.jpg" alt="Photo 5"></td>
+                                                    <td><img src="photo3.jpg" alt="Photo 6"></td>
                                                 </tr>
 
                                                 <tr>
-                                                   <td>Comb</td>
-                                                   <td>1-3</td>
-                                                   <td>3-9</td>
-                                                   <td>8-15</td>
-
+                                                    <td>Penguin</td>
+                                                    <td>Bonus Penguin</td>
+                                                    <td>Bomb</td>
                                                 </tr>
-                                                <tr>
-                                                   <td>Multiplier Range</td>
-                                                   <td>X-XX</td>
-                                                   <td>X-XX</td>
-                                                   <td>X-XX</td>
-                                                </tr>
-                                                <tr>
-                                                   <td>RTP Range</td>
-                                                   <td></td>
-                                                   <td>XX.XX</td>
-                                                   <td></td>
-                                                </tr>
-                                             </tbody>
-                                          </table>
-                                       </div>
-                                       <p><span style="color: red; font-style: italic;">ចំណាំ!</span><br>
-                                          <span style="font-style: italic;">ដំណើរការខុសប្រក្រតីប្រព័ន្ធ ទុកជាមោឃៈ រាល់ការសង និងលេង។</span>
-                                       </p>
-
-                                       <b>និមិត្តសញ្ញាហ្គេម</b>
-                                       <div style="margin: 0 auto; width: 80%;">
-                                          <div style="text-align: center;" class="table-responsive">
-                                             <table class="table" style="margin: 0 auto;">
-                                                <tbody>
-                                                   <tr>
-                                                      </tr><tr>
-                                                         <td><img src="photo1.jpg" alt="Photo 4"></td>
-                                                         <td><img src="photo2.jpg" alt="Photo 5"></td>
-                                                         <td><img src="photo3.jpg" alt="Photo 6"></td>
-                                                     </tr>
-                                                   
-                                                   <tr>
-                                                      <td>Penguin</td>
-                                                      <td>Bonus Penguin</td>
-                                                      <td>Bomb</td>
-                                                   </tr>
-                                                </tbody>
-                                             </table>
-                                          </div>
-                                       </div>
-
-                                       <p>រាល់ពេលនីមួយៗដែលសមាជិកអាចគេចពីមីនបាន penguin និងលេចចេញ ហើយសមាជិកនឹងឈ្នះចំនួនមេគុណ។<br>
-                                          នៅពេលដែលសមាជិកចុចចំគ្រាប់បែក Bomb នឹងផ្ទុះ ហើយសមាជិកនឹងចាញ់ប្រាក់ភ្នាល់ និងរាល់ប្រាក់ដែលឈ្នះទាំងអស់។
-                                       </p>
-
-                                       <b>របៀបលេង</b>
-                                       <p>* ជ្រើសរើសផែនទីចំការមីន ដើម្បីជ្រើសរើសចំនួនគ្រាន់មីន<br>
-                                          * ជ្រើសរើសចំនួនគ្រាប់មីននៅក្នុងផែនទី<br>
-                                          * ចុចចាប់ផ្តើម<span style="font-style: italic;"><b>"Start"</b></span> <br>
-                                          * ជ្រើសរើសចំការ គេចពីមីនដើម្បីទទួលប្រាក់រង្វាន់<br>
-                                          * <b>Collect</b>ប្រមូលប្រាក់ឈ្នះនឹងបញ្ចប់ហ្គេម
-                                       </p>
-
-                                       <b>ការកាត់ផ្តាច់សេវា</b>
-                                       <p>
-                                          នៅក្នុងដៃដែលមិនបានបញ្ចប់ នឹងត្រូវដកចេញរៀងរាល់ 20នាទី។<br>
-                                          ដែលមិនបានបញ្ចប់ នឹងត្រូវប្រមូលប្រាក់ឈ្នះដោយស្វ័យប្រវត្តិ បន្ទាប់ពីរយះពេល 20នាទី និងប្រាក់ដែលឈ្នះត្រូវបានដាក់ចូលក្នុងប្រអប់ប្រាក់របស់សមាជិក។
-                                       </p>
-
-                                       <b>ការគ្រប់គ្រងហ្គេម</b>
-
-                                       <div style="text-align: center;" class="table-responsive">
-                                          <table class="table">
-                                             <tbody>
-                                                <tr>
-                                                   <td>ការគ្រប់គ្រង</td>
-                                                   <td>ការពិពណ៌នា</td>
-                                               </tr>
-                                               
-                                               <tr>
-                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                   <td>ចំនួនដែលបានបើក និងនៅសល់ក្នុងចំការ</td>
-                                               </tr>
-                                               
-                                               <tr>
-                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                   <td>ចំនួននៃគ្រាប់បែក Bomb ដើម្បីកំនត់នៅក្នុងចំការសម្រាប់លេងក្នុងហ្គេម</td>
-                                               </tr>
-                                               
-                                               <tr>
-                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                   <td>ជ្រើសរើស Chip ដើម្បីដាក់ភ្នាល់នៅក្នុងហ្គេម</td>
-                                               </tr>
-                                               
-                                               <tr>
-                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                   <td>ដើម្បីលេងហ្គេម សូមចុច Start<br>
-                                                       ចំនួនឈ្នះបច្ចុប្បន្ន។ ចុចប្រមូល Collect
-                                                   </td>
-                                               </tr>
-                                               
-                                               <tr>
-                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                   <td>ជ្រើសរើសមួយចំការដោយចៃដន្យក្នុងពេលតែមួយ</td>
-                                               </tr>
-                                               
-                                               <tr>
-                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                   <td>ជ្រើសរើសបីចំការដោយចៃដន្យក្នុងពេលតែមួយ</td>
-                                               </tr>
-                                               
-                                               <tr>
-                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                   <td>កំនត់ការលេងដោយស្វ័យប្រវត្តិ On និង Off</td>
-                                               </tr>
-                                               
-                                               <tr>
-                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                   <td>ចំនួនដៃដែលត្រូវលេងដោយស្វ័យប្រវត្តិ</td>
-                                               </tr>
-                                               
-                                               <tr>
-                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                   <td>ចុចលើប៊ូតុង “Turbo” បិទបើកដើម្បីប្តូរទំរង់ហ្គេម<br>
-                                                       ជ្រើសរើសចំនួនកំរាលដើម្បីលេងស្វ័យប្រវត្តិតាមលំដាប់ ឬដោយចៃដន្យ<br>
-                                                       ជ្រើសរើសចំនួនដៃដើម្បីលេងស្វ័យប្រវត្តិ
-                                                   </td>
-                                               </tr>
-                                               
-                                               <tr>
-                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                   <td>ទូទាត់សងចំការបន្ទាប់</td>
-                                               </tr>
-                                               
-                                               <tr>
-                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                   <td>សមតុល្យបច្ចុប្បន្នរបស់សមាជិក (ចុចដើម្បីបិទ/បើក)</td>
-                                               </tr>
-                                               
-                                               <tr>
-                                                   <td><img src="penguin.jpg" alt="Penguin"></td>
-                                                   <td>ចំនួនភ្នាល់របស់សមាជិក និងចំនួនឈ្នះនៅក្នុងដៃ</td>
-                                               </tr>
-
-
-                                             </tbody>
-                                          </table>
-                                       </div>
-
-
+                                            </tbody>
+                                        </table>
                                     </div>
+                                </div>
 
-       </div>
-    </div>
- </div>
-</div>
-</div>
-<div class="col" id="searchNotfound" style="display: none; text-align:center;">
-   <img src="https://www.gpislots.info/shared/images/no-results-en.png">
-   <h3 style="font-family: 'Helvetica', sans-serif;;
-">No results found</h3>
-   <p style="font-family: 'Helvetica', sans-serif;;
-">Please modify your search and try again.
-</p>
-</div>
-<div class="paginationCustom">
-   <div id="pagingControls"></div>
+                                <p>រាល់ពេលនីមួយៗដែលសមាជិកអាចគេចពីមីនបាន penguin និងលេចចេញ
+                                    ហើយសមាជិកនឹងឈ្នះចំនួនមេគុណ។<br>
+                                    នៅពេលដែលសមាជិកចុចចំគ្រាប់បែក Bomb នឹងផ្ទុះ ហើយសមាជិកនឹងចាញ់ប្រាក់ភ្នាល់
+                                    និងរាល់ប្រាក់ដែលឈ្នះទាំងអស់។
+                                </p>
 
-</div>   
-</div>
+                                <b>របៀបលេង</b>
+                                <p>* ជ្រើសរើសផែនទីចំការមីន ដើម្បីជ្រើសរើសចំនួនគ្រាន់មីន<br>
+                                    * ជ្រើសរើសចំនួនគ្រាប់មីននៅក្នុងផែនទី<br>
+                                    * ចុចចាប់ផ្តើម<span style="font-style: italic;"><b>"Start"</b></span> <br>
+                                    * ជ្រើសរើសចំការ គេចពីមីនដើម្បីទទួលប្រាក់រង្វាន់<br>
+                                    * <b>Collect</b>ប្រមូលប្រាក់ឈ្នះនឹងបញ្ចប់ហ្គេម
+                                </p>
+
+                                <b>ការកាត់ផ្តាច់សេវា</b>
+                                <p>
+                                    នៅក្នុងដៃដែលមិនបានបញ្ចប់ នឹងត្រូវដកចេញរៀងរាល់ 20នាទី។<br>
+                                    ដែលមិនបានបញ្ចប់ នឹងត្រូវប្រមូលប្រាក់ឈ្នះដោយស្វ័យប្រវត្តិ បន្ទាប់ពីរយះពេល 20នាទី
+                                    និងប្រាក់ដែលឈ្នះត្រូវបានដាក់ចូលក្នុងប្រអប់ប្រាក់របស់សមាជិក។
+                                </p>
+
+                                <b>ការគ្រប់គ្រងហ្គេម</b>
+
+                                <div style="text-align: center;" class="table-responsive">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>ការគ្រប់គ្រង</td>
+                                                <td>ការពិពណ៌នា</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>ចំនួនដែលបានបើក និងនៅសល់ក្នុងចំការ</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>ចំនួននៃគ្រាប់បែក Bomb ដើម្បីកំនត់នៅក្នុងចំការសម្រាប់លេងក្នុងហ្គេម
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>ជ្រើសរើស Chip ដើម្បីដាក់ភ្នាល់នៅក្នុងហ្គេម</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>ដើម្បីលេងហ្គេម សូមចុច Start<br>
+                                                    ចំនួនឈ្នះបច្ចុប្បន្ន។ ចុចប្រមូល Collect
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>ជ្រើសរើសមួយចំការដោយចៃដន្យក្នុងពេលតែមួយ</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>ជ្រើសរើសបីចំការដោយចៃដន្យក្នុងពេលតែមួយ</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>កំនត់ការលេងដោយស្វ័យប្រវត្តិ On និង Off</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>ចំនួនដៃដែលត្រូវលេងដោយស្វ័យប្រវត្តិ</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>ចុចលើប៊ូតុង “Turbo” បិទបើកដើម្បីប្តូរទំរង់ហ្គេម<br>
+                                                    ជ្រើសរើសចំនួនកំរាលដើម្បីលេងស្វ័យប្រវត្តិតាមលំដាប់ ឬដោយចៃដន្យ<br>
+                                                    ជ្រើសរើសចំនួនដៃដើម្បីលេងស្វ័យប្រវត្តិ
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>ទូទាត់សងចំការបន្ទាប់</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>សមតុល្យបច្ចុប្បន្នរបស់សមាជិក (ចុចដើម្បីបិទ/បើក)</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><img src="penguin.jpg" alt="Penguin"></td>
+                                                <td>ចំនួនភ្នាល់របស់សមាជិក និងចំនួនឈ្នះនៅក្នុងដៃ</td>
+                                            </tr>
 
 
-
-</div>
-
-<footer class="footer" style="background-color: #e8e8e8;">
-
-
-    <div class="container">
-    
+                                        </tbody>
+                                    </table>
+                                </div>
 
 
-            <div class="dropup">
-                <button class="btn btn-black dropdown-toggle" type="button" id="languageDropdown"
-                    data-bs-toggle="dropdown" aria-expanded="false"
-                    style="margin: 1rem; border-radius: 1rem; width: 10rem;">
-                    <span">Khmer</span>
-                </button>
+                            </div>
 
-                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                        <li><a class="dropdown-item" href="rules_slots_en-my.html">English</a></li>
-                        <li><a class="dropdown-item" href="rules_slots_cn-my.html">简体中文</a></li>
-                        <li><a class="dropdown-item" href="rules_slots_id-my.html">Bahasa Indonesia</a></li>
-                        <li><a class="dropdown-item" href="rules_slots_kr-my.html">한국어</a></li>
-                        <li><a class="dropdown-item" href="rules_slots_th-my.html">ไทย</a></li>
-                        <li><a class="dropdown-item" href="rules_slots_vn-my.html">Tiếng Việt</a></li>
-                        <li><a class="dropdown-item" href="rules_slots_es-my.html">Español</a></li>
-                </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="col" id="searchNotfound" style="display: none; text-align:center;">
+            <img src="https://www.gpislots.info/shared/images/no-results-en.png">
+            <h3 style="font-family: 'Helvetica', sans-serif;;
+">No results found</h3>
+            <p style="font-family: 'Helvetica', sans-serif;;
+">Please modify your search and try again.
+            </p>
+        </div>
+        <div class="paginationCustom">
+            <div id="pagingControls"></div>
+
+        </div>
+    </div>
+
 
 
     </div>
-    </div>
-   
-</footer>
 
-<script src="https://www.gpislots.info/shared/js/jquery.js"></script>
-<script src="https://www.gpislots.info/shared/js/flexible-pagination.js"></script>
-<script src="https://www.gpislots.info/shared/js/scripts.js"></script>
-<script src="https://www.gpislots.info/shared/js/bootstrap.js"></script>
+    <footer class="footer" style="background-color: #f5f5f5;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8 align-items-center">
+                    <!-- Your footer content here -->
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 align-items-center">
+                    <div class="dropup" style="position: relative; float: right;">
+                        <button class="btn btn-black dropdown-toggle d-flex justify-content-between align-items-center"
+                            type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false"
+                            style="margin: 1rem; width: 11rem;">
+                            <span>English</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="rules_slots_en-my.html">English</a></li>
+                            <li><a class="dropdown-item" href="rules_slots_cn-my.html">简体中文</a></li>
+                            <li><a class="dropdown-item" href="rules_slots_id-my.html">Bahasa Indonesia</a></li>
+                            <li><a class="dropdown-item" href="rules_slots_kr-my.html">한국어</a></li>
+                            <li><a class="dropdown-item" href="rules_slots_th-my.html">ไทย</a></li>
+                            <li><a class="dropdown-item" href="rules_slots_vn-my.html">Tiếng Việt</a></li>
+                            <li><a class="dropdown-item" href="rules_slots_es-my.html">Español</a></li>
+                        </ul>
+                    </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://www.gpislots.info/shared/js/jquery.js"></script>
+    <script src="https://www.gpislots.info/shared/js/flexible-pagination.js"></script>
+    <script src="https://www.gpislots.info/shared/js/scripts.js"></script>
+    <script src="https://www.gpislots.info/shared/js/bootstrap.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 
 
@@ -812,4 +844,5 @@ h1 {
 
 
 </body>
+
 </html>

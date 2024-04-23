@@ -53,10 +53,6 @@
             color: white;
         }
 
-        .game {
-            color: #4439a1 !important;
-        }
-
         #content img {
             border-radius: 0px !important;
         }
@@ -94,20 +90,32 @@
 
         }
     </style>
-
     <div class="header">
+        <div class="container header">
 
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="../images/thumbnails/logo.png" width="189" height="50"
-                    class="nav-photo"></a>
-            <!-- Center right alignment -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="nav-photo">
+                        <a class="navbar-brand" href="#"><img src="../images/thumbnails/logo.png" width="189"
+                                height="50" class="nav-photo"></a>
+                        <!-- Center right alignment -->
+                    </div>
+                </div>
+            </div>
+            </nav>
+
         </div>
-        </nav>
+
+
         <div class="blue-bar-head">
             <div class="container">
             </div>
         </div>
     </div>
+
+
+
 
 
     <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
@@ -124,7 +132,7 @@
             </div>
 
             <div class="col-lg-3 col-md-6 col-sm-5 justify-content-end">
-                <input class="searchBox form-control" placeholder="Type game title">
+                <input class="searchBox form-control" placeholder="Search game">
             </div>
         </div>
 
@@ -154,29 +162,29 @@
     <div class="container contents">
         <div class="row" id="content">
 
-            <div class="col-lg-3 col-md-6 col-sm-6 result well">
-                <div class="row card">
+            <div class="col-lg-2 col-4 result well">
+                <div class="row mb-4">
+                    <div class="text-center">
+                        <a href="#"><img src="../images/thumbnails/Crypto-Crash-146x189-EN.png" class="thumbnails"
+                                data-toggle="modal" data-target="#CryptoCrash"></a>
 
-                    <a href="#"><img src="../images/thumbnails/Crypto-Crash-EN.png" class="thumbnail-img"
-                            data-toggle="modal" data-target="#CrytoCrash"></a>
-                    <div class="info">
-                        <h1>CRYPTO CRASH</h1>
-                        <button data-toggle="modal" data-target="#CrytoCrash">READ</button>
+                        <p>Crypto Crash</p>
                     </div>
                 </div>
                 <!-- large modal -->
-                <div class="modal fade" id="CrytoCrash" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                <div class="modal fade" id="CryptoCrash" tabindex="-1" role="dialog" aria-labelledby="basicModal"
                     aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title" id="myModalLabel">CRYPTO CRASH</h4>
+                                <h4 class="modal-title" id="myModalLabel">Crypto Crash</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
+                                    <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-
                             <div class="modal-body">
+
+
 
                                 <div class="game-modal">
                                     <p>
@@ -283,14 +291,13 @@
 
             </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-6 result well">
-                <div class="row card">
+            <div class="col-lg-2 col-4 result well">
+                <div class="row mb-4">
+                    <div class="text-center">
+                        <a href="#"><img src="../images/thumbnails/Roulette-146x189-EN.jpg" class="thumbnails"
+                                data-toggle="modal" data-target="#Roulette"></a>
 
-                    <a href="#"><img src="../images/thumbnails/Roulette-EN.jpg" class="thumbnail-img"
-                            data-toggle="modal" data-target="#Roulette"></a>
-                    <div class="info">
-                        <h1>CRYPTO ROULETTE</h1>
-                        <button data-toggle="modal" data-target="#Roulette">READ</button>
+                        <p>Crypto Roulette</p>
                     </div>
                 </div>
                 <!-- large modal -->
@@ -299,12 +306,11 @@
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title" id="myModalLabel">CRYPTO ROULETTE</h4>
+                                <h4 class="modal-title" id="myModalLabel">Crypto Roulette</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
+                                    <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-
                             <div class="modal-body">
 
                                 <div class="game-modal">
@@ -427,14 +433,13 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-6 result well">
-                <div class="row card">
+            <div class="col-lg-2 col-4 result well">
+                <div class="row mb-4">
+                    <div class="text-center">
+                        <a href="#"><img src="../images/thumbnails/HiLo-146x189-EN.jpg" class="thumbnails"
+                                data-toggle="modal" data-target="#HiLo"></a>
 
-                    <a href="#"><img src="../images/thumbnails/HiLo-EN.jpg" class="thumbnail-img" data-toggle="modal"
-                            data-target="#HiLo"></a>
-                    <div class="info">
-                        <h1>HI LO</h1>
-                        <button data-toggle="modal" data-target="#HiLo">READ</button>
+                        <p>Hi Lo</p>
                     </div>
                 </div>
                 <!-- large modal -->
@@ -443,12 +448,11 @@
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title" id="myModalLabel">HI LO</h4>
+                                <h4 class="modal-title" id="myModalLabel">Hi Lo</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
+                                    <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-
                             <div class="modal-body">
 
                                 <p>
@@ -570,14 +574,13 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-6 result well">
-                <div class="row card">
+            <div class="col-lg-2 col-4 result well">
+                <div class="row mb-4">
+                    <div class="text-center">
+                        <a href="#"><img src="../images/thumbnails/w88-slots-Snow-Sweeper-EN.jpg" class="thumbnails"
+                                data-toggle="modal" data-target="#SnowSweeper"></a>
 
-                    <a href="#"><img src="../images/thumbnails/Snow-Sweeper-EN.jpg" class="thumbnail-img"
-                            data-toggle="modal" data-target="#SnowSweeper"></a>
-                    <div class="info">
-                        <h1>SNOW SWEEPER</h1>
-                        <button data-toggle="modal" data-target="#SnowSweeper">READ</button>
+                        <p>Snow Sweeper</p>
                     </div>
                 </div>
                 <!-- large modal -->
@@ -586,12 +589,11 @@
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title" id="myModalLabel">SNOW SWEEPER</h4>
+                                <h4 class="modal-title" id="myModalLabel">Snow Sweeper</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
+                                    <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-
                             <div class="modal-body">
 
                                 <p>
@@ -787,14 +789,16 @@
         </div>
     </div>
 
+
+
     <div class="col" id="searchNotfound" style="display: none; text-align:center;">
         <img src="https://www.gpislots.info/shared/images/no-results-en.png">
         <h3 style="font-family: 'Helvetica', sans-serif;;
         ">No results found</h3>
-                <p style="font-family: 'Helvetica', sans-serif;;
+        <p style="font-family: 'Helvetica', sans-serif;;
         ">Please modify your search and try again.
-                </p>
-            </div>
+        </p>
+    </div>
 
 
     <div class="paginationCustom">
@@ -808,39 +812,37 @@
     </div>
 
 
-
-    <footer class="footer" style="background-color: #e8e8e8;">
-
-
+    <footer class="footer" style="background-color: #f5f5f5;">
         <div class="container">
-        
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8 align-items-center">
+                    <!-- Your footer content here -->
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 align-items-center">
+                    <div class="dropup" style="position: relative; float: right;">
+                        <button class="btn btn-black dropdown-toggle d-flex justify-content-between align-items-center"
+                            type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false"
+                            style="margin: 1rem; width: 11rem;">
+                            <span>English</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="rules_slots_cn-my.html">简体中文</a></li>
+                            <li><a class="dropdown-item" href="rules_slots_id-my.html">Bahasa Indonesia</a></li>
+                            <li><a class="dropdown-item" href="rules_slots_kh-my.html">ខ្មែរ</a></li>
+                            <li><a class="dropdown-item" href="rules_slots_kr-my.html">한국어</a></li>
+                            <li><a class="dropdown-item" href="rules_slots_th-my.html">ไทย</a></li>
+                            <li><a class="dropdown-item" href="rules_slots_vn-my.html">Tiếng Việt</a></li>
+                            <li><a class="dropdown-item" href="rules_slots_es-my.html">Español</a></li>
+                        </ul>
+                    </div>
 
 
-                <div class="dropup">
-                    <button class="btn btn-black dropdown-toggle" type="button" id="languageDropdown"
-                        data-bs-toggle="dropdown" aria-expanded="false"
-                        style="margin: 1rem; border-radius: 1rem; width: 10rem;">
-                        <span">English</span>
-                    </button>
 
-                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                        <li><a class="dropdown-item" href="rules_slots_cn-my.html">简体中文</a></li>
-                        <li><a class="dropdown-item" href="rules_slots_id-my.html">Bahasa Indonesia</a></li>
-                        <li><a class="dropdown-item" href="rules_slots_kh-my.html">ខ្មែរ</a></li>
-                        <li><a class="dropdown-item" href="rules_slots_kr-my.html">한국어</a></li>
-                        <li><a class="dropdown-item" href="rules_slots_th-my.html">ไทย</a></li>
-                        <li><a class="dropdown-item" href="rules_slots_vn-my.html">Tiếng Việt</a></li>
-                        <li><a class="dropdown-item" href="rules_slots_es-my.html">Español</a></li>
-                        
-                    </ul>
                 </div>
             </div>
-
-
         </div>
-        </div>
-       
     </footer>
+
 
     <script src="https://www.gpislots.info/shared/js/jquery.js"></script>
     <script src="https://www.gpislots.info/shared/js/flexible-pagination.js"></script>
