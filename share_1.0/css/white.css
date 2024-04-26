@@ -1022,7 +1022,7 @@ footer {
 }
 
 ul.dropdown-menu.show {
-  width: 11rem;
+  min-width: 11rem;
 }
 
 
@@ -1114,7 +1114,7 @@ p {
 }
 
 ul.dropdown-menu.show {
-  width: 10rem !important;
+  min-width: 10rem !important;
 }
 
 button#languageDropdown {
