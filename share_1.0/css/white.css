@@ -1075,6 +1075,7 @@ p {
   font-size: 1rem;
 }
 
+
 @media screen and (max-width: 820px) and (min-width: 375px) {
   
   a.dropdown-item {
@@ -1136,6 +1137,8 @@ input.searchBox.form-control {
   background-color: white;
   color: #000;
 }
+
+
 
 
 
