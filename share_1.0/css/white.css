@@ -1077,6 +1077,10 @@ p {
 
 
 @media screen and (max-width: 820px) and (min-width: 375px) {
+
+  .imagesize {
+    width: 40% !important;
+  }
   
   a.dropdown-item {
     font-size: x-small;
