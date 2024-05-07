@@ -1079,15 +1079,24 @@ p {
   display: inline-block;
 }
 
+.imagesizetrio {
+ display: inline-block;
+}
+
 
 @media screen and (max-width: 820px) and (min-width: 375px) {
 
   .imagesize {
     width: 40% !important;
+    display: inline-block;
   }
 
   .imagesizesolo {
-    width: 80% !important
+    width: 80% !important;
+  }
+  .imagesizetrio {
+    width: 30% !important;
+    display: inline-block;
   }
   
   a.dropdown-item {
