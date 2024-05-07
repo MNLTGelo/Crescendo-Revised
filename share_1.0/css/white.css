@@ -1085,6 +1085,10 @@ p {
   .imagesize {
     width: 40% !important;
   }
+
+  .imagesizesolo {
+    width: 80% !important
+  }
   
   a.dropdown-item {
     font-size: x-small;
