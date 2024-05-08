@@ -1103,7 +1103,12 @@ p {
 
 
 @media screen and (max-width: 765px) and (min-width: 300px) {
-
+b {
+  font-size: x-small;
+}
+td {
+  font-size: x-small;
+}
   .hexagon1 {
     width:90% !important;
   }
