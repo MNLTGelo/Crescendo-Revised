@@ -1099,7 +1099,21 @@ p {
 }
 
 
-@media screen and (max-width: 765px) and (min-width: 350px) {
+
+
+
+@media screen and (max-width: 765px) and (min-width: 300px) {
+
+  .hexagon1 {
+    width:90% !important;
+  }
+  .hexagon2 {
+    width:70% !important;
+  }
+
+  .hexagon3 {
+    width:100% !important
+  }
 
   .imagesize {
     width: 40% !important;
@@ -1175,7 +1189,21 @@ input.searchBox.form-control {
 }
 
 
+@media (width: 360px) {
+  
+  .hexagon1 {
+    width:90% !important;
+  }
+  .hexagon2 {
+    width:60% !important;
+  }
 
+  .hexagon3 {
+    width:100% !important;
+  }
+
+
+}
 
 
 
