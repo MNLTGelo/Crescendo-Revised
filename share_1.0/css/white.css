@@ -806,7 +806,7 @@ img.thumbnail-img {
   .table-responsive>.table>tbody>tr>td, .table-responsive>.table>tbody>tr>th, .table-responsive>.table>tfoot>tr>td, .table-responsive>.table>tfoot>tr>th, .table-responsive>.table>thead>tr>td, .table-responsive>.table>thead>tr>th {
     /* white-space: nowrap; */
     white-space: unset;
-    font-size: 12px;
+    font-size: x-small;
     line-height: 17px;
 }
   .imgleft-content img {
@@ -1083,8 +1083,23 @@ p {
  display: inline-block;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .imagesize {
+    width: 30% !important;
+    display: inline-block;
+  }
 
-@media screen and (max-width: 820px) and (min-width: 375px) {
+  .imagesizesolo {
+    width: 35% !important;
+  }
+  .imagesizetrio {
+    width: 10% !important;
+    display: inline-block;
+  }
+}
+
+
+@media screen and (max-width: 765px) and (min-width: 350px) {
 
   .imagesize {
     width: 40% !important;
@@ -1092,7 +1107,7 @@ p {
   }
 
   .imagesizesolo {
-    width: 80% !important;
+    width: 50% !important;
   }
   .imagesizetrio {
     width: 30% !important;
