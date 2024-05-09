@@ -890,9 +890,10 @@ img.thumbnail-img {
   .table-responsive {
     border: none;   
   }
-  .table td {
-    text-align: left;
+  .textmid {
+    text-align: left !important;
   }
+  
 }
 
 /*Extra Small Devices, Phones*/
@@ -1085,18 +1086,22 @@ p {
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .imagesize {
-    width: 30% !important;
+    width: 28% !important;
     display: inline-block;
   }
 
   .imagesizesolo {
-    width: 35% !important;
+    width: 33% !important;
   }
   .imagesizetrio {
-    width: 10% !important;
+    width: 16% !important;
     display: inline-block;
   }
 }
+.textmid {
+  text-align: left !important;
+}
+
 
 
 
@@ -1141,6 +1146,15 @@ td {
     font-size: x-small;
 
   }
+
+  .modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 30px !important;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
 
   .mt-5, .my-5 {
     margin-top: 1.1rem !important;
